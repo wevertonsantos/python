@@ -1,0 +1,1 @@
+print("hello, world") #função para mostrar aquilo que está sendo passado de parâmetro.
