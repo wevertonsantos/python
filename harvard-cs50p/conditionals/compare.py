@@ -16,3 +16,23 @@ elif x > y:
     print(f"{x} is greater than {y}")
 else:
     print(f"{x} is equal to {y}")
+
+'''
+or : ou
+and : e
+'''
+
+if x < y or x > y: #or
+    print(f"{x} is not equal to {y}")
+else:
+    print(f"{x} is equal to {y}")
+
+if x != y: #diferente
+    print(f"{x} is not equal to {y}")
+else:
+    print(f"{x} is equal to {y}")
+
+if x == y: #comparação
+    print(f"{x} is equal to {y}")
+else:
+    print(f"{x} is not equal to {y}")
