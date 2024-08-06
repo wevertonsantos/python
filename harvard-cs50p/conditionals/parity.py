@@ -1,14 +1,8 @@
 def main():
     x = int(input("What's x? "))
-    if is_even(x):
-        print(f"{x} is Even")
-    else:
-        print(f"{x} is Odd")
+    print(f"{x} is Even") if is_even(x) else print(f"{x} is Odd")        
 
 def is_even(n):
-    if n % 2 == 0:
-        return True
-    else:
-        return False
+    return True if n % 2 == 0 else False
     
 main()
