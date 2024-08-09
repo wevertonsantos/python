@@ -19,11 +19,12 @@ test = { #representando o teste e como deve retornar/se comportar referente aos 
 }
 
 #Fazendo testes para verificação
+'''
 res = locate_test(cards,query) == output
 print(res)
 res = locate_test(**test['input']) == test['output']
 print(res)
-
+'''
 tests = []
 tests.append(test)
 tests.append({
@@ -84,38 +85,46 @@ tests.append({
 
 #We will assume that our function will return -1 in case cards does not contain query
 def locate_card(cards,query):
-    for i in range(len(cards)):
-        if cards.__contains__(query): #caso contém query
+    if cards.__contains__(query) and cards != None:
+        for i in range(len(cards)):
             if cards.index(query) == i:
                 return i
-        else: return -1
+    else: return -1
 
 # query occurs in the middle
 cards = tests[0]['input']['cards']
-print(locate_card(cards,7)) # retorna 3
+print(locate_card(**tests[0]['input']) == tests[0]['output']) # retorna True
+print(locate_card(cards,7))# retorna 3
 cards = tests[1]['input']['cards']
+print(locate_card(**tests[1]['input']) == tests[1]['output']) # retorna True
 print(locate_card(cards,32)) #retorna 4
 
 # query is the first element
 cards = tests[2]['input']['cards']
+print(locate_card(**tests[2]['input']) == tests[2]['output']) # retorna True
 print(locate_card(cards,-23)) #retorna 0
 
 # cards does not contain query 
 cards = tests[3]['input']['cards']
+print(locate_card(**tests[3]['input']) == tests[3]['output']) #retorna True
 print(locate_card(cards,900)) #retorna -1
 
 # query is the last element
 cards = tests[4]['input']['cards']
+print(locate_card(**tests[4]['input']) == tests[4]['output']) # retorna True
 print(locate_card(cards,0)) #retorna 7
 
 # numbers can repeat in cards
 cards = tests[5]['input']['cards']
+print(locate_card(**tests[5]['input']) == tests[5]['output']) # retorna True
 print(locate_card(cards,7)) #retorna 3
 
 # cards contains just one element, query
-cards = tests[6]['input']['cards'] #retorna 0
-print(locate_card(cards,50))
+cards = tests[6]['input']['cards'] 
+print(locate_card(**tests[6]['input']) == tests[6]['output']) #retorna True
+print(locate_card(cards,50)) #retorna 0
 
 # cards is empty
-cards = tests[7]['input']['cards'] #SOLUCIONAR tem que retornar -1
-print(locate_card(cards,7))
+cards = tests[7]['input']['cards']
+print(locate_card(**tests[7]['input']) == tests[7]['output']) #retorna True
+print(locate_card(cards,7)) #retorna -1
