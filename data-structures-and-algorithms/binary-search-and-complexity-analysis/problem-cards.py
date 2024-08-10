@@ -85,11 +85,15 @@ tests.append({
 
 #We will assume that our function will return -1 in case cards does not contain query
 def locate_card(cards,query):
+    # verifica se contém a query e se cards não é vazio
     if cards.__contains__(query) and cards != None:
+        #para cada posição do index, percorro o tamanho do array inteiro
         for i in range(len(cards)):
+            #verifica se a query é igual ao index na posição atual  
             if cards.index(query) == i:
+                #retorna a posição
                 return i
-    else: return -1
+    else: return -1 #se não retorna -1
 
 # query occurs in the middle
 cards = tests[0]['input']['cards']
