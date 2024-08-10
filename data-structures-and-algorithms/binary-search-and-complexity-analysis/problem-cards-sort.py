@@ -28,7 +28,7 @@ def locate_cards(cards,query):
             #if first_half_list.index(query) == i:
              #   return first_half_list[i]
     elif range(0,first_half_list.index(query)):
-            for i in range()
+            #for i in range()
             ... 
         
     elif first_half_list[i] - 1 > query: # pegar o elemento antes da query
