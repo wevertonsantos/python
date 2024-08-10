@@ -22,13 +22,16 @@ def locate_cards(cards,query):
         return cards[element_middle]
     #se elemento do meio é menor que a query
     elif element_middle < query:
-        #procura a primeira parte da lista
+        #procura a posição na primeira parte da lista
         for i in range(0,element_middle):
             first_half_list.append(i)
-        if first_half_list[query]:
-            ...
-    #se elemento do meio for maior que a query
-    elif cards[element_middle] > query: # pegar o elemento antes da query
+            #if first_half_list.index(query) == i:
+             #   return first_half_list[i]
+    elif range(0,first_half_list.index(query)):
+            for i in range()
+            ... 
+        
+    elif first_half_list[i] - 1 > query: # pegar o elemento antes da query
          for i in range(element_middle,len(cards)):
             #procura a secunda parte da lista
             second_half_list.append(i)
