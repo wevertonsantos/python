@@ -8,13 +8,13 @@ def media_type(file_name):
     extensions = [".gif",".jpg",".jpeg",".png",".pdf",".txt",".zip"]
     for extension in extensions:
         if extension in file_name:
-            if extension == ".txt":
+            if file_name.endswith(".txt"):
                 return "text/plain"
-            elif extension == ".zip" or extension == ".pdf":
+            elif file_name.endswith(".zip") or file_name.endswith(".pdf"):
                 return "application/zip" if extension == ".zip" else "application/pdf"
-            else:
+            elif file_name.endswith(extension):
                 return f"image/{extension.replace(".","")}" if not extension == ".jpg" else "image/jpeg"
-    else:
-        return "Enter a valid extension"
+            else:
+                return "Enter a valid extension"
         
 main()
