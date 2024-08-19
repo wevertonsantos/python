@@ -13,7 +13,7 @@ def media_type(file_name):
             elif extension == ".zip" or extension == ".pdf":
                 return "application/zip" if extension == ".zip" else "application/pdf"
             else:
-                return f"image/{extension.replace(".","")}" if not file_name.endswith(".jpg") else "image/jpeg"
+                return f"image/{extension.replace(".","")}" if not extension == ".jpg" else "image/jpeg"
     else:
         return "Enter a valid extension"
         
