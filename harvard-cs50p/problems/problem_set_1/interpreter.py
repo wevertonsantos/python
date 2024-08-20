@@ -8,8 +8,12 @@ def math(expression):
     datas = []
     for exp in expression:
         if exp != " ":
-            datas.append(exp)
-            
+            if exp != "+" and exp != "-" and exp != "*" and exp != "/":
+                exp = int(exp)
+                datas.append(exp)
+            else:
+                datas.append(exp)
+
     if "+" in datas:
         return add(datas)
     elif "-" in datas:
@@ -20,23 +24,23 @@ def math(expression):
         return divide(datas)
 
 def add(datas):
-    x = int(datas[0])
-    z = int(datas[2])
+    x = datas[0]
+    z = datas[2]
     return f"{x + z:.1f}"
 
 def subtract(datas):
-    x = int(datas[0])
-    z = int(datas[2])
+    x = datas[0]
+    z = datas[2]
     return f"{x - z:.1f}"
 
 def multiply(datas):
-    x = int(datas[0])
-    z = int(datas[2])
+    x = datas[0]
+    z = datas[2]
     return f"{x * z:.1f}"
 
 def divide(datas):
-    x = int(datas[0])
-    z = int(datas[2])
+    x = datas[0]
+    z = datas[2]
     return f"{x / z:.1f}"
 
 main()
