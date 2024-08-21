@@ -6,13 +6,13 @@ def main():
 
 def math(expression):
     datas = []
-    for exp in expression:
-        if exp != " ":
-            if exp != "+" and exp != "-" and exp != "*" and exp != "/":
-                exp = int(exp)
-                datas.append(exp)
+    for data in expression.split(" "):
+        if data != " ":
+            if data != "+" and data != "-" and data != "*" and data != "/":
+                data = int(data)
+                datas.append(data)
             else:
-                datas.append(exp)
+                datas.append(data)
 
     if "+" in datas:
         return add(datas)
