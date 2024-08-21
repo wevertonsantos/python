@@ -2,24 +2,31 @@
 
 def main():
     expression = input("Expression: ").strip()
-    print(math(expression))
+    if " " in expression:
+        print(math(expression))
+    else:
+        print("Enter a valid expression")
 
 def math(expression):
     datas = []
-    for data in expression.split(" "):
-        if data != " ":
-            if data != "+" and data != "-" and data != "*" and data != "/":
-                data = int(data)
-                datas.append(data)
-            else:
-                datas.append(data)
+    arr_expression = expression.split(" ")
+    if len(arr_expression) == 3:
+        for data in arr_expression:
+            if data != " ":
+                if data != "+" and data != "-" and data != "*" and data != "/":
+                        data = int(data)
+                        datas.append(data)
+                else:
+                    datas.append(data)
+    else:
+        return "Enter a valid expression"
 
     if "+" in datas:
         return add(datas)
     elif "-" in datas:
         return subtract(datas)
     elif "*" in datas:
-       return multiply(datas)
+        return multiply(datas)
     else:
         return divide(datas)
 
