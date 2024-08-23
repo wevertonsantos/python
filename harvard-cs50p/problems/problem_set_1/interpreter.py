@@ -8,11 +8,7 @@ def main():
         print("Enter a valid expression")
 
 def math(expression):
-    if " " in expression:
-        datas = math.split(" ")
-        print(datas)
-    else:
-        print("Enter a valid expression")
+    datas = expression.split(" ")
 
     if "+" in datas:
         return add(datas)
