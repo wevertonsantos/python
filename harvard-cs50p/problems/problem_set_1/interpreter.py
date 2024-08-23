@@ -1,7 +1,7 @@
 #https://cs50.harvard.edu/python/2022/psets/1/interpreter/
 
 def main():
-    expression = int(input("Expression: ")).strip()
+    expression = input("Expression: ").strip()
     if " " in expression:
         print(math(expression))
     else:
@@ -38,6 +38,8 @@ def divide(datas):
     x = int(datas[0])
     z = int(datas[2])
     return f"{x / z:.1f}"
+
+main()
 
 #pegar o valor antes do +
 #pegar o valor depois do +
