@@ -8,22 +8,16 @@ def main():
         print("Enter a valid expression")
 
 def math(expression):
-    operators = ["+","-","*","/"]
-    n_operator = []
-
-    #se a string tiver apenas 1 número de operador
-    #vou para próxima linha
-
-    for operator in operators:
-        if operator == "+":
-            n_operator.append(1)
-            if expression.count("+") == 1: #and not expression._contains_(operator):
-                datas = expression.split(" ")
-
-    #if expression.count("+") == 1 and not expression.count("-") and not expression.count("*") and not expression.count("/"):
-    #    datas = expression.split(" ")
-    #else:
-    #    return "Enter a valid expression"
+    if expression.count("+") == 1 and not expression.__contains__("-") and not expression.__contains__("*") and not expression.__contains__("/"):
+        datas = expression.split(" ")
+    elif expression.count("-") == 1 and not expression.__contains__("+") and not expression.__contains__("*") and not expression.__contains__("/"):
+        datas = expression.split(" ")
+    elif expression.count("*") == 1 and not expression.__contains__("-") and not expression.__contains__("/") and not expression.__contains__("+"):
+        datas = expression.split(" ")
+    elif expression.count("/") == 1 and not expression.__contains__("*") and not expression.__contains__("+") and not expression.__contains__("-"):
+        datas = expression.split(" ")
+    else:
+        return "Enter a valid expression"
 
     if "+" in datas: return add(datas)
     elif "-" in datas: return subtract(datas)
@@ -51,6 +45,3 @@ def divide(datas):
     return f"{x / z:.1f}"
 
 main()
-
-strr = "daw"
-strr.__contains__
