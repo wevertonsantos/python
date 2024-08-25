@@ -8,16 +8,27 @@ def main():
         print("Enter a valid expression")
 
 def math(expression):
-    datas = expression.split(" ")
+    operators = ["+","-","*","/"]
+    n_operator = []
 
-    if "+" in datas:
-        return add(datas)
-    elif "-" in datas:
-        return subtract(datas)
-    elif "*" in datas:
-        return multiply(datas)
-    else:
-        return divide(datas)
+    #se a string tiver apenas 1 número de operador
+    #vou para próxima linha
+
+    for operator in operators:
+        if operator == "+":
+            n_operator.append(1)
+            if expression.count("+") == 1: #and not expression._contains_(operator):
+                datas = expression.split(" ")
+
+    #if expression.count("+") == 1 and not expression.count("-") and not expression.count("*") and not expression.count("/"):
+    #    datas = expression.split(" ")
+    #else:
+    #    return "Enter a valid expression"
+
+    if "+" in datas: return add(datas)
+    elif "-" in datas: return subtract(datas)
+    elif "*" in datas: return multiply(datas)
+    else: return divide(datas)
 
 def add(datas):
     x = int(datas[0])
@@ -41,11 +52,5 @@ def divide(datas):
 
 main()
 
-#pegar o valor antes do +
-#pegar o valor depois do +
-#somar os valores se conter o +
-math = input("")
-datas = math.split(" ")
-x = int(datas[0])
-z = int(datas[2])
-print(x - z)
+strr = "daw"
+strr.__contains__
