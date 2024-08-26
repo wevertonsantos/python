@@ -10,14 +10,19 @@ def camel_case(name):
 #main()
 
 #Pegar a string da variável
-name = "camelCase"
+name = "camelCaseAeseCase"
 words_capitalize = ""
-words_lower = ""
+word_lower = ""
+snake_case = ""
 for n in name:
     #Pegar a letra que está em maiúscula
     if n.isupper():
+        word_capitalize = name[name.index(n):]
         #Pegar da letra maiúscula até o restante da string
-        if name[name.index(n):] not in words_capitalize:
-            words_capitalize = name[name.index(n):]
-            words_lower = name[:name.index(n)]
-print(f"{words_lower}_{words_capitalize.lower()}")
+        if word_capitalize not in words_capitalize:
+            for word in word_capitalize:
+                #Se a próxima palavra for maiúscula, colocar um "_" antes dela 
+                words_capitalize += word
+                # A cada palavra com a primeira letra maiúscula, colocar "_"
+
+print(snake_case)
