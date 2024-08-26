@@ -8,7 +8,6 @@ def camel_case(name):
     first_time = False
     words_capitalize = ""
     word_lower = ""
-    snake_case = ""
     for n in name:
         if first_time == False:
             if name.islower():
@@ -26,6 +25,9 @@ def camel_case(name):
                         else:
                             words_capitalize += f"_{word.lower()}"
                 first_time = True
+    return snake_case(words_capitalize,word_lower)
+    
+def snake_case(words_capitalize,word_lower):
     if words_capitalize == "":
         snake_case = word_lower
         return snake_case
