@@ -1,7 +1,7 @@
 #https://cs50.harvard.edu/python/2022/psets/2/camel/
 
 def main():
-    name = input("camelCase: ")
+    name = input("camelCase: ").strip()
     print(camel_case(name))
 
 def camel_case(name):
