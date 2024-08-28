@@ -18,7 +18,7 @@ while amount_due > 0:
             print(f"Amount Due: {amount_due}")
             break
     else:
-        print("Enter a integer")
+        print("Enter a positive integer")
         break
 else:
     print(f"Change Owed: {amount_due}")
