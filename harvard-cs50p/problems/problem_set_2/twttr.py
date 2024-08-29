@@ -5,6 +5,10 @@ def main():
     print(omitting_vowels(text))
 
 def omitting_vowels(text):
-    ...
+    vowels = ['a','e','i','o','u','A','E','I','O','U']
+    for vowel in vowels:
+        if vowel in text:
+            text = text.replace(vowel,"")
+    return f"Output: {text}"
 
 main()
