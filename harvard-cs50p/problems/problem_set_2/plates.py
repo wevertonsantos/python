@@ -13,14 +13,11 @@ def is_valid(s):
                 if i < 2:
                     if s[i].isnumeric():
                         return False
-                        break
                 elif not s[-1].isnumeric():
                     return False
-                    break
                 elif not numbers == []: 
                     if int(numbers[0]) == 0:
                         return False
-                        break
             else:
                 return True
         else:
