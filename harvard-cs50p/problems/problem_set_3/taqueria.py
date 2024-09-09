@@ -4,17 +4,18 @@ def main():
     item = input("Item: ").strip().title()
     cost = 0
     while True:
-        try:
+        try:    
             for product in menu:
-                if item == product:
+                if product == item:
                     price = float(menu[product])
                     cost += price
                     print(f"$ {cost:.2f}")
                     item = input("Item: ").strip().title()
-            if item == '':
-                item = int(item)
             else:
-                item = input("Item: ").strip().title()
+                if item == '':
+                    exit()
+                else:
+                    item = input("Item: ").strip().title()
         except ValueError:
             exit()
 
