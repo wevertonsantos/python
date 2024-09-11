@@ -30,11 +30,9 @@ while True:
         print(list[list.index(item)])
         #se a lista já contém o item
         if list.__contains__(item):
-            if item in list:
+            if list.count(item) == 1:
                 name_item = item
-        else:
-            pass
-        count_item = list.count(item)
+                count_item = list.count(item)
         list_list.append([count_item, name_item])
     print(list_list)
 
