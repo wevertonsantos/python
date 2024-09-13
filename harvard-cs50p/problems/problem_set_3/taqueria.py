@@ -6,12 +6,12 @@ def main():
     while True:
         try:
             if item in menu:
-                    for product in menu:
-                        if product == item:
-                            price = float(menu[product])
-                            cost += price
-                            print(f"$ {cost:.2f}")
-                            item = input("Item: ").strip().title()
+                for product in menu:
+                    if product == item:
+                        price = float(menu[product])
+                        cost += price
+                        print(f"$ {cost:.2f}")
+                        item = input("Item: ").strip().title()
             else:
                 item = input("Item: ").strip().title()
         except KeyboardInterrupt:
