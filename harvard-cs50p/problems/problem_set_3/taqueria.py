@@ -14,7 +14,7 @@ def main():
                             item = input("Item: ").strip().title()
             else:
                 item = input("Item: ").strip().title()
-        except EOFError:
+        except KeyboardInterrupt:
             exit()
 
 menu = {
