@@ -21,19 +21,25 @@ def grocery_list():
             exit()
 
 list = []
-list_list = []
+list_product = []
+item = 0
 count_item = 0
 while True:
-    item = input()
-    list.append(item)
-    for item in list:
-        print(list[list.index(item)])
-        #se a lista já contém o item
-        if list.__contains__(item):
-            if list.count(item) == 1:
-                name_item = item
-                count_item = list.count(item)
-        list_list.append([count_item, name_item])
-    print(list_list)
+    try:
+        item = input()
+        list.append(item)
+    except KeyboardInterrupt:
+        for i in list:
+            if [i,list.count(i)] not in list_product:
+                list_product.append([i,list.count(i)])
+        list_product.sort()
+        for list_p in list_product:
+            print(list_p[0].upper(),list_p[1])
+        exit()
 
+#contando todo item da list ['1','1','1','1']
+#na hora de mostrar
+#tenho que mostrar o item e a quantidade de item
+# '1' 4
+#relacionar o item com a quantidade
 #main()
