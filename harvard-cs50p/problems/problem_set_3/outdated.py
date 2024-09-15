@@ -11,13 +11,7 @@ def formatter_date():
             month = int(date[0])
             day = int(date[1])
             year = int(date[2])
-            if day <= 31 and month <= 12:
-                if month < 10:
-                    month = f"0{month}"
-                if day < 10:
-                    day = f"0{day}"
-                date = f"{year}-{month}-{day}"
-                return date
+            return date_validation(month,day,year)
         else:
             for month in months:
                 if month in date:
@@ -27,13 +21,16 @@ def formatter_date():
                             month = int(months[month])
                             day = int(date[1].replace(",","")) 
                             year = int(date[2])
-                            if day <= 31 and month <= 12:
-                                if month < 10:
-                                    month = f"0{month}"
-                                if day < 10:
-                                    day = f"0{day}"
-                                date = f"{year}-{month}-{day}"
-                                return date  
+                            return date_validation(month,day,year)  
+
+def date_validation(month,day,year):
+     if day <= 31 and month <= 12:
+        if month < 10:
+            month = f"0{month}"
+        if day < 10:
+            day = f"0{day}"
+        date = f"{year}-{month}-{day}"
+        return date
 
 months = {
     "January":1,
