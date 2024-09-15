@@ -2,10 +2,37 @@
 
 def main():
     date = input("Date: ")
-    formatter_date(date)
+    print(formatter_date(date))
 
 def formatter_date(date):
-    ...
+    if "/" in date and len(date) <= 10:
+        date = date.split("/")
+        month = int(date[0])
+        day = int(date[1])
+        year = int(date[2])
+        if day <= 31 and month <= 12:
+            if month < 10:
+                month = f"0{month}"
+            if day < 10:
+                day = f"0{day}"
+            date = f"{year}-{month}-{day}"
+            return date
+    else:
+        for month in months:
+            if month in date:
+                if date.startswith(month):
+                    if len(date) <= 17:
+                        date = date.split(" ")
+                        month = int(months[month])
+                        day = int(date[1].replace(",","")) 
+                        year = int(date[2])
+                        if day <= 31 and month <= 12:
+                            if month < 10:
+                                month = f"0{month}"
+                            if day < 10:
+                                day = f"0{day}"
+                            date = f"{year}-{month}-{day}"
+                            return date  
 
 months = {
     "January":1,
@@ -22,37 +49,4 @@ months = {
     "December":12
 }
 
-#main()
-
-#date = "December 80, 1980"
-date = "9/8/1636"
-if "/" in date and len(date) <= 10:
-    date = date.strip().split("/")
-    month = int(date[0])
-    day = int(date[1])
-    year = int(date[2])
-    if day <= 31:
-        if month < 10:
-            month = f"0{month}"
-        if day < 10:
-            day = f"0{day}"
-        date = f"{year}-{month}-{day}"
-    print(date)
-else:
-    for month in months:
-        if month in date:
-            if date.startswith(month):
-                if len(date) == 17:
-                    month = int(months[month])
-                    year = int(date[13:])
-                    day = int(date[10])
-                    if day <= 31:
-                        if month < 10:
-                            month = f"0{month}"
-                        if day < 10:
-                            day = f"0{day}"
-                        date = f"{year}-{month}-{day}"
-                    print(date)
-                    #print(months[month])
-                    #print(date[10])
-                    #print(date[13:])
+main()
