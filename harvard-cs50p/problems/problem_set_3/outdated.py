@@ -24,11 +24,13 @@ months = {
 
 #main()
 
-date = "December 80, 1980"
-if '/' in date and len(date) == 8:
+#date = "December 80, 1980"
+date = "9/8/1636"
+if "/" in date and len(date) <= 10:
+    date = date.strip().split("/")
     month = int(date[0])
-    year = int(date[4:])
-    day = int(date[2])
+    day = int(date[1])
+    year = int(date[2])
     if day <= 31:
         if month < 10:
             month = f"0{month}"
