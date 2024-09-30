@@ -2,18 +2,23 @@
 import random
 
 level = input("Level: ")
-guess = input("Guess: ")
+guess = None
 while True:
-    try:
-        level = int(level)
-        guess = int(guess)
-        random_number = random.randint(1,level)
-        if guess < random_number:
-            print("Too small!")
-        elif guess > random_number:
-            print("Too large!")
+    if level.isnumeric():
+        random_number = random.randint(1,int(level))
+        if guess == None:
+            guess = input("Guess: ")
         else:
-            print("Just right!")
-        break
-    except ValueError:
+            if guess.isnumeric():
+                guess = int(guess)
+                if guess < random_number:
+                    print("Too small!")
+                elif guess > random_number:
+                    print("Too large!")
+                else:
+                    print("Just right!")
+                break
+            else:
+                guess = input("Guess: ")
+    else:
         level = input("Level: ")
