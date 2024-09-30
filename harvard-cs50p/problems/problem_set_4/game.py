@@ -8,17 +8,19 @@ while True:
         random_number = random.randint(1,int(level))
         if guess == None:
             guess = input("Guess: ")
-        else:
-            if guess.isnumeric():
-                guess = int(guess)
-                if guess < random_number:
+        if guess.isnumeric():
+            while True:
+                if int(guess) < random_number:
                     print("Too small!")
-                elif guess > random_number:
+                    guess = input("Guess: ")
+                elif int(guess) > random_number:
                     print("Too large!")
-                else:
+                    guess = input("Guess: ")
+                else:    
                     print("Just right!")
-                break
-            else:
-                guess = input("Guess: ")
+                    break
+            break
+        else:
+            guess = input("Guess: ")
     else:
         level = input("Level: ")
