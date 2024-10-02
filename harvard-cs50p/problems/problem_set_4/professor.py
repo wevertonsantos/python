@@ -14,13 +14,21 @@ while True:
         print(problems)
     break
 
+times = 0
 for problem in problems:
     x = problem[0]
     y = problem[1]
     result = x + y
-    answer = input(f"{x} + {y} = ")
-    if int(answer) != (int(x) + int(y)):
-        print("EEE")
-    else:
-        print(result)
+    answer = int(input(f"{x} + {y} = "))
+    while True:
+        if answer != result:
+            print("EEE")
+            answer = input(f"{x} + {y} = ")
+            times += 1
+            if times == 3:
+                print(f"{x} + {y} = {result}")
+                answer = result
+                times = 0
+        else:
+            break
     #print(answer)
