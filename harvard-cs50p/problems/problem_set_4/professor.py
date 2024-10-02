@@ -7,9 +7,20 @@ problems = []
 while True:
     level = input("Level: ")
     if int(level) == 1 or int(level) == 2 or int(level) == 3:
-        while 0 < 9:
+        for i in range(10):
             x = random.randint(1,int(10))
             y = random.randint(1,int(10))
             problems.append([x,y])
-            print(problems)
-            break
+        print(problems)
+    break
+
+for problem in problems:
+    x = problem[0]
+    y = problem[1]
+    result = x + y
+    answer = input(f"{x} + {y} = ")
+    if int(answer) != (int(x) + int(y)):
+        print("EEE")
+    else:
+        print(result)
+    #print(answer)
