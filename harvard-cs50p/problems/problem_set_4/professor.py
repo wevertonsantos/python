@@ -13,25 +13,31 @@ while True:
             problems.append([x,y])
         break
 
-times = 1
+times = 0
 score = 0
 for problem in problems:
     x = problem[0]
     y = problem[1]
     result = x + y
-    answer = int(input(f"{x} + {y} = "))
+    #answer = int(input(f"{x} + {y} = "))
     while True:
+        answer = int(input(f"{x} + {y} = "))
         if answer != result:
             print("EEE")
-            answer = input(f"{x} + {y} = ")
             times += 1
-            if times == 3:
-                print("EEE")
+            if times == 1:
+                answer = int(input(f"{x} + {y} = "))
+                if answer == result:
+                    score += 1
+                    times = 0
+                    break 
+                else:
+                    print("EEE")
+            else:
                 print(f"{x} + {y} = {result}")
-                answer = result
                 times = 0
+                break
         else:
             score += 1
             break
-    break
 print(f"Score: {score}")
