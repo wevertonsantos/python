@@ -11,10 +11,10 @@ while True:
             x = random.randint(1,int(10))
             y = random.randint(1,int(10))
             problems.append([x,y])
-        print(problems)
-    break
+        break
 
-times = 0
+times = 1
+score = 0
 for problem in problems:
     x = problem[0]
     y = problem[1]
@@ -26,9 +26,12 @@ for problem in problems:
             answer = input(f"{x} + {y} = ")
             times += 1
             if times == 3:
+                print("EEE")
                 print(f"{x} + {y} = {result}")
                 answer = result
                 times = 0
         else:
+            score += 1
             break
-    #print(answer)
+    break
+print(f"Score: {score}")
