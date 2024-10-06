@@ -22,21 +22,20 @@ for problem in problems:
     y = problem[1]
     result = x + y
     while True:
-        try:
-            if error == False:
-                answer = int(input(f"{x} + {y} = "))
-            else:
-                error = False
+        answer = input(f"{x} + {y} = ")
+        if answer.isnumeric():
             if int(answer) != result:
                 print("EEE")
                 times += 1
                 if times == 1:
-                    answer = int(input(f"{x} + {y} = "))
-                    if answer == result:
-                        score += 1
-                        times = 0
-                        break 
+                    answer = input(f"{x} + {y} = ")
+                    if answer.isnumeric():
+                        if answer == result:
+                            score += 1
+                            times = 0
+                            break 
                     else:
+                        times += 1
                         print("EEE")
                 else:
                     print(f"{x} + {y} = {result}")
@@ -46,7 +45,36 @@ for problem in problems:
                 score += 1
                 times = 0
                 break
-        except ValueError:
+        else:
+            print("EEE")
+            times += 1
+            if times == 3:
+                print(f"{x} + {y} = {result}")
+                times = 0
+                break
+            else:
+                continue
+            #se a resposta não é numérica,
+
+            '''
+            except ValueError:
+            print("EEE")
             answer = input(f"{x} + {y} = ")
+            times += 1
+            if times > 0:
+                if times == 1:
+                    print("EEE")
+                    answer = input(f"{x} + {y} = ")
+                    times += 1
+                else:
+                    print("EEE")
+                    answer = input(f"{x} + {y} = ")
+            if answer != result:
+                print("EEE")
+                print(f"{x} + {y} = {result}")
+                times = 0
             error = True
+            break
+            '''
+        
 print(f"Score: {score}")
