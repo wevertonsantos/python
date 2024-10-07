@@ -30,13 +30,18 @@ for problem in problems:
                 if times == 1:
                     answer = input(f"{x} + {y} = ")
                     if answer.isnumeric():
-                        if answer == result:
+                        if int(answer) == result:
                             score += 1
                             times = 0
                             break 
+                        else:
+                            times += 1
+                            print("EEE")
                     else:
                         times += 1
                         print("EEE")
+                elif times == 2:
+                    times += 1
                 else:
                     print(f"{x} + {y} = {result}")
                     times = 0
@@ -48,7 +53,7 @@ for problem in problems:
         else:
             print("EEE")
             times += 1
-            if times == 3:
+            if times >= 3:
                 print(f"{x} + {y} = {result}")
                 times = 0
                 break
