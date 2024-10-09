@@ -1,18 +1,24 @@
 #https://cs50.harvard.edu/python/2022/psets/4/professor/
-
 import random
 
-#level = input("Level: ")
-problems = []
-while True:
-    level = input("Level: ")
-    if level.isnumeric():
-        if int(level) == 1 or int(level) == 2 or int(level) == 3:
-            for i in range(10):
-                x = random.randint(1,int(10))
-                y = random.randint(1,int(10))
-                problems.append([x,y])
-            break
+def main():
+   level = get_level()
+   generate_integer(level)
+
+def get_level():
+    while True:
+        level = input("Level: ")
+        if level.isnumeric():
+            if int(level) == 1 or int(level) == 2 or int(level) == 3:
+                return level
+
+def generate_integer(level):
+    problems = []
+    for level in range(10):
+        x = random.randint(1,int(10))
+        y = random.randint(1,int(10))
+        problems.append([x,y])
+    return problems
 
 times = 0
 score = 0
@@ -59,27 +65,5 @@ for problem in problems:
                 break
             else:
                 continue
-            #se a resposta não é numérica,
-
-            '''
-            except ValueError:
-            print("EEE")
-            answer = input(f"{x} + {y} = ")
-            times += 1
-            if times > 0:
-                if times == 1:
-                    print("EEE")
-                    answer = input(f"{x} + {y} = ")
-                    times += 1
-                else:
-                    print("EEE")
-                    answer = input(f"{x} + {y} = ")
-            if answer != result:
-                print("EEE")
-                print(f"{x} + {y} = {result}")
-                times = 0
-            error = True
-            break
-            '''
         
 print(f"Score: {score}")
