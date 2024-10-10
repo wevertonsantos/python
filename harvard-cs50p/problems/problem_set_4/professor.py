@@ -14,21 +14,28 @@ def get_level():
                 return level
 
 def generate_integer(level):
-    random_number = int(random.random())
-    integer = random.randint(random_number,level)
+    if level == 1:
+        integer = random.randint(1,9)
+    elif level == 2:
+        integer = random.randint(10,99)
+    else:
+        integer = random.randint(100,999)
     return integer
 
-#for level in range(10):
-        #x = random.randint(1,int(10))
-        #y = random.randint(1,int(10))
-        #problems.append([x,y])
+def problems(integer):
+    problems = []
+    for i in range(integer):
+        x = random.randint(i,integer)
+        y = random.randint(i,integer)
+        problems.append([x,y])
+    return problems
+
 
 main()
 
 times = 0
 score = 0
 error = False
-problems = []
 for problem in problems:
     x = problem[0]
     y = problem[1]
