@@ -9,20 +9,26 @@ def get_level():
     while True:
         level = input("Level: ")
         if level.isnumeric():
-            if int(level) == 1 or int(level) == 2 or int(level) == 3:
+            level = int(level)
+            if level == 1 or level == 2 or level == 3:
                 return level
 
 def generate_integer(level):
-    problems = []
-    for level in range(10):
-        x = random.randint(1,int(10))
-        y = random.randint(1,int(10))
-        problems.append([x,y])
-    return problems
+    random_number = int(random.random())
+    integer = random.randint(random_number,level)
+    return integer
+
+#for level in range(10):
+        #x = random.randint(1,int(10))
+        #y = random.randint(1,int(10))
+        #problems.append([x,y])
+
+main()
 
 times = 0
 score = 0
 error = False
+problems = []
 for problem in problems:
     x = problem[0]
     y = problem[1]
