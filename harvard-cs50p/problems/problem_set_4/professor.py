@@ -9,7 +9,7 @@ def main():
         x = random.randint(i,integer)
         y = random.randint(i,integer)
         problems.append([x,y])
-    return problems
+    print(output(problems))
 
 def get_level():
     while True:
@@ -27,54 +27,52 @@ def generate_integer(level):
     else:
         integer = random.randint(100,999)
     return integer
-    
-main()
 
-problems = []
-times = 0
-score = 0
-error = False
-for problem in problems:
-    x = problem[0]
-    y = problem[1]
-    result = x + y
-    while True:
-        answer = input(f"{x} + {y} = ")
-        if answer.isnumeric():
-            if int(answer) != result:
-                print("EEE")
-                times += 1
-                if times == 1:
-                    answer = input(f"{x} + {y} = ")
-                    if answer.isnumeric():
-                        if int(answer) == result:
-                            score += 1
-                            times = 0
-                            break 
+def output(problems):
+    times = 0
+    score = 0
+    for problem in problems:
+        x = problem[0]
+        y = problem[1]
+        result = x + y
+        while True:
+            answer = input(f"{x} + {y} = ")
+            if answer.isnumeric():
+                if int(answer) != result:
+                    print("EEE")
+                    times += 1
+                    if times == 1:
+                        answer = input(f"{x} + {y} = ")
+                        if answer.isnumeric():
+                            if int(answer) == result:
+                                score += 1
+                                times = 0
+                                break 
+                            else:
+                                times += 1
+                                print("EEE")
                         else:
                             times += 1
                             print("EEE")
-                    else:
+                    elif times == 2:
                         times += 1
-                        print("EEE")
-                elif times == 2:
-                    times += 1
+                    else:
+                        print(f"{x} + {y} = {result}")
+                        times = 0
+                        break
                 else:
-                    print(f"{x} + {y} = {result}")
+                    score += 1
                     times = 0
                     break
             else:
-                score += 1
-                times = 0
-                break
-        else:
-            print("EEE")
-            times += 1
-            if times >= 3:
-                print(f"{x} + {y} = {result}")
-                times = 0
-                break
-            else:
-                continue
-        
-print(f"Score: {score}")
+                print("EEE")
+                times += 1
+                if times >= 3:
+                    print(f"{x} + {y} = {result}")
+                    times = 0
+                    break
+                else:
+                    continue
+            return f"Score: {score}"
+
+main()
