@@ -2,8 +2,14 @@
 import random
 
 def main():
-   level = get_level()
-   generate_integer(level)
+    level = get_level()
+    integer = generate_integer(level)
+    problems = []
+    for i in range(integer):
+        x = random.randint(i,integer)
+        y = random.randint(i,integer)
+        problems.append([x,y])
+    return problems
 
 def get_level():
     while True:
@@ -21,18 +27,10 @@ def generate_integer(level):
     else:
         integer = random.randint(100,999)
     return integer
-
-def problems(integer):
-    problems = []
-    for i in range(integer):
-        x = random.randint(i,integer)
-        y = random.randint(i,integer)
-        problems.append([x,y])
-    return problems
-
-
+    
 main()
 
+problems = []
 times = 0
 score = 0
 error = False
