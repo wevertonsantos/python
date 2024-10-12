@@ -5,11 +5,13 @@ def main():
     level = get_level()
     integer = generate_integer(level)
     problems = []
-    for i in range(integer):
-        x = random.randint(i,integer)
-        y = random.randint(i,integer)
+    while True:
+        x = random.randint(1,integer)
+        y = random.randint(1,integer)
         problems.append([x,y])
-    print(output(problems))
+        if len(problems) == 10:
+            break
+    print(score(problems))
 
 def get_level():
     while True:
@@ -23,12 +25,12 @@ def generate_integer(level):
     if level == 1:
         integer = random.randint(1,9)
     elif level == 2:
-        integer = random.randint(10,99)
+        integer = random.randint(1,99)
     else:
-        integer = random.randint(100,999)
+        integer = random.randint(1,999)
     return integer
 
-def output(problems):
+def score(problems):
     times = 0
     score = 0
     for problem in problems:
@@ -73,6 +75,7 @@ def output(problems):
                     break
                 else:
                     continue
-            return f"Score: {score}"
+    return f"Score: {score}"
 
-main()
+if __name__ == "__main__":
+    main()
