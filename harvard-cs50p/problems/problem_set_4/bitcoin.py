@@ -4,12 +4,12 @@ import requests
 
 def main():
     try:
-        response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+        response = requests.get("https://api.csoindesk.com/v1/bpi/currentprice.json")
         o = response.json()
+        bitcoins = check_argv()
+        bitcoins_to_usd(o,bitcoins)
     except requests.RequestException:
-        ...
-    bitcoins = check_argv()
-    bitcoins_to_usd(o,bitcoins)
+        print('Request Exception found.')
 
 def check_argv():
     if len(sys.argv) < 2:
@@ -26,4 +26,5 @@ def bitcoins_to_usd(o,bitcoins):
     output = f"${converted:,}"
     return print(output)
 
-main()
+if __name__ == "__main__":
+    main()
