@@ -9,5 +9,7 @@ try:
     bitcoins = float(sys.argv[1])
     usd = o['bpi']['USD']['rate_float']
     current = bitcoins * usd
+    output = f"${current:,}"
+    print(output)
 except requests.RequestException:
     sys.exit("Missing command-line argument")
