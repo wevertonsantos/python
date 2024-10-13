@@ -4,7 +4,7 @@ import requests
 
 def main():
     try:
-        response = requests.get("https://api.csoindesk.com/v1/bpi/currentprice.json")
+        response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
         o = response.json()
         bitcoins = check_argv()
         bitcoins_to_usd(o,bitcoins)
