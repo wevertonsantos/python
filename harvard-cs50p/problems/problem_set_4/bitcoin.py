@@ -2,14 +2,28 @@
 import sys
 import requests
 
-response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
-o = response.json()
+def main():
+    response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+    o = response.json()
+    if len(sys.argv) < 2:
+        sys.exit("Missing command-line argument")
+    else:
+        try:
+            bitcoins = float(sys.argv[1])
+        except ValueError:
+            sys.exit("Command-line argument is not a number")
+    bitcoins_to_usd(o,bitcoins)
 
-try:
-    bitcoins = float(sys.argv[1])
+def check_argv():
+    ...
+
+def bitcoins_to_usd(o,bitcoins):
     usd = o['bpi']['USD']['rate_float']
     converted = bitcoins * usd
     output = f"${converted:,}"
-    print(output)
+    return output
+
+try:
+    ...
 except requests.RequestException:
-    sys.exit("Missing command-line argument")
+    ...
