@@ -2,8 +2,7 @@
 import sys
 import requests
 
-bitcoins = sys.argv[1]
 try:
-    bitcoins = float(bitcoins)
+    bitcoins = float(sys.argv[1])
 except requests.RequestException:
     sys.exit("Missing command-line argument")
