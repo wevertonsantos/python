@@ -2,7 +2,12 @@
 import sys
 import requests
 
+response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+o = response.json()
+
 try:
     bitcoins = float(sys.argv[1])
+    usd = o['bpi']['USD']['rate_float']
+    current = bitcoins * usd
 except requests.RequestException:
     sys.exit("Missing command-line argument")
