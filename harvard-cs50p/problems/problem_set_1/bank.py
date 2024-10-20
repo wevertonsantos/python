@@ -2,9 +2,9 @@
 
 def main():
     greeting = input("Greeting: ").strip().lower()
-    print(check_greeting(greeting))
+    print(value(greeting))
 
-def check_greeting(greeting):
+def value(greeting):
     if greeting.startswith("hello"):
         return "$0"
     elif greeting.startswith("h"):
@@ -12,4 +12,5 @@ def check_greeting(greeting):
     else:
         return "$100"
 
-main()
+if __name__ == "__main__":
+    main()
