@@ -1,14 +1,15 @@
 #https://cs50.harvard.edu/python/2022/psets/2/twttr/
 
 def main():
-    text = input("Input: ").strip()
-    print(omitting_vowels(text))
+    word = input("Input: ").strip()
+    print(shorten(word))
 
-def omitting_vowels(text):
+def shorten(word=""):
     vowels = ['a','e','i','o','u','A','E','I','O','U']
     for vowel in vowels:
-        if vowel in text:
-            text = text.replace(vowel,"")
-    return f"Output: {text}"
+        if vowel in word:
+            word = word.replace(vowel,"")
+    return f"Output: {word}"
 
-main()
+if __name__ == "__main__":
+    main()
