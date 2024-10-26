@@ -26,8 +26,13 @@ def is_valid(s):
         return False
 
 def invalid_things(s):
-    invalid_things = [".",";"," ","!",",","?"]
-    for invalid_thing in invalid_things:
-        return False if invalid_thing not in s else True
+    invalid_things = [".",";",":"," ","!",",","?"]
+    while True:
+        for invalid_thing in invalid_things:
+            if invalid_thing in s:
+                return True
+            else:
+                continue
+        return False
 
 main()
