@@ -1,7 +1,7 @@
 #https://cs50.harvard.edu/python/2022/psets/2/plates/
 
 def main():
-    plate = input("Plate: ")
+    plate = input("Plate: ").strip()
     print("Valid") if is_valid(plate) else print("Invalid")
 
 def is_valid(s):
