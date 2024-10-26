@@ -5,7 +5,7 @@ def main():
     print("Valid") if is_valid(plate) else print("Invalid")
 
 def is_valid(s):
-    if len(s) == 6 or len(s) > 2:
+    if len(s) == 6 and len(s) > 2:
         numbers = []
         if invalid_things(s) == False:
             for i in range(len(s)):
