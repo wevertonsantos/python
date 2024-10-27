@@ -3,11 +3,12 @@ def main():
     print(fuel())
 
 def fuel():
-    fraction = input("Fraction: ")
+    fraction = input("Fraction: ").split()
     while True:
         if '.' not in fraction:
+            fraction = fraction.split('/')
             x = fraction[0]
-            y = fraction[2]
+            y = fraction[1]
             try:
                 x = int(x)
                 y = int(y)
@@ -19,11 +20,11 @@ def fuel():
                 fraction = input("Fraction: ")
             else:
                 if f"{x}/{y}" == "1/4":
-                    return "25%"
+                    return f"{int((x/y) * 100)}%"
                 elif f"{x}/{y}" == "1/2":
-                    return "50%"
+                    return f"{int((x/y) * 100)}%"
                 elif f"{x}/{y}" == "3/4":
-                    return "75%"
+                    return f"{int((x/y) * 100)}%"
                 elif f"{x}/{y}" == "4/4":
                     return "F"
                 else:
