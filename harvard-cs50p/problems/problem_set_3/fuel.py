@@ -3,7 +3,7 @@ def main():
     print(fuel())
 
 def fuel():
-    fraction = input("Fraction: ").split()
+    fraction = input("Fraction: ").strip()
     while True:
         if '.' not in fraction:
             fraction = fraction.split('/')
