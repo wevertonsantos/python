@@ -20,7 +20,7 @@ def convert(fraction):
                     if f"{x}/{y}" == "1/4":
                         return int((x/y) * 100)
                     elif f"{x}/{y}" == "1/2":
-                        return f"{int((x/y) * 100)}"
+                        return f"{int((x/y) * 100)}" #making mistake
                     elif f"{x}/{y}" == "3/4":
                         return int((x/y) * 100)
                     else: 
@@ -39,7 +39,7 @@ def gauge(percentage):
     elif percentage >= 99:
         return "F"
     else:
-        return "Z%"
+        return "Z" #making mistake
 
 if __name__ == "__main__":
     main()

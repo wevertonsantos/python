@@ -25,3 +25,6 @@ def test_return_e():
 
 def test_return_f():
     assert convert('1/1') == "F"
+
+def test_return_z():
+    assert convert('1/3') == "Z%"
