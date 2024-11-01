@@ -21,10 +21,10 @@ def test_y_is_zero():
     assert convert('1/0') == ZeroDivisionError
 
 def test_return_e():
-    assert convert('0/1') == "E"
+    assert gauge(0) == "E"
 
 def test_return_f():
-    assert convert('1/1') == "F"
+    assert gauge(100) == "F"
 
 def test_return_z():
-    assert convert('1/3') == "Z%"
+    assert gauge(33) == "Z%"
