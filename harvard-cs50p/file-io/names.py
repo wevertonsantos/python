@@ -7,7 +7,5 @@ file.close
 '''
 
 with open("names.txt","r") as file: #working "with" with file
-    lines = file.readlines() #reading lines
-
-for line in lines:
-    print(f"Hello, {line.rstrip()}")
+    for line in file:
+        print(f"Hello, {line.rstrip()}")
