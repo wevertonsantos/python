@@ -10,9 +10,10 @@ with open("students.csv") as file:
 students = []
 
 with open("students.csv") as file:
-    reader = csv.reader(file)
-    for name, home in reader:
-        students.append({"name": name,"home":home})
+    reader = csv.DictReader(file) #return dictonary
+    #reader = csv.reader(file)
+    for row in reader:
+        students.append({"name": row["name"],"home": row["home"]})
     '''
     for line in file:
         name, house = line.rstrip().split(",")
