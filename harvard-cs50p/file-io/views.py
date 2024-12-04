@@ -8,6 +8,11 @@ def main():
         writer.writeheader()
         new = "new_value"
         for row in reader:
-            print(row["id"])
+            writer.writerow({
+                "id" : row["id"],
+                "english_title" : row["english_title"],
+                "japanese_title" : row["japanese_title"],
+                "new" : new
+            })
 
 main()
