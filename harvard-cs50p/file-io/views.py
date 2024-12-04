@@ -6,13 +6,17 @@ def main():
         reader = csv.DictReader(views)
         writer = csv.DictWriter(analysis,fieldnames=reader.fieldnames + ["new"])
         writer.writeheader()
-        new = "new_value"
+        new = "new_val"
         for row in reader:
+            row["new"] = new
+            writer.writerow(row)
+            '''
             writer.writerow({
                 "id" : row["id"],
                 "english_title" : row["english_title"],
                 "japanese_title" : row["japanese_title"],
                 "new" : new
             })
+            '''
 
 main()
