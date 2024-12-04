@@ -5,6 +5,6 @@ def main():
     with open("views.csv","r",encoding="utf-8") as file:
         reader = csv.DictReader(file)
         for row in reader:
-            print(row)
+            print(row["id"])
 
 main()
