@@ -10,8 +10,12 @@ def main():
         sys.exit("Not a Python file")
     else:
         try:
+            lines = []
             with open(sys.argv[1]) as file:
-                lines = file.readlines
+                for line in file:
+                    if not line.startswith("\n") and not line.startswith("'''") and "#" not in line:
+                       lines.append(line)
+                print(len(lines))
         except FileNotFoundError:
              sys.exit("File does not exist")
 
