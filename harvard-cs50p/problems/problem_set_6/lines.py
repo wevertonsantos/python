@@ -9,7 +9,10 @@ def main():
     elif '.py' not in sys.argv[1]:
         sys.exit("Not a Python file")
     else:
-        with open(sys.argv[1]) as file:
-            print(file)
+        try:
+            with open(sys.argv[1]) as file:
+                lines = file.readlines
+        except FileNotFoundError:
+             sys.exit("File does not exist")
 
 main()
