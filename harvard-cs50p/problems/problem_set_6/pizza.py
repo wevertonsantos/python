@@ -24,7 +24,7 @@ def main():
                 if sys.argv[1] == "sicilian.csv":
                     print(tabulate(sicilian,["Sicilian Pizza","Small","Large"],"grid"))
                 elif sys.argv[1] == "regular.csv":
-                    print(tabulate(regular,["Sicilian Pizza","Small","Large"],"grid"))
+                    print(tabulate(regular,["Regular Pizza","Small","Large"],"grid"))
         except FileNotFoundError:
             sys.exit("File does not exist")
 
