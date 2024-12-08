@@ -13,19 +13,24 @@ def main():
     else:
         try:
             with open(sys.argv[1]) as file:
-                sicilian = []
-                regular = []
+                rows = []
                 reader = csv.DictReader(file)
                 for row in reader:
-                    if sys.argv[1] == "sicilian.csv":
-                        sicilian.append([row["Sicilian Pizza"], row["Small"], row["Large"]])
-                    elif sys.argv[1] == "regular.csv":
-                        regular.append([row["Regular Pizza"], row["Small"], row["Large"]])
-                if sys.argv[1] == "sicilian.csv":
-                    print(tabulate(sicilian,["Sicilian Pizza","Small","Large"],"grid"))
-                elif sys.argv[1] == "regular.csv":
-                    print(tabulate(regular,["Regular Pizza","Small","Large"],"grid"))
+                    append_rows(row,rows)
+                print(grid(sys.argv[1],rows))
         except FileNotFoundError:
             sys.exit("File does not exist")
+
+def append_rows(row,list):
+    if sys.argv[1] == "sicilian.csv":
+        list.append([row["Sicilian Pizza"], row["Small"], row["Large"]])
+    elif sys.argv[1] == "regular.csv":
+        list.append([row["Regular Pizza"], row["Small"], row["Large"]])
+
+def grid(argv,rows):
+    if argv == "sicilian.csv":
+        return tabulate(rows,["Sicilian Pizza","Small","Large"],"grid")
+    elif argv == "regular.csv":
+        return tabulate(rows,["Regular Pizza","Small","Large"],"grid")
 
 main()
