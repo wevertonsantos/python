@@ -1,7 +1,7 @@
 #https://cs50.harvard.edu/python/2022/psets/6/pizza/
 import sys
 import csv
-import tabulate
+from tabulate import tabulate
 
 def main():
     if len(sys.argv) == 1:
@@ -13,9 +13,18 @@ def main():
     else:
         try:
             with open(sys.argv[1]) as file:
+                sicilian = []
+                regular = []
                 reader = csv.DictReader(file)
                 for row in reader:
-                    print(f"{row["Regular Pizza"]} {row["Small"]} {row["Large"]}")
+                    if sys.argv[1] == "sicilian.csv":
+                        sicilian.append([row["Sicilian Pizza"], row["Small"], row["Large"]])
+                    elif sys.argv[1] == "regular.csv":
+                        regular.append([row["Regular Pizza"], row["Small"], row["Large"]])
+                if sys.argv[1] == "sicilian.csv":
+                    print(tabulate(sicilian,["Sicilian Pizza","Small","Large"],"grid"))
+                elif sys.argv[1] == "regular.csv":
+                    print(tabulate(regular,["Sicilian Pizza","Small","Large"],"grid"))
         except FileNotFoundError:
             sys.exit("File does not exist")
 
