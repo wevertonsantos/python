@@ -4,17 +4,19 @@ import csv
 import tabulate
 
 def main():
-    if sys.argv == 1:
+    if len(sys.argv) == 1:
         sys.exit("Too few command-line arguments")
-    elif sys.argv > 2:
+    elif len(sys.argv) > 2:
         sys.exit("Too many command-line arguments")
     elif '.csv' not in sys.argv[1]:
         sys.exit("Not a CSV file")
     else:
         try:
             with open(sys.argv[1]) as file:
-                ...
+                reader = csv.DictReader(file)
+                for row in reader:
+                    print(f"{row["Regular Pizza"]} {row["Small"]} {row["Large"]}")
         except FileNotFoundError:
-            sys.exit("")
+            sys.exit("File does not exist")
 
 main()
