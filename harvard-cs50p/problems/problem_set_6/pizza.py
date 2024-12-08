@@ -22,12 +22,14 @@ def main():
             sys.exit("File does not exist")
 
 def append_rows(row,list):
+    ''' Adding rows within list '''
     if sys.argv[1] == "sicilian.csv":
         list.append([row["Sicilian Pizza"], row["Small"], row["Large"]])
     elif sys.argv[1] == "regular.csv":
         list.append([row["Regular Pizza"], row["Small"], row["Large"]])
 
 def grid(argv,rows):
+    ''' Returning table as grid '''
     if argv == "sicilian.csv":
         return tabulate(rows,["Sicilian Pizza","Small","Large"],"grid")
     elif argv == "regular.csv":
