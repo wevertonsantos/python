@@ -11,8 +11,11 @@ def main():
         try:
             with open(sys.argv[1],"r") as input, open(sys.argv[2],"w") as output:
                 reader = csv.DictReader(input)
+                writer = csv.DictReader(output,fieldnames=reader.fieldnames)
+                [print(line) for line in reader]
+                print(writer)
                 #writer = csv.DictWriter(output)
         except FileNotFoundError:
-            sys.exit(f"Could not read {sys.argv[1]}") if sys.argv[1] else sys.exit(f"Could not write {sys.argv[2]}")
+            sys.exit(f"Could not read {sys.argv[1]}")
 
 main()
