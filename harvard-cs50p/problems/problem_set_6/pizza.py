@@ -15,8 +15,7 @@ def main():
             with open(sys.argv[1]) as file:
                 rows = []
                 reader = csv.DictReader(file)
-                for row in reader:
-                    append_rows(row,rows)
+                any(append_rows(row,rows) for row in reader)
                 print(grid(sys.argv[1],rows))
         except FileNotFoundError:
             sys.exit("File does not exist")
