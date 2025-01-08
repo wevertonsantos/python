@@ -14,9 +14,9 @@ def main():
                 writer.writeheader()
                 for row in reader:
                     name = row["name"]
-                    first_last = name.split(",")
+                    first_last_name = name.split(",")
                     house = row["house"]
-                    writer.writerow({"first":first_last[0],"last":first_last[1].strip(),"house":house})
+                    writer.writerow({"first":first_last_name[0],"last":first_last_name[1].strip(),"house":house})
         except FileNotFoundError:
             sys.exit(f"Could not read {sys.argv[1]}")
 
