@@ -8,8 +8,11 @@ def main():
             ...
 
 def verify_arg():
-    if len(sys.argv) == 1: sys.exit("Too few command-line arguments")
-    elif len(sys.argv) > 2: sys.exit("Too many command line-arguments")
-    else: return True
+    if len(sys.argv) < 3:
+        sys.exit("Too few command-line arguments")
+    elif len(sys.argv) > 3:
+        sys.exit("Too many command line-arguments")
+    else:
+        return
 
 main()
