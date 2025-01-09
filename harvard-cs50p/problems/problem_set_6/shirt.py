@@ -1,9 +1,11 @@
 #https://cs50.harvard.edu/python/2022/psets/6/shirt/
 import sys
+from PIL import Image
 
 def main():
     if verify_arg():
-        print("ok")
+        with Image.open(sys.argv[1]) as input, open(sys.argv[2]) as output:
+            ...
 
 def verify_arg():
     if len(sys.argv) == 1: sys.exit("Too few command-line arguments")
