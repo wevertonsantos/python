@@ -1,13 +1,11 @@
 #https://cs50.harvard.edu/python/2022/psets/6/shirt/
 import sys
-from PIL import Image
+from PIL import Image,ImageOps
 
 def main():
     if verify_arg():
-        #open the image
-        image = Image.open(sys.argv[1])
-        #output the image
-        image.save(sys.argv[2])
+        with Image.open(sys.argv[1]) as img: #open the image
+            img.save(sys.argv[2]) #output the image
 
 def verify_arg():
     if len(sys.argv) < 3:
