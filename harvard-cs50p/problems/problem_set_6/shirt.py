@@ -4,8 +4,10 @@ from PIL import Image
 
 def main():
     if verify_arg():
-        #with Image.open(sys.argv[1]) as input, open(sys.argv[2]) as output:
-        print("pass")
+        #open the image
+        image = Image.open(sys.argv[1])
+        #output the image
+        image.save(sys.argv[2])
 
 def verify_arg():
     if len(sys.argv) < 3:
