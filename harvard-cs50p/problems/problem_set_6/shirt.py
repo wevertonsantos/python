@@ -5,6 +5,8 @@ from PIL import Image,ImageOps
 def main():
     if verify_arg():
         with Image.open(sys.argv[1]) as img: #open the image
+            ImageOps.fit(sys.argv[1],tuple[600,600],0,0.0,tuple[0.5, 0.5])
+            Image.Image.paste()
             img.save(sys.argv[2]) #output the image
 
 def verify_arg():
