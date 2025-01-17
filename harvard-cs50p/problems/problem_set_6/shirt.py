@@ -7,7 +7,8 @@ def main():
         with Image.open(sys.argv[1]) as img: #open the image
             ImageOps.fit(img,[600,600]) #fit the image
             #Image.Image.paste()
-            img.save(sys.argv[2]) #output the image
+            Image.Image.save(img,sys.argv[1]) #save image
+            #img.save(sys.argv[2]) #output the image
 
 def verify_arg():
     if len(sys.argv) < 3:
