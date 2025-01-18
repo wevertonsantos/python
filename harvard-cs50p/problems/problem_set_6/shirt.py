@@ -4,10 +4,13 @@ from PIL import Image,ImageOps
 
 def main():
     if verify_arg():
-        with Image.open(sys.argv[1]) as img, Image.open('shirt.png') as shirt: #open the image
-            img_fit = ImageOps.fit(img,[600,600]) #fit the image
-            img_fit.paste(shirt,shirt) #overlay the shirt
-            Image.Image.save(img_fit,sys.argv[2]) #save image
+        try:
+            with Image.open(sys.argv[1]) as img, Image.open('shirt.png') as shirt: #open the image
+                img_fit = ImageOps.fit(img,[600,600]) #fit the image
+                img_fit.paste(shirt,shirt) #overlay the shirt
+                Image.Image.save(img_fit,sys.argv[2]) #save image
+        except FileNotFoundError:
+            sys.exit("Input does not exist")
 
 def verify_arg():
     if len(sys.argv) < 3:
