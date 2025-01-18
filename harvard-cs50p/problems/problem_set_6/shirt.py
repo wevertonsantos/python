@@ -4,10 +4,10 @@ from PIL import Image,ImageOps
 
 def main():
     if verify_arg():
-        with Image.open(sys.argv[1]) as img: #open the image
-            imgfit = ImageOps.fit(img,[600,600]) #fit the image
-            #Image.Image.paste()
-            Image.Image.save(imgfit,sys.argv[2]) #save image
+        with Image.open(sys.argv[1]) as img, Image.open('shirt.png') as shirt: #open the image
+            img_fit = ImageOps.fit(img,[600,600]) #fit the image
+            #img_fit.paste(shirt)
+            Image.Image.save(img_fit,sys.argv[2]) #save image
             #img.save(sys.argv[2]) #output the image
 
 def verify_arg():
