@@ -18,9 +18,9 @@ def verify_arg():
         sys.exit("Invalid input")
     elif "." in sys.argv[1].lower() and sys.argv[1].count(".") == 1 and "." in sys.argv[2].lower() and sys.argv[2].count(".") == 1:
         if ".jpg" not in sys.argv[1].lower() and ".jpeg" not in sys.argv[1].lower() and ".png" not in sys.argv[1].lower():
-            sys.exit("Invalid input")
+            sys.exit("Invalid output")
         elif ".jpg" not in sys.argv[2].lower() and ".jpeg" not in sys.argv[2].lower() and ".png" not in sys.argv[2].lower():
-            sys.exit("Invalid input")
+            sys.exit("Invalid output")
         elif not sys.argv[1][sys.argv[1].index("."):] == sys.argv[2][sys.argv[2].index("."):]:  
             sys.exit("Input and output have different extensions")
         else:
