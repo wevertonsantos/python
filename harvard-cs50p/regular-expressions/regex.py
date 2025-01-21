@@ -44,4 +44,10 @@ string = "a"
 pattern = re.compile("a$")
 result = re.fullmatch(pattern, string)
 
+# "[^]" verificação se é diferente do caracter passado
+
+string = "a"
+pattern = re.compile("[^b]")
+result = re.fullmatch(pattern, string)
+
 print(result)
