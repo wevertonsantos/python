@@ -31,4 +31,11 @@ pattern = re.compile("^b")
 
 result = re.fullmatch(pattern, string)
 
+# "[]" representa um conjunto de alguma operação, isolar um conjunto
+
+string = "a"
+pattern = re.compile("^[a]")
+
+result = re.fullmatch(pattern, string)
+
 print(result)
