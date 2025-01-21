@@ -23,4 +23,12 @@ pattern = re.compile("py....")
 
 result = re.fullmatch(pattern, string)
 
+# "^" representa início da string, começo da string
+
+string = "b"
+pattern = re.compile("^p")
+pattern = re.compile("^b")
+
+result = re.fullmatch(pattern, string)
+
 print(result)
