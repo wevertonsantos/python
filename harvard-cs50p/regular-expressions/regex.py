@@ -23,7 +23,7 @@ pattern = re.compile("py....")
 
 result = re.fullmatch(pattern, string)
 
-# "^" representa início da string, começo da string
+# "^" representa início da string, verificação no começo da string
 
 string = "b"
 pattern = re.compile("^p")
@@ -36,6 +36,12 @@ result = re.fullmatch(pattern, string)
 string = "a"
 pattern = re.compile("^[a]")
 
+result = re.fullmatch(pattern, string)
+
+# "$" representa o final da string, verificação no final da string
+
+string = "a"
+pattern = re.compile("a$")
 result = re.fullmatch(pattern, string)
 
 print(result)
