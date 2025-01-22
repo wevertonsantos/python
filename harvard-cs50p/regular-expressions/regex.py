@@ -72,4 +72,11 @@ pattern = re.compile("[\s]")
 
 result = re.findall(pattern, string)
 
+#[a-z] buscando de a até z minúsculo
+
+string = " a2dwa23.sAd@"
+pattern = re.compile("[a-z]")
+
+result = re.findall(pattern, string)
+
 print(result)
