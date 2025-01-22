@@ -50,10 +50,10 @@ string = "a"
 pattern = re.compile("[^b]")
 result = re.fullmatch(pattern, string)
 
-# "\" - verificação se aquilo passado é um alfanumérico
-
+# "\w" - verificação se aquilo passado é um alfanumérico
+# "\W" - verificação se aquilo passado não é um alfanumérico
 string = "@1a"
-pattern = re.compile("[\w]")
+pattern = re.compile("[\W]")
 result = re.findall(pattern, string)
 
 print(result)
