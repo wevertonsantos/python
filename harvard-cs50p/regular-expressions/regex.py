@@ -79,4 +79,11 @@ pattern = re.compile("[a-z]")
 
 result = re.findall(pattern, string)
 
+#verificar se irá repetir mais de uma vez com "+"
+
+string = "aa"
+pattern = re.compile("[a-d]+")
+
+result = re.fullmatch(pattern, string)
+
 print(result)
