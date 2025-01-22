@@ -56,4 +56,12 @@ string = "@1a"
 pattern = re.compile("[\W]")
 result = re.findall(pattern, string)
 
+#verificação "\d" de número de 0 a 9
+#verificação "\D" números not in 0 a 9
+
+string = "@1a"
+pattern = re.compile("[\d]")
+pattern = re.compile("[\D]")
+result = re.findall(pattern, string)
+
 print(result)
