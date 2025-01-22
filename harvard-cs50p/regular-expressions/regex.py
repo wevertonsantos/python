@@ -33,10 +33,10 @@ result = re.fullmatch(pattern, string)
 
 # "[]" representa um conjunto de alguma operação, isolar um conjunto
 
-string = "a"
-pattern = re.compile("^[a]")
+string = "a2dwa23.sad@"
+pattern = re.compile("[\w]")
 
-result = re.fullmatch(pattern, string)
+result = re.findall(pattern, string)
 
 # "$" representa o final da string, verificação no final da string
 
@@ -62,6 +62,14 @@ result = re.findall(pattern, string)
 string = "@1a"
 pattern = re.compile("[\d]")
 pattern = re.compile("[\D]")
+result = re.findall(pattern, string)
+
+#\s caracter vazio
+#\S não vazio
+
+string = " a2dwa23.sad@"
+pattern = re.compile("[\s]")
+
 result = re.findall(pattern, string)
 
 print(result)
