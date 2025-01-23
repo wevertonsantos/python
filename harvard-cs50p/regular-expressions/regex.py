@@ -81,8 +81,8 @@ result = re.findall(pattern, string)
 
 #verificar se irá repetir mais de uma vez com "+"
 
-string = "aa"
-pattern = re.compile("[a-d]+")
+string = "malan@harvard.edu"
+pattern = re.compile(".+@.+")
 
 result = re.fullmatch(pattern, string)
 
