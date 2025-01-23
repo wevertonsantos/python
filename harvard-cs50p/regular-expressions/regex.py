@@ -81,6 +81,8 @@ result = re.findall(pattern, string)
 
 #verificar se irá repetir mais de uma vez com "+"
 
+# + uma ou mais esse padrão vai se repetir
+
 string = "malan@harvard.edu"
 pattern = re.compile(".+@.+")
 
