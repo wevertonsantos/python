@@ -88,4 +88,18 @@ pattern = re.compile(".+@.+")
 
 result = re.fullmatch(pattern, string)
 
+# * = 0 ou mais vezes esse padrão vai se repetir
+
+string = "@harvard.edu"
+pattern = re.compile(".*@.*")
+
+result = re.fullmatch(pattern, string)
+
+# ? = 0 ou 1 vez esse padrão vai se repetir
+
+string = "h@h"
+pattern = re.compile(".?@.?")
+
+result = re.fullmatch(pattern, string)
+
 print(result)
