@@ -7,5 +7,3 @@ class Cliente:
         print(self.nome, self.email)
 
 cliente_1 = Cliente("Guilherme","email@email.com") #objeto
-
-cliente_1.exibir()
