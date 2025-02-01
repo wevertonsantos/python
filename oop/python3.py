@@ -8,6 +8,9 @@ class Cliente:
     email: str
     idade: int
 
+    def exibir(self):
+        print(f"Meu nome é: {self.nome}, tenho {self.idade} anos e meu e-mail é: {self.email}")
+
 cliente_1 = Cliente(nome = "Guilherme", email="email@gmail.com", idade = 20)
 
-print(cliente_1.nome,cliente_1.email,cliente_1.idade)
+cliente_1.exibir()
