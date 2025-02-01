@@ -9,4 +9,4 @@ t1 = Transacao(
     categoria=c
 )
 
-print(t1)
+t1.exibir()
