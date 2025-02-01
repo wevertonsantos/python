@@ -4,8 +4,8 @@ class Cliente:
         self.email = email
 
     def exibir(self): #método
-        print(self.email, self.idade)
+        print(self.nome, self.email)
 
 cliente_1 = Cliente("Guilherme","email@email.com") #objeto
 
-print(cliente_1.nome, cliente_1.email)
+cliente_1.exibir()
