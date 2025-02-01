@@ -1,6 +1,12 @@
 from categoria import Categoria
 from transacao import Transacao
 
-c = Categoria("Receitas")
+c = Categoria(nome="Receitas")
 
-print(c.nome)
+t1 = Transacao(
+    descricao="Salário Jan/2025",
+    valor=1000,
+    categoria=c
+)
+
+print(t1)
