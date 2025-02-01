@@ -21,4 +21,5 @@ def cadastrar_transacao(descricao,valor,categoria):
 def saldo_total():
     total = 0
     for transacao in lista_transacoes:
-        print(transacao.valor)
+        total += transacao.valor
+    return total
