@@ -3,7 +3,7 @@
 nums = [3,3]
 val = 3
 
-for num in nums:
+for i in range(len(nums)):
     if val in nums:
         nums.remove(val)
 print(f"k = {len(nums)}")
