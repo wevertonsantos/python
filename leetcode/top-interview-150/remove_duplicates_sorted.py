@@ -2,8 +2,9 @@
 
 nums = [0,0,1,1,1,2,2,3,3,4]
 
-for num in nums:
-    if nums.count(num) > 1:
-        nums.remove(num)
-
+i = 0
+while i <= len(nums):
+    nums.count(nums[i]) > 1
+    nums.remove(nums[i])
+    i += 1
 print(nums)
