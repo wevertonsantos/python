@@ -4,6 +4,7 @@ Esse repositório foi construído com o intuito de se aprofundar em conhecimento
 
 - [CS50’s Introduction to Programming with Python - Harvard](https://cs50.harvard.edu/python/2022/)
 - [Codewars](https://www.codewars.com/)
+- [Leetcode](https://leetcode.com/)
 - [Data Structures and Algorithms in Python - Jovian](https://jovian.com/learn/data-structures-and-algorithms-in-python)
 - [Programação Orientada a Objetos com Python & Dataclass](https://www.youtube.com/watch?v=eqBf1TxN5mQ&ab_channel=ProgramadorPython)
 
