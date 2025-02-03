@@ -5,11 +5,7 @@ m = 3
 nums2 = [2,5,6]
 n = 3
 
-for num1 in nums1[m:]:
-    if num1 == 0:
-        nums1.remove(num1)
-        
-for num2 in nums2[:n]:
-    nums1.append(num2)
+nums1[m:] = nums2
+nums1.sort()
 
 print(nums1)
