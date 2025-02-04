@@ -2,11 +2,11 @@
 
 nums = [1,1,1,1]
 
-for i in range(len(nums)):
-    if i >= 2:
-        i -= 1
-    if nums.count(nums[i]) > 1:
-        nums.remove(nums[i])
-    else:
-        nums.remove(nums[i])
+for num in nums:
+    n = nums.count(num)
+    if n > 1:
+        nums.remove(1)
+        n -= 1
 print(nums)
+
+# preciso remover números duplicados de um array, até ficar apenas 1
