@@ -3,7 +3,9 @@
 nums =  [2,2,1,1,1,2,2]
 for num in nums:
     if nums.count(num) > len(nums) / 2:
-        ...
+        print(num)
+
+# preciso fazer com que o número que mais aparece no array, seja mostrado mais rápido
 
 i = 0
 while i < sum(nums):
