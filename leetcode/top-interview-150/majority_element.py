@@ -2,8 +2,9 @@
 
 nums =  [2,2,1,1,1,2,2]
 for num in nums:
-    if nums.count(num) > len(nums) / 2:
-        print(num)
+    n = len(nums)
+    if nums.count(num) > n:
+        majority_element = num
 
 # preciso fazer com que o número que mais aparece no array, seja mostrado mais rápido
 
