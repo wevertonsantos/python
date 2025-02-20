@@ -3,6 +3,7 @@
 Esse repositório foi construído com o intuito de se aprofundar em conhecimento com a linguagem Python, fazendo isso por meio de cursos gratuitos e também sites com problemas para serem solucionados, como:
 
 - [CS50’s Introduction to Programming with Python - Harvard](https://cs50.harvard.edu/python/2022/)
+- [Formação Profissional Python: Curso Completo + Projetos](https://www.udemy.com/course/formacao-python/?couponCode=ST3MT200225A)
 - [Codewars](https://www.codewars.com/)
 - [Leetcode](https://leetcode.com/)
 - [Programação Orientada a Objetos com Python & Dataclass](https://www.youtube.com/watch?v=eqBf1TxN5mQ&ab_channel=ProgramadorPython)
