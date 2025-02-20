@@ -16,3 +16,6 @@ print("Maçã","Pera", end=" Fim",sep=" ")
 
 # Quebrando linha com \n
 print("Este é um texto longo,","e preciso que quebre a linha",sep="\n")
+
+# Adicionando variáveis no print e declarando ela
+print("A pontuação total de %s foi de %s pontos" % ("Fernando","10"))
