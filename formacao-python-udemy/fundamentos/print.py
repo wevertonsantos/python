@@ -10,3 +10,6 @@ print("Maçã",20,30.45)
 # Print com separador
 print("Maçã","Pera","Uva", sep=" - ")
 print("Maçã","Pera","Uva", sep=".")
+
+# Determinando end para print
+print("Maçã","Pera", end=" Fim",sep=" ")
