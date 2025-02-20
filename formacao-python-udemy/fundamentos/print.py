@@ -19,3 +19,6 @@ print("Este é um texto longo,","e preciso que quebre a linha",sep="\n")
 
 # Adicionando variáveis no print e declarando ela
 print("A pontuação total de %s foi de %s pontos" % ("Fernando","10"))
+
+# Usando variáveis com format no print
+print("A pontuação total de {} foi de {} pontos".format("Fernando","10"))
