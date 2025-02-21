@@ -28,3 +28,10 @@ print("O valor é: %d" % (valor))
 # Formatando decimal para inteiro
 decimal = 23.33
 print("A parte inteira é: %d" % (decimal))
+
+# Formatação com caracteres especiais
+texto = "Quebrando\nlinha e colocando\n\ttabulação"
+print(texto)
+
+texto = "Deixa a \"palavra\" entre aspas" # Caracter literal
+print(texto)
