@@ -19,3 +19,8 @@ print(texto)
 # Formatando ponto flutuante
 numero_gigante = 1.123456789
 print("Número gigante formatado: %.2f" % numero_gigante)
+
+# Formatando valor booleano
+valor = True
+print("O valor é: %s" % (valor))
+print("O valor é: %d" % (valor))
