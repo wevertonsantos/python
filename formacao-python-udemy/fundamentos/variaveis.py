@@ -26,3 +26,8 @@ var = True # valor verdadeiro
 print(var)
 var = False # valor falso
 print(var)
+
+# Atribuindo variável a outra variável
+var1 = 10
+var2 = var1
+print(var2)
