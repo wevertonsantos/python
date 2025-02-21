@@ -24,3 +24,7 @@ print("Número gigante formatado: %.2f" % numero_gigante)
 valor = True
 print("O valor é: %s" % (valor))
 print("O valor é: %d" % (valor))
+
+# Formatando decimal para inteiro
+decimal = 23.33
+print("A parte inteira é: %d" % (decimal))
