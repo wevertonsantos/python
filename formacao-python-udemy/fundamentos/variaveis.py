@@ -31,3 +31,7 @@ print(var)
 var1 = 10
 var2 = var1
 print(var2)
+
+# Variáveis inline
+
+dia, mes, ano = 21,2,2025
