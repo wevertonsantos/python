@@ -17,3 +17,7 @@ print(multiplicacao)
 
 divisao = 10 / 3
 print(divisao)
+
+# pegando parte inteira da divisão
+resultado = 10 // 3
+print(resultado)
