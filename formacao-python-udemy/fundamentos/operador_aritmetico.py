@@ -18,9 +18,13 @@ print(multiplicacao)
 divisao = 10 / 3
 print(divisao)
 
-# pegando parte inteira da divisão
+# Parte inteira da divisão
 resultado = 10 // 3
 print(resultado)
 
-# exponenciação
+# Exponenciação
 resultado = 2 ** 4
+
+# Resto
+resultado = 4 % 2
+print(resultado)
