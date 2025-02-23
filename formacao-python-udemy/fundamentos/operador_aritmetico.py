@@ -45,3 +45,11 @@ print(resultado)
 
 resultado = 10 * (2 + 1)
 print(resultado)
+
+i = 1
+i = i + 1
+print(i)
+
+x = 1
+x += 1
+print(x)
