@@ -21,3 +21,6 @@ print(divisao)
 # pegando parte inteira da divisão
 resultado = 10 // 3
 print(resultado)
+
+# exponenciação
+resultado = 2 ** 4
