@@ -28,3 +28,20 @@ resultado = 2 ** 4
 # Resto
 resultado = 4 % 2
 print(resultado)
+
+'''
+Ordem de prioridade
+1 - **
+2 - *
+3 - /
+4 - %
+5 - //
+
+Quando tem parênteses, o python resolve primeiro do parênteses
+'''
+
+resultado = 10 * 2 + 1
+print(resultado)
+
+resultado = 10 * (2 + 1)
+print(resultado)
