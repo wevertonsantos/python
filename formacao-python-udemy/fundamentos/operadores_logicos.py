@@ -26,3 +26,16 @@ clima_bom = True
 estou_disposto = True
 vou_ao_mercado = clima_bom and estou_disposto
 print(vou_ao_mercado)
+
+# usando or
+
+resultado = True or False
+print(resultado)
+
+resultado = False or False
+print(resultado)
+
+sei_programar = True
+sei_investir = True
+ganho_bom_salario = sei_programar or sei_investir
+print("Terei um bom salário? ",ganho_bom_salario)
