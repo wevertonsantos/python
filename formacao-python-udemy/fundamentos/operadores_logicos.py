@@ -39,3 +39,12 @@ sei_programar = True
 sei_investir = True
 ganho_bom_salario = sei_programar or sei_investir
 print("Terei um bom salário? ",ganho_bom_salario)
+
+# usando o not
+
+resultado = True
+print(not resultado)
+
+porta_aberta = True
+tem_chave = False
+print("Estou trancado? ",not porta_aberta and not tem_chave)
