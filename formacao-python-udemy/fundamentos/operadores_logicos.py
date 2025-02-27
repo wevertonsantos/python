@@ -48,3 +48,19 @@ print(not resultado)
 porta_aberta = True
 tem_chave = False
 print("Estou trancado? ",not porta_aberta and not tem_chave)
+
+'''
+Ordem de prioridade:
+1 - NOT
+2 - AND
+3 - OR
+'''
+
+res = True or False and True
+print(res)
+
+res1 = True or not False
+print(res1)
+
+res2 = True and not (True or False)
+print(res2)
