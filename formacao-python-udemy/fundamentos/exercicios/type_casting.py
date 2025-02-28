@@ -4,7 +4,7 @@
 
 saldo = "2000"
 saldo_descontado = float(saldo) - 1000
-print("Total restado:",saldo_descontado)
+print("Total restado: R$%.2f" % (saldo_descontado))
 
 # 2 - Crie um programa que indique se seu saldo bancário esta zerado (valor lógico). 
 # Declare uma variável para guardar seu saldo bancário.
