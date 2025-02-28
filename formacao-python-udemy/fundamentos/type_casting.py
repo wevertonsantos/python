@@ -19,3 +19,8 @@ numero2 = float(texto2) # convertendo para float
 num = 21.45646
 inteiro = int(num)
 print("Parte inteira de %f é %d" % (num,inteiro))
+
+texto = "O número é "
+numero = 10.3
+numero_string = str(numero) # convertendo para string
+print(texto, numero_string)
