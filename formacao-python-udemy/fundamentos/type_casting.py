@@ -29,3 +29,27 @@ numero = 123
 texto = str(numero)
 tamanho_texto = len(texto)
 print("O número %s tem %d digitos " % (texto,tamanho_texto))
+
+# utilizando casting bool (se tiver valor retorna True caso contrário False)
+
+vazio = None
+
+numero_um = 15
+numero_zero = 0
+
+texto = "Texto"
+texto_vazio = ""
+
+decimal_zero = 0.0
+decimal = 3.5
+
+print("Variável tem valor: ", bool(vazio))
+
+print("Número tem valor: ", bool(numero_um))
+print("Número tem valor: ", bool(numero_zero))
+
+print("String tem conteúdo: ", bool(texto))
+print("String tem conteúdo: ", bool(texto_vazio))
+
+print("Float tem valor: ", bool(decimal_zero))
+print("Float tem valor: ", bool(decimal))
