@@ -29,3 +29,8 @@ print(e_menor_ou_igual)
 num = 11
 boolean = num > 0 and num < 10
 print(boolean)
+
+#verificar se é tipo float e igual a 10.1 ou 20.2
+num = 10.1
+boolean = type(num) == float and (num == 10.1 or num == 20.2)
+print(boolean)
