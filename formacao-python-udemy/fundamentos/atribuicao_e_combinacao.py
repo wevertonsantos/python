@@ -25,3 +25,7 @@ print(e_menor)
 
 e_menor_ou_igual = num1 <= num2
 print(e_menor_ou_igual)
+
+num = 11
+boolean = num > 0 and num < 10
+print(boolean)
