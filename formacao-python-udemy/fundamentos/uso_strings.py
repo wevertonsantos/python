@@ -49,3 +49,8 @@ igual = texto1 == texto2
 print("Textos são iguais?", igual)
 print("a" != "b")
 
+#verificação de existência
+texto = "Programação"
+print("a" in texto) #está contido?
+print("Programa" in texto)
+print("Programa" not in texto) #não está contido?
