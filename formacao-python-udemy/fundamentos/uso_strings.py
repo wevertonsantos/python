@@ -54,3 +54,6 @@ texto = "Programação"
 print("a" in texto) #está contido?
 print("Programa" in texto)
 print("Programa" not in texto) #não está contido?
+
+tamanho = len(texto) # tamanho do texto
+print(tamanho)
