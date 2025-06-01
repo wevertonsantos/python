@@ -4,3 +4,8 @@ nome_completo = "Weverton Santos"
 nome = nome_completo[:8]
 sobrenome = nome_completo[9:]
 print(nome,sobrenome)
+
+# 2 - Leia uma string através do input e retire o ultimo caractere.
+
+string = input("Digite alguma coisa: ")
+print(string[:-1])
