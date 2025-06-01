@@ -31,3 +31,13 @@ texto = "metro"
 print(texto[::-1]) #inverter string
 print(texto[3::])
 print(texto[3:1:-1])
+
+#substituição
+texto = "023"
+texto = "1" + texto[1:]
+print(texto)
+
+#remoção
+texto = "abcdefg"
+texto = texto[:3] + texto[4:]
+print(texto)
