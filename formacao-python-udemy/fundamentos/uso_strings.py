@@ -26,3 +26,8 @@ print(texto[-5]) #conta da direita para esquerda
 print(texto[-5:])
 print(texto[:-1])
 print(texto[-5:-2])
+
+texto = "metro"
+print(texto[::-1]) #inverter string
+print(texto[3::])
+print(texto[3:1:-1])
