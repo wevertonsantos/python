@@ -14,3 +14,9 @@ print(string[:-1])
 
 string = input("Digite alguma coisa: ")
 print("String tem vogal?","A" in string or "E" in string or "I" in string or "O" in string or "U" in string or "a" in string or "e" in string or "i" in string or "o" in string or "u" in string)
+
+# 4 - Faça um programa que insira a palavra 'ABC' na primeira posição de uma string lida por input.
+
+string = input("Digite alguma coisa: ")
+string = "ABC" + string[0:]
+print(string)
