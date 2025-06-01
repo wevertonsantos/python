@@ -9,3 +9,8 @@ print(nome,sobrenome)
 
 string = input("Digite alguma coisa: ")
 print(string[:-1])
+
+# 3 - Faça um programa que leia uma string através do input e diga se ela possui uma vogal.
+
+string = input("Digite alguma coisa: ")
+print("String tem vogal?","A" in string or "E" in string or "I" in string or "O" in string or "U" in string or "a" in string or "e" in string or "i" in string or "o" in string or "u" in string)
