@@ -41,3 +41,11 @@ print(texto)
 texto = "abcdefg"
 texto = texto[:3] + texto[4:]
 print(texto)
+
+#comparação de string
+texto1 = "Olá"
+texto2 = "Olá"
+igual = texto1 == texto2
+print("Textos são iguais?", igual)
+print("a" != "b")
+
