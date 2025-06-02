@@ -13,3 +13,6 @@ valor2 = 10
 sao_iguais = (valor1 == valor2)
 if sao_iguais:
     print("São iguais")
+
+if (valor1 == valor2):
+    print("São iguais")
