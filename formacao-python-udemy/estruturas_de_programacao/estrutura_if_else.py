@@ -21,3 +21,13 @@ if len(texto) == 1:
     print("Tem um caractere")
 else:
     print("Não tem um caractere")
+
+numero = 1
+if numero == 1 or numero == 0:
+    print("É 1 ou 0")
+
+numero = 11
+if numero > 0:
+    print("Absolutamente maior que zero")
+    if numero > 10:
+        print("Número é maior que 10")
