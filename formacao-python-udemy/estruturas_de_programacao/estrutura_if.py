@@ -16,3 +16,17 @@ if sao_iguais:
 
 if (valor1 == valor2):
     print("São iguais")
+
+if (10 != 20):
+    print("São diferentes")
+
+if (10 != 10):
+    print("Não irá executar porque é falso")
+
+numero = 11
+if (numero > 10):
+    print("Número é maior que 10")
+
+nome = input("Digite seu nome: ")
+if "a" in nome:
+    print("Tem a letra 'a'")
