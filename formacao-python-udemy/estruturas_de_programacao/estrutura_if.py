@@ -29,4 +29,4 @@ if (numero > 10):
 
 nome = input("Digite seu nome: ")
 if "a" in nome:
-    print("Tem a letra 'a'")
+    print("O nome tem a letra 'a'")
