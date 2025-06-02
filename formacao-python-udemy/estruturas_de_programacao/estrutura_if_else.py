@@ -16,3 +16,8 @@ if valor >= 0 and valor < 9:
 else:
     print("Valor não aceito")
 
+texto = "a"
+if len(texto) == 1:
+    print("Tem um caractere")
+else:
+    print("Não tem um caractere")
