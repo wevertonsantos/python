@@ -21,3 +21,11 @@ elif texto == 'u':
     print("É vogal")
 else:
     print("É consoante")
+
+#if ternário
+numero = 10
+resultado = "Esse número é par" if numero % 2 == 0 else "Esse número é impar"
+print(resultado)
+
+numero = 3
+resultado = "Um" if numero == 1 else "Dois" if numero == 2 else "Três"
