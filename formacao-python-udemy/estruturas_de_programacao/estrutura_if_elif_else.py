@@ -7,3 +7,17 @@ elif numero <= 1000:
     print("Menor ou igual a 1000")
 else:
     print("Nenhuma anterior")
+
+texto = 's'
+if texto == 'a':
+    print("É vogal")
+elif texto == 'e':
+    print("É vogal")
+elif texto == 'i':
+    print("É vogal")
+elif texto == 'o':
+    print("É vogal")
+elif texto == 'u':
+    print("É vogal")
+else:
+    print("É consoante")
