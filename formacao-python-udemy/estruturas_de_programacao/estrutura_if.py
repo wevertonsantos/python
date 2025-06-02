@@ -30,3 +30,7 @@ if (numero > 10):
 nome = input("Digite seu nome: ")
 if "a" in nome:
     print("O nome tem a letra 'a'")
+
+possui_vogal = "a" in nome or "e" in nome or "i" in nome or "o" in nome or "u" in nome
+if possui_vogal:
+    print("Este nome possui vogal")
