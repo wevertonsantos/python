@@ -6,3 +6,10 @@ if (False):
 
 if (True):
     pass #estrutura quando não executa nada
+
+#avaliação lógica com if (executa quando é verdadeiro)
+valor1 = 10
+valor2 = 10
+sao_iguais = (valor1 == valor2)
+if sao_iguais:
+    print("São iguais")
