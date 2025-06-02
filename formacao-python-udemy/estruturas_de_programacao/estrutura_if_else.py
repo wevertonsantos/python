@@ -9,3 +9,10 @@ if numero % 2 == 0:
     print("É par")
 else:
     print("É impar")
+
+valor = 11
+if valor >= 0 and valor < 9:
+    print(valor)
+else:
+    print("Valor não aceito")
+
