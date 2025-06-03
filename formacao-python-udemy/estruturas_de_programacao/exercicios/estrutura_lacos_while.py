@@ -18,3 +18,14 @@ while i < 5:
         soma += valor
     i += 1
 print("A soma é: %.2f" % soma)
+
+# 3 - Crie um programa que receba um número arbitrário (definido pelo usuário) de números que serão lidos e retorne a soma de todos eles.
+
+i = 0
+soma = 0
+quantidade = int(input("Digite a quantidade de números que serão lidos: "))
+while i < quantidade:
+    valor = float(input("Digite um valor: "))
+    soma += valor
+    i += 1
+print("A total é: %.2f" % soma)
