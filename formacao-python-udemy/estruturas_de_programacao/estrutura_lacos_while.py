@@ -18,8 +18,8 @@ while indice >= 2:
 i = 0
 soma = 0
 while i < 5:
-    #valor = float(input("Digite um valor: "))
-    #soma += valor
+    valor = float(input("Digite um valor: "))
+    soma += valor
     i += 1
 print("O resultado da soma é: %.2f" % soma)
 
@@ -35,3 +35,10 @@ while True:
         break
     print(atual)
     atual += 1
+
+atual = 0
+while atual < 10:
+    atual += 1
+    if atual == 7:
+        continue #continue = de não executar o código
+    print(atual)
