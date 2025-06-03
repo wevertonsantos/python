@@ -7,3 +7,14 @@ while i < 5:
     soma += valor
     i += 1
 print("A média aritmética é: %.2f" % (soma / 5))
+
+# 2 - Crie um programa que receba 5 números, realiza a soma destes números, mas caso um destes números seja negativo não considere ele na soma.
+
+i = 0
+soma = 0
+while i < 5:
+    valor = float(input("Digite um valor: "))
+    if valor > 0:
+        soma += valor
+    i += 1
+print("A soma é: %.2f" % soma)
