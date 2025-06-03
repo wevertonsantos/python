@@ -29,3 +29,13 @@ while i < quantidade:
     soma += valor
     i += 1
 print("A total é: %.2f" % soma)
+
+# 4 - Percorra os números de 2 até 10 e diga se o número é par ou impar.
+
+i = 2
+while i <= 10:
+    if i % 2 == 0:
+        print("Número par %d" % i)
+    else:
+        print("Número impar %d" % i)
+    i += 1
