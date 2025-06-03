@@ -22,3 +22,9 @@ while i < 5:
     soma += valor
     i += 1
 print("O resultado da soma é: %.2f" % soma)
+
+texto = "Olá 123 _"
+i = 0
+while i < len(texto):
+    print(texto[i])
+    i += 1
