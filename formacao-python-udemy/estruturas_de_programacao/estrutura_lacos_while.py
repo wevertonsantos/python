@@ -14,3 +14,11 @@ while indice >= 2:
     else:
         print("O número %d é impar" % indice)
     indice -= 1
+
+i = 0
+soma = 0
+while i < 5:
+    valor = float(input("Digite um valor: "))
+    soma += valor
+    i += 1
+print("O resultado da soma é: %.2f" % soma)
