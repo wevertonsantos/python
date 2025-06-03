@@ -39,3 +39,14 @@ while i <= 10:
     else:
         print("Número impar %d" % i)
     i += 1
+
+# 5 - Crie um programa que receba como input uma string. Em seguida percorra a string e diga quantos espaços em branco essa string tem.
+
+string = input("Digite algo: ")
+i = 0
+espaco = 0
+while i < len(string):
+    if string[i] == " ":
+        espaco += 1
+    i += 1
+print("A string tem %d espaços" % espaco)
