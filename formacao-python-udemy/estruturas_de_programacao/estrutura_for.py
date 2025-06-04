@@ -23,3 +23,7 @@ else:
     for i in range(0,len(texto)):
         if letra == texto[i]:
             print("Encontrei a letra %s na posição %d" % (letra, i))
+
+texto = "Olá, eu sou iterável"
+for x in texto:
+    print(x)
