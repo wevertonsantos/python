@@ -14,3 +14,6 @@ print(elemento)
 # Alterando valor de uma lista
 array[0] = 4
 print(array)
+
+# Fazendo slice com lista
+print(array[1:3])
