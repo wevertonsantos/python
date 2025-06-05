@@ -10,8 +10,10 @@ print("Esse texto tem exatamente %d caracter(es)" % caracter)
 # 2 - Crie um programa que faça o calculo do fatorial de um número. O fatorial a ser calculado deve ser recebido por input.
 
 fatorial = int(input("Digite o fatorial a ser calculado: "))
-for i in range(1,fatorial):
-    print(fatorial)
+resultado = 1
+for i in range(1,fatorial + 1):
+    resultado *= i
+print(resultado)
 #    5 * 4 * 3 * 2 * 1
 
 # 3 - Crie um programa que leia um quantidade arbitraria de textos e concatene eles numa string única.
