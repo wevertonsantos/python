@@ -13,8 +13,7 @@ fatorial = int(input("Digite o fatorial a ser calculado: "))
 resultado = 1
 for i in range(1,fatorial + 1):
     resultado *= i
-print(resultado)
-#    5 * 4 * 3 * 2 * 1
+print("O fatorial de %d é %d " % (fatorial, resultado))
 
 # 3 - Crie um programa que leia um quantidade arbitraria de textos e concatene eles numa string única.
 quantidade = int(input("Digite a quantidade de textos: "))
@@ -24,13 +23,20 @@ for i in range(0,quantidade):
 print("Texto completo: %s" % string)
 
 # 4 - Crie um programa que printe a tabuada da divisão de um número lido por input.
-tabuada = int(input("Digite qual tabuada gostaria de ver: "))
-for x in range (1,tabuada + 1):
-    for y in range(1,11):
-        print("%d / %d = %d" % x,y,x/y)
+tabuada = int(input("Digite a tabuada de divisão desejada: "))
+for x in range (1,11):
+    print("%d / %d = %f " % (x, tabuada, x / tabuada))
 
 # 5 - Crie um programa que percorra os números de 3 até 30 e diga se o número é primo ou não.
-for i in range(3, 31):
-    print(i)
-    if i % 2 != 0:
-        print(i)
+for numero in range(3,31):
+  primo = True
+
+  for num_teste in range(2, numero):
+    if (numero % num_teste == 0):
+      primo = False
+      break
+  
+  if (primo):
+    print("O número %d é primo" % (numero))
+  else:
+    print("O número %d não é primo " % (numero))
