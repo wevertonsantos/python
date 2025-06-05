@@ -10,3 +10,7 @@ misto = [2,2.3,"ABC"] # Lista com dados diferentes
 array = list([1,2,3]) # Método lista com números
 elemento = array[0] # Acessando elemento de uma lista
 print(elemento)
+
+# Alterando valor de uma lista
+array[0] = 4
+print(array)
