@@ -20,3 +20,15 @@ string = ''
 for i in range(0,quantidade):
     string += input("Digite um texto: ")
 print("Texto completo: %s" % string)
+
+# 4 - Crie um programa que printe a tabuada da divisão de um número lido por input.
+tabuada = int(input("Digite qual tabuada gostaria de ver: "))
+for x in range (1,tabuada + 1):
+    for y in range(1,11):
+        print("%d / %d = %d" % x,y,x/y)
+
+# 5 - Crie um programa que percorra os números de 3 até 30 e diga se o número é primo ou não.
+for i in range(3, 31):
+    print(i)
+    if i % 2 != 0:
+        print(i)
