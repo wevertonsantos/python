@@ -8,3 +8,5 @@ strings = ["A","B","C"] # Lista com strings
 misto = [2,2.3,"ABC"] # Lista com dados diferentes
 
 array = list([1,2,3]) # Método lista com números
+elemento = array[0] # Acessando elemento de uma lista
+print(elemento)
