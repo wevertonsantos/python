@@ -13,3 +13,10 @@ fatorial = int(input("Digite o fatorial a ser calculado: "))
 for i in range(1,fatorial):
     print(fatorial)
 #    5 * 4 * 3 * 2 * 1
+
+# 3 - Crie um programa que leia um quantidade arbitraria de textos e concatene eles numa string única.
+quantidade = int(input("Digite a quantidade de textos: "))
+string = ''
+for i in range(0,quantidade):
+    string += input("Digite um texto: ")
+print("Texto completo: %s" % string)
