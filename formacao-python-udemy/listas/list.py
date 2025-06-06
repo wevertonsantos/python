@@ -26,3 +26,8 @@ print(array)
 # Inserindo elemento em determinada posição
 array.insert(2,4) #inserindo o 4 na posição 2 do array
 print(array)
+
+# Removendo elemento pelo valor
+array = [10,2,3,20,"3"]
+array.remove(10)
+print(array)
