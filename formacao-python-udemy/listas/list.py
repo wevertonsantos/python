@@ -45,3 +45,6 @@ print(False not in array)
 # Verifica quantas vezes o elemento aparece na lista
 lista = [5,6,7,2,3,4,7]
 print(lista.count(7))
+
+# Verifica em qual posição o elemento aparece na lista
+print(lista.index(5))
