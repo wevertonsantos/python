@@ -48,3 +48,9 @@ print(lista.count(7))
 
 # Verifica em qual posição o elemento aparece na lista
 print(lista.index(5))
+
+# Juntando array
+arr = [1,2,3]
+array = [3,4,5]
+completo = arr + array
+print(completo)
