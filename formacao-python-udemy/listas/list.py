@@ -64,3 +64,7 @@ print(x,y)
 cores = ["Azul","Preto","Amarelo"]
 for cor in cores:
     print(cor)
+    
+# Percorrendo por índice
+for i in range(0,len(cores)):
+    print(cores[i]) 
