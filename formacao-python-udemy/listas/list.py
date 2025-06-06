@@ -54,3 +54,4 @@ arr = [1,2,3]
 array = [3,4,5]
 completo = arr + array
 print(completo)
+print(completo * 2) # Multiplicando array e mostrando ele x vezes
