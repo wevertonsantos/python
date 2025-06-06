@@ -60,3 +60,7 @@ print(completo * 2) # Multiplicando array e mostrando ele x vezes
 numero = ["um","dois","três"]
 x,y,_ = numero # Para elemento que não quero mostrar colocar um (_)
 print(x,y)
+
+cores = ["Azul","Preto","Amarelo"]
+for cor in cores:
+    print(cor)
