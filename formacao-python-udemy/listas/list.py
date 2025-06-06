@@ -58,5 +58,5 @@ print(completo * 2) # Multiplicando array e mostrando ele x vezes
 
 # Atribuindo elemento do array para cada variável
 numero = ["um","dois","três"]
-x,y,z = numero
-print(x,y,z)
+x,y,_ = numero
+print(x,y)
