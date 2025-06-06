@@ -17,3 +17,8 @@ print(array)
 
 # Fazendo slice com lista
 print(array[1:3])
+
+# Inserindo elemento no final da lista
+array = [10,2,3]
+array.append(2)
+print(array)
