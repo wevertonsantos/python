@@ -78,3 +78,5 @@ while i < len(cores):
 # Lista que contém mais listas dentro dela
 lista = [[1,2,3],[4,5,6]]
 print(lista[0], lista[1])
+# Pegando elemento que está dentro da lista da lista
+print(lista[0][0])
