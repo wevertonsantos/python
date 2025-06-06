@@ -32,3 +32,4 @@ array = [10,2,3,20,"3"]
 array.remove(10)
 array.pop(2) # Removendo elemento pelo índice
 print(array)
+print(len(array)) # Verificando comprimento do array
