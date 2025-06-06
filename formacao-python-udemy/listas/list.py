@@ -55,3 +55,8 @@ array = [3,4,5]
 completo = arr + array
 print(completo)
 print(completo * 2) # Multiplicando array e mostrando ele x vezes
+
+# Atribuindo elemento do array para cada variável
+numero = ["um","dois","três"]
+x,y,z = numero
+print(x,y,z)
