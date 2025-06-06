@@ -33,3 +33,7 @@ array.remove(10)
 array.pop(2) # Removendo elemento pelo índice
 print(array)
 print(len(array)) # Verificando comprimento do array
+
+# Limpando completamente o array
+array.clear()
+print(array)
