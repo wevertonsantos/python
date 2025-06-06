@@ -37,3 +37,7 @@ print(len(array)) # Verificando comprimento do array
 # Limpando completamente o array
 array.clear()
 print(array)
+
+array = [1,'teste',1.3,True]
+print(1 in array) # Verificando se existe valor na lista
+print(False not in array)
