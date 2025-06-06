@@ -41,3 +41,7 @@ print(array)
 array = [1,'teste',1.3,True]
 print(1 in array) # Verificando se existe valor na lista
 print(False not in array)
+
+# Verifica quantas vezes o elemento aparece na lista
+lista = [5,6,7,2,3,4,7]
+print(lista.count(7))
