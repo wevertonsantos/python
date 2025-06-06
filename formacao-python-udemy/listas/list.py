@@ -74,3 +74,7 @@ i = 0
 while i < len(cores):
     print(cores[i])
     i += 1
+
+# Lista que contém mais listas dentro dela
+lista = [[1,2,3],[4,5,6]]
+print(lista[0], lista[1])
