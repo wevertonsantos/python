@@ -22,3 +22,7 @@ print(array[1:3])
 array = [10,2,3]
 array.append(2)
 print(array)
+
+# Inserindo elemento em determinada posição
+array.insert(2,4) #inserindo o 4 na posição 2 do array
+print(array)
