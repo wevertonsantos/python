@@ -68,3 +68,9 @@ for cor in cores:
 # Percorrendo por índice
 for i in range(0,len(cores)):
     print(cores[i]) 
+
+# Percorrendo a lista com while
+i = 0
+while i < len(cores):
+    print(cores[i])
+    i += 1
