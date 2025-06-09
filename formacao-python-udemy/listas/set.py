@@ -14,4 +14,5 @@ for item in set: #interação apenas com itens
 sett = {5,3,7,8}
 sets = set.union(sett) # União de sets
 sets = set.intersection(sett) # Intersecção dos dois sets
+sets = set.difference(sett) # Diferença entre os dois
 print(sets)
