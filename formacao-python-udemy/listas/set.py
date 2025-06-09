@@ -7,4 +7,7 @@ set.add(5) # Adicionando elemento
 set.remove(1) # Removendo valores
 set = {1,2,2} # Ele não permite duplicidade
 set.clear() # Remove todos os elementos
-print(set)
+
+set = {1,2,3,4,5,5.6,False}
+for item in set: #interação apenas com itens
+    print(item)
