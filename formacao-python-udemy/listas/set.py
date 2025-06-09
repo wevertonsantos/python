@@ -11,6 +11,7 @@ set.clear() # Remove todos os elementos
 set = {1,2,3,4,5,5.6,False}
 for item in set: #interação apenas com itens
     print(item)
-sett = {7,8}
+sett = {5,3,7,8}
 sets = set.union(sett) # União de sets
+sets = set.intersection(sett) # Intersecção dos dois sets
 print(sets)
