@@ -12,6 +12,9 @@ idades['maria'] = 30
 idades.update({"joão":40})
 print(idades)
 
+# Atribuindo item
+idades['marcos'] = 20
+
 # Removendo item
 idades.pop('ana')
 print(idades)
