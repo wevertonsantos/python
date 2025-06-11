@@ -3,3 +3,6 @@ print(idades)
 # Forma de pegar valor da chave
 print(idades['maria'])
 print(idades['fernando'])
+
+# Usando get
+print(idades.get('fernando'))
