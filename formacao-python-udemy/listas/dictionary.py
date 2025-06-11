@@ -11,3 +11,7 @@ print(idades.get('fernando'))
 idades['maria'] = 30
 idades.update({"joão":40})
 print(idades)
+
+# Removendo item
+idades.pop('ana')
+print(idades)
