@@ -6,3 +6,8 @@ print(idades['fernando'])
 
 # Usando get para pegar valor da chave
 print(idades.get('fernando'))
+
+# Atualizando valor da chave
+idades['maria'] = 30
+idades.update({"joão":40})
+print(idades)
