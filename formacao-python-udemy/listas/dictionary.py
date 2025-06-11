@@ -15,3 +15,7 @@ print(idades)
 # Removendo item
 idades.pop('ana')
 print(idades)
+
+# Removendo último item
+idades.popitem()
+print(idades)
