@@ -4,5 +4,5 @@ print(idades)
 print(idades['maria'])
 print(idades['fernando'])
 
-# Usando get
+# Usando get para pegar valor da chave
 print(idades.get('fernando'))
