@@ -33,3 +33,7 @@ for item in lista:
 chaves = idades.keys()
 valores = idades.values()
 print(chaves)
+
+# Limpando dicionário
+idades.clear()
+print(idades)
