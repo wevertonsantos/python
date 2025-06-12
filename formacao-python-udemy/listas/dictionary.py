@@ -58,3 +58,4 @@ dados_nome = {
 }
 
 print(dados_nome)
+print(dados_nome['joao']['sexo']) # Acessando dados de um dic dentro de outro dic
