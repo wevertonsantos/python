@@ -37,3 +37,24 @@ print(chaves)
 # Limpando dicionário
 idades.clear()
 print(idades)
+
+# Acessando dicionário dentro de um dicionário
+
+dados_maria = {
+    'sexo' : 'feminino',
+    'cpf' : '12345678910',
+    'rg' : '233232432'
+}
+
+dados_joao = {
+    'sexo' : 'masculino',
+    'cpf' : '12345678910',
+    'rg' : '233232233'
+}
+
+dados_nome = {
+    'maria' : dados_maria,
+    'joao' : dados_joao
+}
+
+print(dados_nome)
