@@ -22,3 +22,9 @@ print(idades)
 # Removendo último item
 idades.popitem()
 print(idades)
+
+# Percorrendo nova lista com itens do dicionário
+lista = idades.items()
+print(lista)
+for item in lista:
+    print(item[0],item[1])
