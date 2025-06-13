@@ -18,3 +18,6 @@ print(lista)
 # Usando operações com o x da lista
 lista = [x*2 for x in range(-10,21) if x <= 10 if x >= 0]
 print(lista)
+
+lista = [str(x) for x in range(-10,21) if x <= 10 if x >= 0]
+print(lista)
