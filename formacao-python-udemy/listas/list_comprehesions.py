@@ -21,3 +21,6 @@ print(lista)
 
 lista = [str(x) for x in range(-10,21) if x <= 10 if x >= 0]
 print(lista)
+
+lista = ['negativo' if x < 0 else 'positivo' for x in range(-3,4)]
+print(lista)
