@@ -25,5 +25,5 @@ print(lista)
 lista = ['negativo' if x < 0 else 'positivo' for x in range(-3,4)]
 print(lista)
 
-lista = ['par' if x % 2 == 0 else 'impar' for x in range(2,11)]
+lista = [str(x) + ' par' if x % 2 == 0 else str(x) + ' impar' for x in range(2,11)]
 print(lista)
