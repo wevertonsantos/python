@@ -14,3 +14,7 @@ print(lista)
 # Usando lista comprehension com mais de uma condição lógica
 lista = [x for x in range(-10,21) if x <= 10 if x >= 0]
 print(lista)
+
+# Usando operações com o x da lista
+lista = [x*2 for x in range(-10,21) if x <= 10 if x >= 0]
+print(lista)
