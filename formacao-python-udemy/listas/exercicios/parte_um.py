@@ -11,3 +11,13 @@ print("Soma dos números:",total)
 lista = []
 lista += range(1,101)
 print(lista)
+
+'''
+3 - Crie duas listas com os seguintes valores 30,4,43,52,65,-10 e 
+# 43,2,4,76,32,65,3. Agora faça a junção dessas listas, mas se houverem valores repetidos entre ambas eles não podem repetir na lista unida.
+'''
+
+lista_um = {30,4,43,52,65,-10}
+lista_dois = {43,2,4,76,32,65,3}
+sets_uniao = lista_um.union(lista_dois)
+print(sets_uniao)
