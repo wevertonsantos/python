@@ -21,3 +21,10 @@ lista_um = {30,4,43,52,65,-10}
 lista_dois = {43,2,4,76,32,65,3}
 sets_uniao = lista_um.union(lista_dois)
 print(sets_uniao)
+
+# 4 - Crie uma lista contendo o nome de todos os meses do ano. Em seguida receba por input o mês (número) em que você nasceu e mostre qual o nome do mês que você nasceu.
+
+meses = {1:'janeiro',2:'fevereiro',3:'março',4:'abril',5:'maio',6:'junho',7:'julho',8:'agosto',9:'setembro',10:'outubro',11:'novembro',12:'dezembro'}
+
+numero_mes = int(input('Digite o número do mês que você nasceu: '))
+print('Você nasceu no mês:',meses.get(numero_mes))
