@@ -56,3 +56,8 @@ else:
 
 lista = [x for x in range(-30,-19)]
 print(lista)
+
+# 8 - Percorra os números de 4 a 100 e mantenha apenas aqueles divisíveis por 4.
+
+numeros = [x for x in range(4,101) if x % 4 == 0]
+print(numeros)
