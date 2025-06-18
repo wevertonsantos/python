@@ -37,3 +37,17 @@ for i in range(1,32):
 dia_nascido = int(input("Digite o número do dia em que você nasceu: "))
 dias.remove(dia_nascido)
 print(dias)
+
+# 6 - Escolha três objetos de sua escolha e em seguida cria uma lista para armazenar o objeto e sua função. Agora por input receba o nome desse objeto e imprima a sua função. Caso o objeto não exista, informa ao usuário.
+
+objetos = {
+   'lapis':'escrever',
+   'cadeira':'sentar',
+   'teclado':'digitar'
+}
+
+objeto = input('Digite o objeto: ')
+if objeto in objetos: 
+  print('Função do objeto escolhido:',objetos.get(objeto))
+else:
+  print("Objeto não encontrado")
