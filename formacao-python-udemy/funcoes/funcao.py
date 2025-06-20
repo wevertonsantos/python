@@ -26,3 +26,10 @@ def func(*args):
     print("Argumentos são:",args)
 
 func()
+
+# Função com parâmetro arbitrário e outro normal
+def func(*args, par):
+    print(args)
+    print(par)
+
+func(1,2,3, par="1")
