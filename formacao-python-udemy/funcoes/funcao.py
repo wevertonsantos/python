@@ -3,3 +3,7 @@ def func(): # Bloco de código reutilizável
     print("Uma função %d " % num)
 
 func() # Chamando a função
+
+# Função que não faz nada com pass
+def func():
+    pass
