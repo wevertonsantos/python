@@ -7,3 +7,9 @@ func() # Chamando a função
 # Função que não faz nada com pass
 def func():
     pass
+
+# Função que tem parâmetro
+def var(numero):
+    print(numero)
+
+var(2)
