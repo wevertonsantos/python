@@ -1,4 +1,4 @@
 # Estrutura básica de uma função
-def nome(parametros):
+def nome(parametros): # Parametros opcionais
     ...
-    return
+    return # Return é opcional
