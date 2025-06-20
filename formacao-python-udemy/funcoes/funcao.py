@@ -33,3 +33,4 @@ def func(*args, par):
     print(par)
 
 func(1,2,3, par="1")
+func(par='1')
