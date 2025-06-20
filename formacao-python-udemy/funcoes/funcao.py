@@ -13,3 +13,9 @@ def var(numero):
     print(numero)
 
 var(2)
+
+# Função com mais parâmetros
+def soma(x,y):
+    print("A soma dos números é: %.2f" % (x + y))
+
+soma(10,20)
