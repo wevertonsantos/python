@@ -19,3 +19,10 @@ def soma(x,y):
     print("A soma dos números é: %.2f" % (x + y))
 
 soma(10,20)
+
+# Função com parâmetro arbitrário
+def func(*args):
+    print(type(args))
+    print("Argumentos são:",args)
+
+func()
