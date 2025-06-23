@@ -34,3 +34,9 @@ def func(*args, par):
 
 func(1,2,3, par="1")
 func(par='1')
+
+# Função com argumentos arbitrários
+def func(valor,nome = "Teste"): # Atribuindo variável padrão
+    print(valor,nome)
+
+func(3)
