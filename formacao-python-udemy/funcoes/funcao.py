@@ -49,3 +49,14 @@ def func(**args): # O args vira um dicionário
     print(args['valor'])
 
 func(valor = '10', operacao = 'Soma', resultado = 10)
+
+# Função com parâmetro com outra função
+def printing(x):
+    print(x)
+
+def execute(func,x):
+    func(x)
+
+funcao = printing
+print(type(funcao))
+execute(printing,'Olá')
