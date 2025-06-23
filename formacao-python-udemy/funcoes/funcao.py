@@ -40,3 +40,4 @@ def func(valor,nome = "Teste"): # Atribuindo variável padrão
     print(valor,nome)
 
 func(3)
+func(3, "Outro nome") # Também podemos atribuir
