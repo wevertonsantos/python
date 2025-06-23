@@ -77,5 +77,5 @@ num1 = 10
 num2 = 1234
 tamanho1 = len_int(num1)
 tamanho2 = len_int(num2)
-print(tamanho1)
-print(tamanho2)
+print("O número %d tem %d dígitos" % (num1,tamanho1))
+print("O número %d tem %d dígitos" % (num2,tamanho2))
