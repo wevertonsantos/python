@@ -68,3 +68,14 @@ def subtrai(x,y):
 
 subtracao = subtrai(10,3)
 print(subtracao)
+
+def len_int(num):
+    numero_em_texto = str(num)
+    return len(numero_em_texto)
+
+num1 = 10
+num2 = 1234
+tamanho1 = len_int(num1)
+tamanho2 = len_int(num2)
+print(tamanho1)
+print(tamanho2)
