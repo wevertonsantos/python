@@ -41,3 +41,11 @@ def func(valor,nome = "Teste"): # Atribuindo variável padrão
 
 func(3)
 func(3, "Outro nome") # Também podemos atribuir novo nome na variável padrão
+
+# Função com parâmetros que tem nome e tamanho arbitrário
+def func(**args): # O args vira um dicionário
+    print(type(args))
+    print(args)
+    print(args['valor'])
+
+func(valor = '10', operacao = 'Soma', resultado = 10)
