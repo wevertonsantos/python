@@ -60,3 +60,11 @@ def execute(func,x):
 funcao = printing
 print(type(funcao))
 execute(printing,'Olá')
+
+# Função que retorna valores
+def subtrai(x,y):
+    valor = x - y
+    return valor
+
+subtracao = subtrai(10,3)
+print(subtracao)
