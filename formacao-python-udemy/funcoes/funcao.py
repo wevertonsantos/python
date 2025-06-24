@@ -107,3 +107,10 @@ def multiplica(y):
 
 valor = multiplica(2)
 print(valor(10))
+
+# Funções recursivas
+def print_num(num):
+    print(num)
+    if num >= 10:
+        return # return para encerrar
+    print_num(num + 1) # chamando a função e add + 1
