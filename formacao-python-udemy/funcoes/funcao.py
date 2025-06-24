@@ -114,3 +114,13 @@ def print_num(num):
     if num >= 10:
         return # return para encerrar
     print_num(num + 1) # chamando a função e add + 1
+
+print_num(0)
+
+def print_str(texto,indice):
+    if indice == len(texto):
+        return
+    print(texto[indice])
+    print_str(texto, indice + 1)
+
+print_str("Olá",0)
