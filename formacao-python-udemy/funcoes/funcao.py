@@ -124,3 +124,10 @@ def print_str(texto,indice):
     print_str(texto, indice + 1)
 
 print_str("Olá",0)
+
+def fatorial(num):
+    if num == 1:
+        return 1
+    return num * fatorial(num - 1)
+
+print(fatorial(5))
