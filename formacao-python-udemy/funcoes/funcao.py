@@ -79,3 +79,10 @@ tamanho1 = len_int(num1)
 tamanho2 = len_int(num2)
 print("O número %d tem %d dígitos" % (num1,tamanho1))
 print("O número %d tem %d dígitos" % (num2,tamanho2))
+
+# Retornar muitos valores em uma função (vira uma tupla)
+def retorna_multiplo():
+    return 1,2
+
+valor = retorna_multiplo()
+print(valor)
