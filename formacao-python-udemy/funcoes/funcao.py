@@ -100,3 +100,10 @@ print(valor)
 multiplica = lambda x,y : x * y
 valor = multiplica(10,5)
 print(valor)
+
+# Função normal retornando função lambda
+def multiplica(y):
+    return lambda x : x * y
+
+valor = multiplica(2)
+print(valor(10))
