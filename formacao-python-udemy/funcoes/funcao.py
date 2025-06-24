@@ -93,3 +93,5 @@ print(x,y)
 
 # Função Lambda
 soma = lambda x : x + 10 # Função anônima e simples
+valor = soma(10)
+print(valor)
