@@ -90,3 +90,6 @@ print(valor)
 # Atribuindo valores para cada variável
 x,y = retorna_multiplo()
 print(x,y)
+
+# Função Lambda
+soma = lambda x : x + 10 # Função anônima e simples
