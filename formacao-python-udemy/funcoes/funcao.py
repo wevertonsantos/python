@@ -86,3 +86,7 @@ def retorna_multiplo():
 
 valor = retorna_multiplo()
 print(valor)
+
+# Atribuindo valores para cada variável
+x,y = retorna_multiplo()
+print(x,y)
