@@ -95,3 +95,8 @@ print(x,y)
 soma = lambda x : x + 10 # Função anônima e simples
 valor = soma(10)
 print(valor)
+
+# Função lambda com mais de uma parâmetro/argumento
+multiplica = lambda x,y : x * y
+valor = multiplica(10,5)
+print(valor)
