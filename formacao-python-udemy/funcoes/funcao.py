@@ -174,3 +174,15 @@ def retorna_string():
 
 valor = retorna_string()
 print(valor)
+
+def Minusculo(func):
+    def inner_func(st1,str2):
+        return func(st1,str2).lower()
+    return inner_func
+
+@Minusculo # Utilizando decorator
+def retorna_strings(str1,str2):
+    return str1 + str2
+
+valor = retorna_strings("OLÁ ","MUNDO")
+print(valor)
