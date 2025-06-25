@@ -140,3 +140,16 @@ def pai():
     filho()
 
 pai()
+
+def calculadora(x,y,op):
+    def soma(a,b):
+        return a + b
+    def subtrai(a,b):
+        return a - b
+    if op == '+':
+        return soma(x,y)
+    elif op == '-':
+        return subtrai(x,y)
+    
+print(calculadora(10,10,'+'))
+print(calculadora(10,5,'-'))
