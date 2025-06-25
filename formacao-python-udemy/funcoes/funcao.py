@@ -161,3 +161,9 @@ def pega_func_print():
  
 print_me = pega_func_print() # Criando instância de uma função
 print_me(10)
+
+# Decorators
+def Maiusculo(func):
+    def inner_func():
+        return func().upper()
+    return inner_func
