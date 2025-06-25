@@ -131,3 +131,12 @@ def fatorial(num):
     return num * fatorial(num - 1)
 
 print(fatorial(5))
+
+# Funções aninhadas (quando tem uma segunda função declarada dentro de outra função)
+
+def pai():
+    def filho():
+        print("sou filho")
+    filho()
+
+pai()
