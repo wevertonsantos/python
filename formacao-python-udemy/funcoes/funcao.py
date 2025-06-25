@@ -153,3 +153,11 @@ def calculadora(x,y,op):
     
 print(calculadora(10,10,'+'))
 print(calculadora(10,5,'-'))
+
+def pega_func_print():
+    def print_var(var):
+        print(var)
+    return print_var
+ 
+print_me = pega_func_print() # Criando instância de uma função
+print_me(10)
