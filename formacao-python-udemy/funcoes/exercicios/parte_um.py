@@ -42,3 +42,10 @@ def caractere(string):
    return string[-1]
 
 print('Último caractere da string recebida:',caractere("tudo bem?"))
+
+# 5 - Crie um função que receba dois números e uma string dizendo se deve realizar a soma ou subtração do números.
+
+def operacao(num1,num2,op):
+    return num1 - num2 if op == '-' else num1 + num2
+    
+print('Operação:', operacao(10,5,'-'))
