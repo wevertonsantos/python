@@ -1,5 +1,5 @@
 '''
-Crie uma função chamada “e_negativo” que receba um número, retorna um booleano “True” se o número for negativo, caso contrário retorna “False”.
+1 - Crie uma função chamada “e_negativo” que receba um número, retorna um booleano “True” se o número for negativo, caso contrário retorna “False”.
 '''
 
 def e_negativo(num):
