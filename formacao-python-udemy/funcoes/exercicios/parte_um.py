@@ -35,3 +35,10 @@ def vogais(string):
     return total
 
 print("Quantidade de vogais na string:", vogais("ooolaa muundoo"))
+
+# 4 - Crie um função que retorne o último caractere de um string recebida.
+
+def caractere(string):
+   return string[-1]
+
+print('Último caractere da string recebida:',caractere("tudo bem?"))
