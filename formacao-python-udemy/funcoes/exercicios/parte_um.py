@@ -22,3 +22,16 @@ def soma(array):
 
 array = [1,10,50,3]
 print("Soma:",soma(array))
+
+# 3 - Crie um função que receba uma string e que conte e retorne o número de vogais desta string.
+
+def vogais(string):
+    total = 0
+    string = string.lower()
+    vogais = ['a','e','i','o','u']
+    for letra in string:
+        if letra in vogais:
+            total += 1
+    return total
+
+print("Quantidade de vogais na string:", vogais("ooolaa muundoo"))
