@@ -186,3 +186,22 @@ def retorna_strings(str1,str2):
 
 valor = retorna_strings("OLÁ ","MUNDO")
 print(valor)
+
+# Usando dois decorators
+
+def DeixaMaiusculo(func):
+    def inner_func(texto):
+        return func(texto).upper()
+    return inner_func
+
+def InsereParenteses(func):
+    def inner_func(texto):
+        return '(' + func(texto) + ')'
+    return inner_func
+
+@DeixaMaiusculo
+@InsereParenteses
+def formata_string(texto):
+    return texto
+
+print(formata_string('Texto formatado'))
