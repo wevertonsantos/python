@@ -8,4 +8,5 @@ def e_negativo(num):
  else:
   return False
  
+print(e_negativo(-1))
 print(e_negativo(0))
