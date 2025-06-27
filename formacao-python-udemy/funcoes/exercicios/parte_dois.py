@@ -49,3 +49,16 @@ def transforma(texto):
     return texto
 
 print(transforma("OLÁ, ISTO É UMA CITAÇÃO"))
+
+'''
+10 - Cria uma função recursiva que intere os números de 0 até 10 e printe o 
+resultado de sua divisão inteira com o número três
+'''
+
+def divisao(num):
+    print(num // 3)
+    if num >= 10:
+        return
+    divisao(num + 1)
+
+divisao(0)
