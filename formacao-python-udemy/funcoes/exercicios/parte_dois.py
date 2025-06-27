@@ -21,3 +21,13 @@ def encontrando(array,valor):
         return False
     
 print(encontrando([10,20,3,4,5,6],2))
+
+'''
+8 - Crie uma função que recebe um número arbitrário de parâmetros. Em seguida diga qual o tipo de cada parâmetro
+'''
+
+def typing(*args):
+    for arg in args:
+        print((type(arg)))
+
+typing(1,'for',True)
