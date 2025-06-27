@@ -3,7 +3,21 @@
 seguida retorne um booleano dizendo se o valor foi encontrado ou não na lista.
 '''
 
-def encontrando_valor(array,valor):
+def encontrando(array,valor):
     return True if valor in array else False
     
-print(encontrando_valor([10,20,3,4,5,6],2))
+print(encontrando([10,20,3,4,5,6],2))
+
+'''
+7 - Crie um função que receba uma lista de elementos e um valor qualquer. Em 
+seguida retorne um booleano dizendo se o valor foi encontrado ou não e também 
+a posição onde foi encontrado.
+'''
+
+def encontrando(array,valor):
+    if valor in array:
+        return True, array.index(valor)
+    else: 
+        return False
+    
+print(encontrando([10,20,3,4,5,6],2))
