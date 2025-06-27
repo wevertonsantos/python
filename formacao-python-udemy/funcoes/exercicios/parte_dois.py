@@ -31,3 +31,21 @@ def typing(*args):
         print((type(arg)))
 
 typing(1,'for',True)
+
+'''
+9 - Crie uma função que receba um string, mas que possua um decorator para 
+transforma-la em uma citação, ou seja você deve retornas strings entre aspas 
+duplas, além disso transforme todos os caracteres para minúscula usando a 
+função lower()
+'''
+
+def citacao(func):
+    def inner_func(texto):
+        return '"' + func(texto).lower() + '"'
+    return inner_func
+
+@citacao
+def transforma(texto):
+    return texto
+
+print(transforma("OLÁ, ISTO É UMA CITAÇÃO"))
