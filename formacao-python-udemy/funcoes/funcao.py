@@ -242,3 +242,8 @@ def func_pai():
     print(pai)
 
 func_pai()
+
+var = 20
+print(var)
+del var # Deletando variável
+print(var)
