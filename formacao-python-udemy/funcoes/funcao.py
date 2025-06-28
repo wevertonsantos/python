@@ -221,3 +221,13 @@ def func2():
     var = 20 # Atribuindo valor
 
 print(var) # Aqui o escopo é global
+
+def func_pai():
+    pai = 10
+    def func_filho():
+        pai = 20 # Mesmo estando dentro da função pai, a função filho está criando nova variável
+        print(pai)
+    func_filho()
+    print(pai)
+
+func_pai
