@@ -215,4 +215,9 @@ def func():
     print(var) # A variável da função é local
 
 func()
+
+def func2():
+    global var # Alterando variável para global
+    var = 20 # Atribuindo valor
+
 print(var) # Aqui o escopo é global
