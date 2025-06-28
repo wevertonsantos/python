@@ -205,3 +205,14 @@ def formata_string(texto):
     return texto
 
 print(formata_string('Texto formatado'))
+
+# Escopo
+
+var = 10
+
+def func():
+    var = 20
+    print(var) # A variável da função é local
+
+func()
+print(var) # Aqui o escopo é global
