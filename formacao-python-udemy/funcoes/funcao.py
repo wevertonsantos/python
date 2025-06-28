@@ -230,4 +230,15 @@ def func_pai():
     func_filho()
     print(pai)
 
-func_pai
+func_pai()
+
+def func_pai():
+    pai = 10
+    def func_filho():
+        nonlocal pai # Alterando para variável nonlocal para poder acessar da função pai
+        pai = 20
+        print(pai)
+    func_filho()
+    print(pai)
+
+func_pai()
