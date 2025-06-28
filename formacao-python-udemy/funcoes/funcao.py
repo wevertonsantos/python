@@ -249,4 +249,4 @@ del var # Deletando variável
 print(var)
 
 array = [1,2,3]
-del array[0] # Deletando do array a posição zero
+del array[0] # Deletando do array a posição zero (também pode ser slice)
