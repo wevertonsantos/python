@@ -217,7 +217,7 @@ def func():
 func()
 
 def func2():
-    global var # Alterando variável para global
+    global var # Acessando variável para global
     var = 20 # Atribuindo valor
 
 print(var) # Aqui o escopo é global
