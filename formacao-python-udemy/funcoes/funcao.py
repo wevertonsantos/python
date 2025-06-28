@@ -247,3 +247,6 @@ var = 20
 print(var)
 del var # Deletando variável
 print(var)
+
+array = [1,2,3]
+del array[0] # Deletando do array a posição zero
