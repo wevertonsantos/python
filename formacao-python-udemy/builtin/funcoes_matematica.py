@@ -21,3 +21,6 @@ print(pow(x,y)) # Potência de um número
 print(math.sqrt(25)) # Raiz quadrada
 
 print(round(2.455,2)) # Arredondamento
+
+print(math.floor(2.4566)) # Arredondamento para baixo
+print(math.ceil(2.4566)) # Arredondamento para cima
