@@ -19,3 +19,5 @@ y = 3
 print(pow(x,y)) # Potência de um número
 
 print(math.sqrt(25)) # Raiz quadrada
+
+print(round(2.455,2)) # Arredondamento
