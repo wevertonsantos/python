@@ -1,3 +1,5 @@
+import math
+
 num1 = -10
 num2 = 10
 print(abs(num1))
@@ -15,3 +17,5 @@ print(min(lista)) # Traz o menor valor
 x = 2
 y = 3
 print(pow(x,y)) # Potência de um número
+
+print(math.sqrt(25)) # Raiz quadrada
