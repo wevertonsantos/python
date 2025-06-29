@@ -11,3 +11,7 @@ lista = [0,2,3,4,5,6]
 print(max(lista))
 
 print(min(lista)) # Traz o menor valor
+
+x = 2
+y = 3
+print(pow(x,y)) # Potência de um número
