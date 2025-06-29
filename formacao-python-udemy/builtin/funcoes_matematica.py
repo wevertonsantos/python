@@ -9,3 +9,5 @@ print(maior_valor)
 
 lista = [0,2,3,4,5,6]
 print(max(lista))
+
+print(min(lista)) # Traz o menor valor
