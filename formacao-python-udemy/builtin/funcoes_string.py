@@ -9,3 +9,8 @@ print(texto.swapcase()) # Texto invertido
 
 texto = "eu sou um ótimo programador python"
 print(texto.title()) # Transforma cada primeira letra de cada palavra em maiúsculo
+
+texto = "1234567"
+print(texto.center(9)) # Centralizando texto
+print(texto.center(14))
+print(texto.center(14,'-'))
