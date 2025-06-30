@@ -14,3 +14,7 @@ texto = "1234567"
 print(texto.center(9)) # Centralizando texto
 print(texto.center(14))
 print(texto.center(14,'-'))
+
+texto = "1234567"
+print(texto.rjust(9)) # Justificando à direita
+print(texto.ljust(9)) # Justificando à esquerda
