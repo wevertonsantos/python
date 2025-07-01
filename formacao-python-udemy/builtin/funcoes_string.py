@@ -27,3 +27,5 @@ print(texto.endswith("12")) # Verificando se o texto termina com
 texto = "Me encontra 20 10 5"
 pos = texto.find("10") # Encontrando a posição da ocorrência no texto
 print(pos)
+pos = texto.find("4")
+print(pos) # Se ele não encontrar ele mostra -1
