@@ -29,3 +29,4 @@ pos = texto.find("10") # Encontrando a posição da ocorrência no texto
 print(pos)
 pos = texto.find("4")
 print(pos) # Se ele não encontrar ele mostra -1
+pos = texto.index("10") # Encontrando index da ocorrência no texto
