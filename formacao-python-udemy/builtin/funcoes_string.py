@@ -18,3 +18,6 @@ print(texto.center(14,'-'))
 texto = "1234567"
 print(texto.rjust(9)) # Justificando à direita
 print(texto.ljust(9)) # Justificando à esquerda
+
+texto = "12121212"
+print(texto.count("12")) # Contando a ocorrência no texto
