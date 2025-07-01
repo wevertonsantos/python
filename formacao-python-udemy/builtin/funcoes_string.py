@@ -21,3 +21,5 @@ print(texto.ljust(9)) # Justificando à esquerda
 
 texto = "12121212"
 print(texto.count("12")) # Contando a ocorrência no texto
+print(texto.startswith("12")) # Verificando se o texto começa com
+print(texto.endswith("12")) # Verificando se o texto termina com
