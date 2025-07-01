@@ -23,3 +23,7 @@ texto = "12121212"
 print(texto.count("12")) # Contando a ocorrência no texto
 print(texto.startswith("12")) # Verificando se o texto começa com
 print(texto.endswith("12")) # Verificando se o texto termina com
+
+texto = "Me encontra 20 10 5"
+pos = texto.find("10") # Encontrando a posição da ocorrência no texto
+print(pos)
