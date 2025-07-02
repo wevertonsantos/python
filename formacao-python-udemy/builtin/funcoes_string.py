@@ -45,3 +45,5 @@ print("abcdE3 ".isalpha()) # Verificando se é alfanumérico
 print("abc,dE3 ".isalnum()) # Verificando se é alpha e números
 print("123.4".isdecimal()) # Verifica se é uma string decimal
 print('123'.isspace()) # Verifica se é uma string com espaço
+print("ola".islower()) # Verifica se é uma string minúscula
+print("ABC".islower()) # Verifica se é uma string maiúscula
