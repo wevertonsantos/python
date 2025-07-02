@@ -27,3 +27,7 @@ produtos = [
 
 for produto, valor in produtos:
     print(produto,valor)
+
+nomes = ('José','Carlos','João')
+dicionario = dict.fromkeys(nomes,10) # Atribuindo cada valor para uma chave no dicionário
+print(dicionario)
