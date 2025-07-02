@@ -34,3 +34,6 @@ pos = texto.index("10") # Encontrando index da ocorrência no
 texto = "Ol@ eu sou @ ful@no!"
 novo_texto = texto.replace("@","a") # Encontrando o texto que quero substituir e colocando texto que quero incluir 
 print(texto,novo_texto)
+
+texto = "10,20,30"
+print(texto.split(',')) # Divindo texto através do split (cria uma lista)
