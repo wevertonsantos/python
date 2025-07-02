@@ -16,3 +16,14 @@ print(lista)
 lista = [5,10,2,1,5]
 lista.reverse() # Inverter lista
 print(lista)
+
+produtos = [
+    ["carro", "R$ 100.000"],
+    ["cadeira","R$ 1000"],
+    ["moto", "R$ 40.000"],
+    ["geladeira", "R$ 2000"],
+    ["armario","R$ 1500"]
+]
+
+for produto, valor in produtos:
+    print(produto,valor)
