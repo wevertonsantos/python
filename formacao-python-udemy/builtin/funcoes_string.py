@@ -41,4 +41,5 @@ print(texto.split(',')) # Divindo texto através do split (cria uma lista)
 texto = "Olá, bom dia,\n Esse é um curso de python.\n Boa aula!"
 print(texto.splitlines()) # Divide o texto por quebra de linha
 
-print("abcdE3 ".isalpha()) # Verificando se é alpha númerico
+print("abcdE3 ".isalpha()) # Verificando se é alfanumérico
+print("abc,dE3 ".isalnum()) # Verificando se é alpha e números
