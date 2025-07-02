@@ -3,5 +3,5 @@ lista.sort() # Ordernando lista
 print(lista)
 
 lista = ["a","b","x","ab","d","c"]
-lista.sort()
+lista.sort(reverse=True) # Ordenando lista decrescente
 print(lista)
