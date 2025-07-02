@@ -43,3 +43,4 @@ print(texto.splitlines()) # Divide o texto por quebra de linha
 
 print("abcdE3 ".isalpha()) # Verificando se é alfanumérico
 print("abc,dE3 ".isalnum()) # Verificando se é alpha e números
+print("123.4".isdecimal()) # Verifica se é uma string decimal
