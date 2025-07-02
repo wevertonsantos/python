@@ -29,4 +29,8 @@ pos = texto.find("10") # Encontrando a posição da ocorrência no texto
 print(pos)
 pos = texto.find("4")
 print(pos) # Se ele não encontrar ele mostra -1
-pos = texto.index("10") # Encontrando index da ocorrência no texto
+pos = texto.index("10") # Encontrando index da ocorrência no 
+
+texto = "Ol@ eu sou @ ful@no!"
+novo_texto = texto.replace("@","a") # Encontrando o texto que quero substituir e colocando texto que quero incluir 
+print(texto,novo_texto)
