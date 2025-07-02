@@ -37,3 +37,6 @@ print(texto,novo_texto)
 
 texto = "10,20,30"
 print(texto.split(',')) # Divindo texto através do split (cria uma lista)
+
+texto = "Olá, bom dia,\n Esse é um curso de python.\n Boa aula!"
+print(texto.splitlines()) # Divide o texto por quebra de linha
