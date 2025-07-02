@@ -12,3 +12,7 @@ def sort_por_tamanho(item): # Criando função para odernar pelo tamanho das str
 lista = ["a","b","ab","de","abc","abcd"]
 lista.sort(key=sort_por_tamanho) # Passando chave para ordenar por tamanho.
 print(lista)
+
+lista = [5,10,2,1,5]
+lista.reverse() # Inverter lista
+print(lista)
