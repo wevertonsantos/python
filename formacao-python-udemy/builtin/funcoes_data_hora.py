@@ -14,3 +14,6 @@ print("Segundo", data_completa.second)
 
 data = datetime.date(2000,9,30) # Passando ano, mês e dia
 print(data)
+
+hora = datetime.time(10,30,20) # Passando hora, minuto, segundo
+print(hora)
