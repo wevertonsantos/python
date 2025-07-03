@@ -20,3 +20,8 @@ print(hora)
 
 current_time = data_completa.strftime("%y/%m/%d %H:%M:%S") # Formatando texto com data e hora
 print(current_time)
+
+print(data_completa.strftime("%A - %a")) # Dia da semana e dia da semana abrevi.
+print(data_completa.strftime("%B - %b")) # Mês e mês abrevi.
+print(data_completa.strftime("%H - %I")) # Hora em 24hrs e hora em 12 horas
+print(data_completa.strftime("%I - %p")) #Formatação com 12hrs com AM ou PM
