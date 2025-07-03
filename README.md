@@ -23,7 +23,7 @@ A proposta é aprofundar meus conhecimentos por meio de cursos gratuitos, plataf
 ### 🗂️ Estrutura do repositório
 
 ```bash
-📦 python-aprendizado/
+📦 python/
 ├── harvard-cs50p/            # Conteúdo curso da Harvard
 ├── formacao-python-udemy/    # Curso completo e projetos práticos
 ├── codewars/                 # Resolução de desafios do Codewars
