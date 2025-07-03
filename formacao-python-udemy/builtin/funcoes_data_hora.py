@@ -35,3 +35,4 @@ data_atual = datetime.now()
 datafutura1 = data_atual + timedelta(weeks=4) # acrescentando 4 semanas à data atual
 datafutura1 = data_atual + timedelta(days= 30) # acrescentando 30 dias à data atual
 datafutura1 = data_atual + timedelta(hours=12) # acrescentando 12 horas à data atual
+datafutura1 = data_atual + timedelta(minutes=60) # acrescentando 60 minutos à data atual
