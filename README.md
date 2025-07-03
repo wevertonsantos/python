@@ -30,3 +30,8 @@ A proposta é aprofundar meus conhecimentos por meio de cursos gratuitos, plataf
 ├── leetcode/                 # Problemas resolvidos do Leetcode
 ├── oop/                      # Estudos de Programação Orientada a Objetos
 └── README.md                 # Este arquivo
+
+📌 Observações
+Este repositório está em constante atualização à medida que avanço nos estudos e novos conteúdos são adicionados.
+
+Sinta-se à vontade para explorar os diretórios, dar sugestões ou até mesmo contribuir!
