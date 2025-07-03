@@ -11,3 +11,6 @@ print("Ano", data_completa.year)
 print("Hora", data_completa.hour)
 print("Minuto", data_completa.minute)
 print("Segundo", data_completa.second)
+
+data = datetime.date(2000,9,30) # Passando ano, mês e dia
+print(data)
