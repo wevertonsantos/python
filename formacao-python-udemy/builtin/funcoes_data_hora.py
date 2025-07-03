@@ -25,3 +25,8 @@ print(data_completa.strftime("%A - %a")) # Dia da semana e dia da semana abrevi.
 print(data_completa.strftime("%B - %b")) # Mês e mês abrevi.
 print(data_completa.strftime("%H - %I")) # Hora em 24hrs e hora em 12 horas
 print(data_completa.strftime("%I - %p")) #Formatação com 12hrs com AM ou PM
+
+data1 = datetime.datetime(2020,10,20)
+data2 = datetime.datetime(2020,11,20)
+diferenca = data2 - data1
+print(diferenca) # Calculando diferença com data
