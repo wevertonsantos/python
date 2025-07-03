@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime,timedelta
 
 data_completa = datetime.datetime.now() # Pegando data e hora no agora
 
