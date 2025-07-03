@@ -17,3 +17,6 @@ print(data)
 
 hora = datetime.time(10,30,20) # Passando hora, minuto, segundo
 print(hora)
+
+current_time = data_completa.strftime("%y/%m/%d %H:%M:%S") # Formatando texto com data e hora
+print(current_time)
