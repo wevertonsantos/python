@@ -1,6 +1,6 @@
 from datetime import datetime,timedelta
 
-data_completa = datetime.datetime.now() # Pegando data e hora no agora
+data_completa = datetime.now() # Pegando data e hora no agora
 
 data = data_completa.date() # Pegando apenas data
 hora = data_completa.time() # Pegando apenas hora
@@ -36,3 +36,7 @@ datafutura1 = data_atual + timedelta(weeks=4) # acrescentando 4 semanas à data 
 datafutura1 = data_atual + timedelta(days= 30) # acrescentando 30 dias à data atual
 datafutura1 = data_atual + timedelta(hours=12) # acrescentando 12 horas à data atual
 datafutura1 = data_atual + timedelta(minutes=60) # acrescentando 60 minutos à data atual
+
+data_txt = input("Digite a data no formato dia/mês/ano: ")
+data = datetime.strptime(data_txt,"%d/%m/Y")
+print(data)
