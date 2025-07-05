@@ -16,3 +16,14 @@ def soma(x,y):
     soma = min(10000,soma)
     soma = max(0,soma)
     return soma
+
+"""
+3 - Crie uma função que receba argumentos de tamanho arbitrário. 
+Todos esses argumentos serão números. Em seguida retorne o menor número 
+entre todos os recebidos.
+"""
+
+def menor(*args):
+    return min(args)
+
+print(menor(960,203,50))
