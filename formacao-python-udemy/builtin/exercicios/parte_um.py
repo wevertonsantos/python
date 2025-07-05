@@ -38,6 +38,16 @@ a = float(input("Digite o coeficiente a:"))
 b = float(input("Digite o coeficiente b:"))
 c = float(input("Digite o coeficiente c:"))
 
-x1 = (-b + math.sqrt(pow(b,2) - 4*a*c))/ (2*a)
-x2 = (-b - math.sqrt(pow(b,2) - 4*a*c))/ (2*a)
+x1 = (-b + math.sqrt(math.pow(b,2) - 4*a*c))/ (2*a)
+x2 = (-b - math.sqrt(math.pow(b,2) - 4*a*c))/ (2*a)
 print("A solução encontrada é ", x1, x2)
+
+"""
+5 - Crie uma função que receba uma string, e para cada letra minúscula a 
+transforme em uma letra maiúscula e vice versa.
+"""
+
+def transformacao(texto):
+    return texto.swapcase()
+
+print(transformacao("olaMuNdo"))
