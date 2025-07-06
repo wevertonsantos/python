@@ -49,3 +49,20 @@ def verificacao(string):
     return string.isupper() or string.islower()
 
 print(verificacao("sada"))
+
+'''
+10 - Crie uma função que receba uma lista de textos. 
+Detecte quais os valores dessa lista são inteiros e em seguida transforme 
+eles para um número do tipo inteiro. Todos esses valores encontrados 
+serão retornados em uma nova lista que deve estar ordenada.
+'''
+
+def transformacao(lista):
+    lista_inteiros = []
+    for item in lista:
+        if item.isdecimal():
+            lista_inteiros.append(int(item))
+    lista_inteiros.sort()
+    return lista_inteiros
+
+print(transformacao(['23',"1","4","sds4","a","b","32"]))
