@@ -39,3 +39,13 @@ def retira_palavras(texto,palavras):
     return texto
 
 print(retira_palavras("ola mundo",["mundo"]))
+
+'''
+9 - Crie uma função que retorne verdadeiro se uma string é totalmente 
+maiúscula ou totalmente minúscula.
+'''
+
+def verificacao(string):
+    return string.isupper() or string.islower()
+
+print(verificacao("sada"))
