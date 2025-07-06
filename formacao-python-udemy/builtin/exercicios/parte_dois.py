@@ -78,3 +78,14 @@ data = datetime.strptime(entrada,"%d/%m/%Y")
 data_atual = datetime.now()
 diferenca = data_atual - data
 print(diferenca)
+
+'''
+12 - Leia por input sua próxima data de aniversario no formado Dia/Mês/Ano 
+e mostre quantos dias faltam para seu próximo aniversario.
+'''
+
+entrada = input("Digite sua data de aniversário (Dia/Mês/Ano): ")
+data = datetime.strptime(entrada,"%d/%m/%Y")
+data_atual = datetime.now()
+diferenca = data - data_atual
+print(diferenca)
