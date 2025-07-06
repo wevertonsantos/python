@@ -66,3 +66,15 @@ def transformacao(lista):
     return lista_inteiros
 
 print(transformacao(['23',"1","4","sds4","a","b","32"]))
+
+'''
+11 - Leia por input sua data de nascimento no formado Dia/Mês/Ano e 
+mostre quantos dias você já viveu.
+'''
+
+from datetime import datetime
+entrada = input("Digite sua data de nascimento (Dia/Mês/Ano): ")
+data = datetime.strptime(entrada,"%d/%m/%Y")
+data_atual = datetime.now()
+diferenca = data_atual - data
+print(diferenca)
