@@ -24,3 +24,18 @@ def ocorrencias(texto,caracter):
   return indices
 
 print(ocorrencias("abcaa","a"))
+
+'''
+8 - Crie uma função que receba o que foi digitado pelo usuário no chat e 
+também uma lista contendo todas as palavras não permitidas a serem digitadas. 
+Essa função então retornara o que foi digitado pelo usuário mas no lugar 
+das palavras não permitidas retorna o caractere '*’.
+'''
+
+def retira_palavras(texto,palavras):
+    for palavra in palavras:
+        if palavra in texto:
+            texto = texto.replace(palavra,"*")
+    return texto
+
+print(retira_palavras("ola mundo",["mundo"]))
