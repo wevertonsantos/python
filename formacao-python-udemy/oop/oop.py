@@ -9,3 +9,12 @@ class NossaClasse: # criando classe
         print("Eu existo")
 
 var = NossaClasse()
+
+class Pessoa:
+    def __init__(self,nome,idade): # atribuindo parâmetros
+        self.nome = nome # self é o próprio objeto que recebe nome
+        self.idade = idade
+        print("Pessoa com nome %s e idade %d criada" % (nome,idade))
+
+pessoa1 = Pessoa('Rodrigo',25) # chamando instância do objeto
+pessoa2 = Pessoa('Lucas',21)
