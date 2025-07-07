@@ -12,6 +12,7 @@ var = NossaClasse()
 
 class Pessoa:
     def __init__(self,nome,idade): # atribuindo parâmetros
+        especie = "Homo Sapiens" # atributo estático
         self.nome = nome # self é o próprio objeto que recebe nome
         self.idade = idade
         print("Pessoa com nome %s e idade %d criada" % (nome,idade))
