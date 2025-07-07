@@ -22,3 +22,7 @@ pessoa2 = Pessoa('Lucas',21)
 # acessando propriedades
 print(pessoa1.nome)
 print(pessoa2.idade)
+
+# alterando propriedades
+pessoa1.nome = "Marcelo"
+print(pessoa1.nome)
