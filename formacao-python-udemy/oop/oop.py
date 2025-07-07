@@ -18,3 +18,7 @@ class Pessoa:
 
 pessoa1 = Pessoa('Rodrigo',25) # chamando instância do objeto
 pessoa2 = Pessoa('Lucas',21)
+
+# acessando propriedades
+print(pessoa1.nome)
+print(pessoa2.idade)
