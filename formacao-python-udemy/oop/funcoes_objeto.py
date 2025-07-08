@@ -10,3 +10,5 @@ class Pessoa:
 
 pessoa1 = Pessoa("Rodrigo")
 pessoa1.print_nome() # chamando função da instância do objeto
+pessoa1.insere_idade(12) # inserindo idade na propriedade
+print(pessoa1.idade) # chamando idade
