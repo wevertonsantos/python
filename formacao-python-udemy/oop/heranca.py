@@ -14,4 +14,4 @@ triangulo = Triangulo(100,50)
 
 print(quadrado.altura)
 print(quadrado.largura)
-print(quadrado.lado)
+print(quadrado.lado) # é possível verificar as propriedades da classe filho
