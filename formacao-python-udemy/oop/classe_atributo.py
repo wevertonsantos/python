@@ -7,3 +7,4 @@ class Tipo2:
 
 classe2 = Tipo2()
 classe1 = Tipo1(classe2) # passando a instância da classe como parâmetro.
+print(classe1.outra.numero) # printando propriedade número atráves da classe
