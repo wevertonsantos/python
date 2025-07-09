@@ -13,3 +13,13 @@ class ClasseFilha2(ClassePai):
 pai = ClassePai()
 filha1 = ClasseFilha1() # sobrescrevendo método init
 filha2 = ClasseFilha2()
+
+class FormaGeometrica():
+    def __init__(self,altura,largura):
+        self.altura = altura
+        self.largura = largura
+
+class Quadrado(FormaGeometrica):
+    def __init__(self,altura,largura,atributo_quadrado):
+        FormaGeometrica.__init__(self, altura, largura) # instânciando o init da classe pai e as propriedades vão estar disponível
+        self.atributo_quadrado = atributo_quadrado
