@@ -23,3 +23,8 @@ class Quadrado(FormaGeometrica):
     def __init__(self,altura,largura,atributo_quadrado):
         FormaGeometrica.__init__(self, altura, largura) # instânciando o init da classe pai e as propriedades vão estar disponível
         self.atributo_quadrado = atributo_quadrado
+
+quadrado = Quadrado(100,200,'quadrado') # instanciando e passando propriedades
+
+print(quadrado.altura)
+print(quadrado.atributo_quadrado)
