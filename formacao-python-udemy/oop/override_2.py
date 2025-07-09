@@ -5,6 +5,9 @@ class FormaGeometrica:
     def calcula_area(self):
         pass
 
-class Quadrao(FormaGeometrica):
+class Quadrado(FormaGeometrica):
     def calcula_area(self): # fazendo override da classe pai
         return self.altura * self.largura
+    
+quadrado = Quadrado(200,200)
+print(quadrado.calcula_area())
