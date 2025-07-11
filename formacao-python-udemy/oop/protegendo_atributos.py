@@ -12,3 +12,7 @@ class Natural:
         if value >= 0:
             self.__numero = value
             print('Setando número para',value)
+
+numero = Natural(10)
+numero.numero = 20 # invocando método set
+print(numero.numero) # invocando método get
