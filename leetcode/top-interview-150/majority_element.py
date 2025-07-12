@@ -1,15 +1,11 @@
 #https://leetcode.com/problems/majority-element/?envType=study-plan-v2&envId=top-interview-150
 
-nums =  [2,2,1,1,1,2,2]
-for num in nums:
-    n = len(nums)
-    if nums.count(num) > n:
-        majority_element = num
-
-# preciso fazer com que o número que mais aparece no array, seja mostrado mais rápido
-
-i = 0
-while i < sum(nums):
-    if nums.count(nums[i]) > len(nums) / 2:
-        print(nums[i])
-    i += 1
+class Solution:
+    def majorityElement(self, nums):
+        self.lista_nums = []
+        for n in nums:
+            if n not in self.lista_nums:
+                self.lista_nums.append(n)
+        for n in self.lista_nums:
+            if nums.count(n) > len(nums) // 2:
+                return n
