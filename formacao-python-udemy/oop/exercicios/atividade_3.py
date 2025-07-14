@@ -18,6 +18,7 @@ class Onibus(Veiculo):
 class Carro(Veiculo):
     def __init__(self, peso, potencia, rodas):
         Veiculo.__init__(self, peso, potencia, rodas)
+
 class Moto(Veiculo):
     def __init__(self, peso, potencia, rodas):
         Veiculo.__init__(self, peso, potencia, rodas)
