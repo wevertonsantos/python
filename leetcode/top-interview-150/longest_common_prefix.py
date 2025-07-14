@@ -3,17 +3,16 @@ https://leetcode.com/problems/longest-common-prefix/description/?envType=study-p
 '''
 
 strs = ["flower","flow","flight"]
-lista = []
+primeira_letra = ""
+letras_comum = ""
 i = 0
-while i < len(strs):
-    for str in strs[:i+1]:
-        if strs[i][:1] in str:
-            lista.append(strs[i][:1])
-    print(strs[i][:1])
-    print(strs[:i+1])
-    i += 1
-
-print(lista)
+for i in range(len(strs)):
+    if strs[i] == strs[0]:
+        primeira_letra += strs[i][:1]
+    if strs[i] != strs[0]:
+        if primeira_letra == strs[i][:1]:
+            if primeira_letra not in letras_comum:
+                letras_comum += strs[i][:1]
 
 '''
 1.pegar as strings do array
