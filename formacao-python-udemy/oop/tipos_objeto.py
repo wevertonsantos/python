@@ -15,3 +15,5 @@ e_base = isinstance(classe,Base)
 e_herdero = isinstance(classe,Herdeiro) # verificação se classe herdada é do tipo base
 print(e_base)
 print(e_herdero)
+e_subclasse = issubclass(Herdeiro,Base) # verificando se classe herdada é sub classe da clase base
+print(e_subclasse)
