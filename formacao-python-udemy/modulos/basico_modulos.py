@@ -4,3 +4,6 @@ import datetime as data # módulo se chama datetime. usando álias com módulo(d
 print(type(data))
 data = data.datetime.now()
 print(data)
+
+import random
+print(random.randrange(10,100)) #usando função que está dentro do módulo
