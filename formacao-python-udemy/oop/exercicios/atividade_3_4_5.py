@@ -10,6 +10,10 @@ class Veiculo:
         self.peso = peso
         self.rodas = rodas
         self.potencia = potencia
+    def __lt__(self,outro) :
+        return self.potencia < outro.potencia
+    def __gt__(self, outro):
+        return self.potencia > outro.potencia
 
     def distancia_percorrida(self):
         return (self.peso / self.potencia) * 1000
@@ -35,3 +39,7 @@ print(f"Distância percorrida carro: {carro.distancia_percorrida():.2f}")
 moto = Moto(100,50,2)
 print(f"Moto: Peso {moto.peso} Potência {moto.potencia} Rodas: {moto.rodas}")
 print(f"Distância percorrida moto: {moto.distancia_percorrida():.2f}")
+
+print(onibus > carro)
+print(onibus < moto)
+print(moto > carro)
