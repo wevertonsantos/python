@@ -18,3 +18,6 @@ from random import randrange,randint #importando mais de uma funções do módul
 print(randrange(10,100))
 
 from random import * #importando todas as funções do módulo
+
+import random
+print(dir(random)) # verificar tudo que existe no módulo
