@@ -7,3 +7,6 @@ print(data)
 
 import random
 print(random.randrange(10,100)) #usando função que está dentro do módulo
+
+from random import randrange #importando randrange diretamente do módulo
+print(randrange(10,100))
