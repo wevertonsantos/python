@@ -13,3 +13,6 @@ print(randrange(10,100))
 
 from random import randrange as numero_aleatorio #importando randrange e atribuindo álias
 print(numero_aleatorio(10,100))
+
+from random import randrange,randint #importando mais de uma funções do módulo
+print(randrange(10,100))
