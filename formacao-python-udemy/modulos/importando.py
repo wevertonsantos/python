@@ -5,3 +5,4 @@ var = modulo_teste.Teste()
 modulo_teste.MyFunc(10)
 print(modulo_teste.__name__) # verificando nome do módulo
 print(modulo_teste.__file__) # verificando onde o módulo está
+print(modulo_teste.__doc__) # verificando o documento do módulo
