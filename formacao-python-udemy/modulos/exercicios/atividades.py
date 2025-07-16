@@ -21,3 +21,15 @@ while i <= 100:
     i += 1
 
 print(soma)
+
+# 3 - Crie um modulo que dispõem de duas funções, uma que subtrai dois números 
+# e outra que soma dois números. Importe essas funções e as use. 
+# Não se esqueça de gerar a documentação destas funções e do modulo e mostrar 
+# na saída de seu programa. Chame o modulo de “calc_python”
+
+import calc_python
+
+print(calc_python.soma.__doc__)
+calc_python.soma(10,20)
+print(calc_python.subtracao.__doc__)
+calc_python.subtracao(20,10)
