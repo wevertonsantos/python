@@ -44,3 +44,23 @@ calc_python.subtracao(20,10)
 
 from meu_random import get_random_lista
 print(get_random_lista(1,100,10))
+
+# 5 - Crie um programa que tenha a entrada na função e modulo main(). 
+# Ele deve receber dois números via parâmetro do programa e mostrar sua soma. 
+# Mas com uma condição: Verificar se possui dois parâmetros de entrada. 
+# Caso contrario parar a execução do programa e avisar qual o problema.
+
+import sys
+
+def main():
+    if len(sys.argv) == 3:
+        print(soma(int(sys.argv[1]),int(sys.argv[2])))
+    else:
+        print("Argumentos insuficientes")
+        sys.exit(1)
+
+def soma(x,y):
+    return x + y
+
+if __name__ == '__main__':
+    main()
