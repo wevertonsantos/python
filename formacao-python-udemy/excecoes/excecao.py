@@ -25,3 +25,13 @@ except IndexError as error_index: # tipo de sessão específica do python (tipo 
     print("Erro de acesso ao índice:",str(error_index))
 except ZeroDivisionError as error_zero_divisao: # tipo de erro para divisão por zero
     print("Erro de divisão por zero:",str(error_zero_divisao))
+
+def printa_positivo(num):
+    if num < 0:
+        raise ValueError("Valor não pode ser negativo") # lançando um erro criado pelo programador
+    print(num)
+
+try:
+    printa_positivo(-1)
+except ValueError as erro:
+    print("O erro é:",str(erro))
