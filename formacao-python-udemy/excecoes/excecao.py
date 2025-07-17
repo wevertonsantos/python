@@ -17,3 +17,10 @@ except:
     print("Falha ao acessar")
 else: # else executado somente se não houver erro
     print("Não houve erro")
+
+try:
+    print(lista[10])
+except IndexError as error_index: # tipo de sessão específica do python (tipo de erro index erro)
+    print("Erro de acesso ao índice:",str(error_index))
+except:
+    ...
