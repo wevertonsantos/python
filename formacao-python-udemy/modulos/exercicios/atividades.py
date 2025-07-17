@@ -41,3 +41,6 @@ calc_python.subtracao(20,10)
 # que pode aparecer na lista e “final” é o número máximo que pode aparecer. 
 # Por fim “tam” deve ser o número de elementos na lista. 
 # Chame o modulo de “meu_random”
+
+from meu_random import get_random_lista
+print(get_random_lista(1,100,10))
