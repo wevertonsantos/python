@@ -10,3 +10,10 @@ except:
     print("Falha ao acessar")
 finally: # finally irá executar de qualquer forma
     print("Executa sempre que o try-except acabar")
+
+try:
+    print(lista[0])
+except:
+    print("Falha ao acessar")
+else: # else executado somente se não houver erro
+    print("Não houve erro")
