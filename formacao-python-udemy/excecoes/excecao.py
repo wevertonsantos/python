@@ -19,8 +19,9 @@ else: # else executado somente se não houver erro
     print("Não houve erro")
 
 try:
+    divisao = 10 / 0
     print(lista[10])
 except IndexError as error_index: # tipo de sessão específica do python (tipo de erro index erro)
     print("Erro de acesso ao índice:",str(error_index))
-except:
-    ...
+except ZeroDivisionError as error_zero_divisao: # tipo de erro para divisão por zero
+    print("Erro de divisão por zero:",str(error_zero_divisao))
