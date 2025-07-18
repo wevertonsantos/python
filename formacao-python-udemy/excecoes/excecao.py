@@ -41,6 +41,6 @@ def print_positivo(num):
     print(num)
 
 try:
-    printa_positivo(-1)
+    print_positivo(-1)
 except AssertionError as erro:
     print("O erro é:",str(erro))
