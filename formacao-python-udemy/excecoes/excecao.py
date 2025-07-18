@@ -35,3 +35,12 @@ try:
     printa_positivo(-1)
 except ValueError as erro:
     print("O erro é:",str(erro))
+
+def print_positivo(num):
+    assert(num >= 0) # criando outra exceção se o teste lógico der falso
+    print(num)
+
+try:
+    printa_positivo(-1)
+except AssertionError as erro:
+    print("O erro é:",str(erro))
