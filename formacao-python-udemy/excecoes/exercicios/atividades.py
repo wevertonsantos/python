@@ -25,3 +25,15 @@ def acesso_seguro(lista,indice):
         return None
 
 print(acesso_seguro([1,2,3,4,5,6],10))
+
+'''
+3 - Crie uma função que leia o input do usuário e retorne o que foi digitado, mas caso o input seja interrompido trate a exceção e retorne o valor None.
+'''
+
+def retornando_input():
+    try:
+        return input("Digite algo: ")
+    except:
+        return None
+    
+print(retornando_input())
