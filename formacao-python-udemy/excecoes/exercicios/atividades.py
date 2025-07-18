@@ -18,9 +18,9 @@ da lista na posição deste número. Faça um tratamento para que caso haja um
 acesso fora do índice a função retorne o valor None.
 '''
 
-def funcao(lista,num):
+def funcao(lista,indice):
     try:
-        return lista[num]
+        return lista[indice]
     except:
         return None
 
