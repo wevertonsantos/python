@@ -18,10 +18,10 @@ da lista na posição deste número. Faça um tratamento para que caso haja um
 acesso fora do índice a função retorne o valor None.
 '''
 
-def funcao(lista,indice):
+def acesso_seguro(lista,indice):
     try:
         return lista[indice]
     except:
         return None
 
-print(funcao([1,2,3,4,5,6],10))
+print(acesso_seguro([1,2,3,4,5,6],10))
