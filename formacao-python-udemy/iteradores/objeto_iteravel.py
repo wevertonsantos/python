@@ -14,3 +14,6 @@ class ColecaoNumeros:
             raise StopIteration
         
 colecao = ColecaoNumeros(6) # deve ter 6 iterações
+
+for item in colecao: # fazendo iteração
+    print(item)
