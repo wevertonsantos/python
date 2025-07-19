@@ -13,3 +13,4 @@ class ColecaoNumeros:
         else:
             raise StopIteration
         
+colecao = ColecaoNumeros(6) # deve ter 6 iterações
