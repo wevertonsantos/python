@@ -8,3 +8,8 @@ arquivo = open("nomes.txt","wt")
 for item in lista:
     arquivo.write(item + '\n')
 arquivo.close()
+
+texto = ["Ana\nMaria\nFernando"]
+arquivo = open("nomes2.txt","wt")
+arquivo.writelines(texto) #writelines para escrever texto no arquivo ao invés de linha por linha 
+arquivo.close()
