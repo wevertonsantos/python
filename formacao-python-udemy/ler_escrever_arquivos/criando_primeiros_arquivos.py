@@ -2,3 +2,9 @@ arquivo = open("exemplo.txt","wt") # "w" abre um arquivo para escrita, se não e
 arquivo.write("Olá estou escrevendo no arquivo\n") # escrevendo uma linha no arquivo
 arquivo.write("Está é a segunda linha do arquivo")
 arquivo.close() # fecha o arquivo
+
+lista = ["Ana","Fernando","João","Maria"]
+arquivo = open("nomes.txt","wt")
+for item in lista:
+    arquivo.write(item + '\n')
+arquivo.close()
