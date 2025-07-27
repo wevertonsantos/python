@@ -1,0 +1,1 @@
+arquivo = open("exemplo.txt","wt") # "w" abre um arquivo para escrita, se não existir o arquivo é criado/ "t" abre um arquivo em modo texto
