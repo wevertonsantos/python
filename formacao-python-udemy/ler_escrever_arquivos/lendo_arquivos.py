@@ -12,3 +12,9 @@ segunda_linha = arquivo.readline()
 print(primeira_linha)
 print(segunda_linha)
 arquivo.close()
+
+#percorrendo arquivo por laço
+arquivo = open("exemplo.txt","rt")
+for linha in arquivo:
+    print(linha)
+arquivo.close()
