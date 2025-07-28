@@ -14,7 +14,6 @@ print(segunda_linha)
 arquivo.close()
 
 #percorrendo arquivo por laço
-arquivo = open("exemplo.txt","rt")
-for linha in arquivo:
-    print(linha)
-arquivo.close()
+with open("exemplo.txt","rt") as arquivo:
+    for linha in arquivo:
+        print(linha)
