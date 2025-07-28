@@ -4,5 +4,11 @@ with open("exemplo_with.txt",'wt') as arquivo: # nessa abordagem com with não �
 # abrir arquivo que foi gerado
 arquivo = open("exemplo.txt","rt") # r - abre um arquivo para leitura, se não existir ele gera exceção.
 lido = arquivo.read() # lendo todo o arquivo com read()
-print(lido)
+arquivo.close()
+
+arquivo = open("exemplo.txt","rt")
+primeira_linha = arquivo.readline() # ler linha
+segunda_linha = arquivo.readline()
+print(primeira_linha)
+print(segunda_linha)
 arquivo.close()
