@@ -1,4 +1,4 @@
-import os
+import os,shutil
 os.mkdir('pasta') # criando pasta através do os
 os.rmdir('pasta') # excluindo pasta (deve estar vazia)
 
@@ -26,3 +26,6 @@ for i in range(0,2):
         os.rmdir(nome_pasta)
     except:
         pass
+
+# excluindo pasta mesmo com arquivo dentro
+shutil.rmtree(nome_pasta)
