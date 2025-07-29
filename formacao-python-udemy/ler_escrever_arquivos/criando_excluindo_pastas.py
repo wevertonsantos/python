@@ -29,3 +29,7 @@ for i in range(0,2):
 
 # excluindo pasta mesmo com arquivo dentro
 shutil.rmtree(nome_pasta)
+
+# verificando arquivos de uma pasta
+files = os.listdir()
+print(files)
