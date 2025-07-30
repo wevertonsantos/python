@@ -12,3 +12,9 @@ linhas = [["id","nome"],["1","Fernando"]]
 with open('pessoas2.csv','w') as arquivo2:
     escritorCsv = csv.writer(arquivo2)
     escritorCsv.writerows(linhas) # escrevendo várias linhas ao mesmo tempo.
+
+# lendo arquivo csv
+with open('pessoas.csv','r') as arquivo3:
+    leitor = csv.reader(arquivo3,delimiter=',') #lendo arquivo csv com reader
+    for linha in leitor:
+        print(linha)
