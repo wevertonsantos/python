@@ -46,3 +46,15 @@ class Carro:
         texto = json.dumps(dicionario,indent=4)
         with open('carros.json','wt') as arquivo:
             arquivo.write(texto)
+    
+    @staticmethod
+    def le_carros():
+        lista = []
+        texto = None
+        with open('carros.json','rt') as arquivo:
+            texto = arquivo.read()
+        dicionario = json.loads(texto)
+        for chave in dicionario:
+            carro = Carro(chave,dicionario[chave])
+            lista.append(carro)
+        return lista
