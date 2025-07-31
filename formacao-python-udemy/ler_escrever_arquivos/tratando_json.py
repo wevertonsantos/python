@@ -6,3 +6,14 @@ idades = {
 }
 
 print(json.dumps(idades)) #transformando dicionário em json
+
+DadosPessoas = {
+    'Rodrigo': {
+        'CPF':'123456',
+        'Sexo':'Masculino'
+    },
+    'Fernando': {
+        'CPF':'123456',
+        'Sexo':'Masculino'
+    }
+}
