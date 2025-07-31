@@ -1,0 +1,10 @@
+{
+    "Rodrigo": {
+        "CPF": "123456",
+        "Sexo": "Masculino"
+    },
+    "Fernando": {
+        "CPF": "123456",
+        "Sexo": "Masculino"
+    }
+}
