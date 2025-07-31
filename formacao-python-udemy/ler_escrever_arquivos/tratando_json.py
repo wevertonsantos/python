@@ -30,3 +30,19 @@ with open('exemplo.json','rt') as arquivo:
     dicionario = json.loads(arquivo_lido) # transformando arquivo lido para dicionário com load
 
 print(dicionario)
+
+# mesmo fluxo com classe
+
+class Carro:
+    def __init__(self,nome,potencia):
+        self.nome = nome
+        self.potencia = potencia
+    
+    @staticmethod
+    def salva_carros(*carros):
+        dicionario = dict()
+        for carro in carros:
+            dicionario[carro.nome] = carro.potencia
+        texto = json.dumps(dicionario,indent=4)
+        with open('carros.json','wt') as arquivo:
+            arquivo.write(texto)
