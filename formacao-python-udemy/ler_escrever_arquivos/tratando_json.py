@@ -19,3 +19,6 @@ DadosPessoas = {
 }
 
 texto = json.dumps(DadosPessoas, indent=4) #identar objetos com 4 espaços
+print(texto)
+with open('exemplo.json','wt') as arquivo: # criando arquivo como json
+    arquivo.write(texto) #escrevendo o dump no arquivo
