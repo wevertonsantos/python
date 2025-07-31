@@ -58,3 +58,12 @@ class Carro:
             carro = Carro(chave,dicionario[chave])
             lista.append(carro)
         return lista
+
+carro1 = Carro('Fusca',40)
+carro2 = Carro('Nivus',450)
+carro3 = Carro('Focus',290)
+
+Carro.salva_carros(carro1,carro2,carro3)
+lista_carros = Carro.le_carros()
+for carro in lista_carros:
+    print(carro.nome,carro.potencia)
