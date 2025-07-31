@@ -17,3 +17,5 @@ DadosPessoas = {
         'Sexo':'Masculino'
     }
 }
+
+texto = json.dumps(DadosPessoas, indent=4) #identar objetos com 4 espaços
