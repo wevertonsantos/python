@@ -9,3 +9,6 @@ no_cpf.text = '123456789'
 no_raiz.append(no_pessoa) # passando nó pessoa para o nó raiz
 
 arvore = xml.ElementTree(no_raiz) # transformando nó raiz em um xml com elementTree
+
+with open('dados_exemplo.xml','wb') as file: #abrindo arquivo xml como escrita
+    arvore.write(file) #escrevendo xml pela arvore
