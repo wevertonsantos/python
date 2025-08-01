@@ -9,11 +9,11 @@ def cria_tag_pessoa(nome,cpf):
 
     return no_pessoa
 
-no_raiz = xml.Element("DadosPessoais") # criando um nó raiz com um elemento
+raiz = xml.Element("DadosPessoais") # criando um nó raiz com um elemento
+pessoa1 = cria_tag_pessoa('Rodrigo','12345678')
+raiz.append(pessoa1) # passando nó pessoa para o nó raiz
 
-no_raiz.append(no_pessoa) # passando nó pessoa para o nó raiz
-
-arvore = xml.ElementTree(no_raiz) # transformando nó raiz em um xml com elementTree
+arvore = xml.ElementTree(raiz) # transformando nó raiz em um xml com elementTree
 
 with open('dados_exemplo.xml','wb') as file: #abrindo arquivo xml como escrita
     arvore.write(file) #escrevendo xml pela arvore
