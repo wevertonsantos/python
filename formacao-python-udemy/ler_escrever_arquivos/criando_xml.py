@@ -17,3 +17,28 @@ arvore = xml.ElementTree(raiz) # transformando nó raiz em um xml com elementTre
 
 with open('dados_exemplo.xml','wb') as file: #abrindo arquivo xml como escrita
     arvore.write(file) #escrevendo xml pela arvore
+
+'''
+Criando xml a partir de um dicionário
+'''
+
+dados = {
+    'Rodrigo': {
+        'CPF':'123456',
+    },
+    'Fernando': {
+        'CPF':'123456',
+    }
+}
+
+raiz = xml.Element("DadosPessoais")
+for chave in dados:
+    nome = chave
+    dados_pessoa = dados[nome]
+    cpf = dados_pessoa['CPF']
+    pessoa = cria_tag_pessoa(nome,cpf)
+    raiz.append(pessoa)
+
+arvore = xml.ElementTree(raiz)
+with open('dados_pessoais3.xml','wb') as file:
+    arvore.write(file)
