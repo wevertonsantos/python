@@ -7,3 +7,5 @@ no_cpf = xml.SubElement(no_pessoa,'CPF') # criando sub elemento de um elemento
 no_cpf.text = '123456789'
 
 no_raiz.append(no_pessoa) # passando nó pessoa para o nó raiz
+
+arvore = xml.ElementTree(no_raiz) # transformando nó raiz em um xml com elementTree
