@@ -13,3 +13,4 @@ while url != None:
     for item_pokemon in response['results']: # acessando cada registro que retorna lista do results
         pokemon_name = item_pokemon['name']
         url_pokemon = f"https://pokeapi.co/api/v2/pokemon/{pokemon_name}" # pegando cada pokemon com sua devida url
+        response_pokemon = json.loads(requests.request("GET", url_pokemon, headers=headers, data=payload).text) # retorno da url de cada pokemon
