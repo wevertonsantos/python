@@ -10,6 +10,7 @@ A proposta é aprofundar meus conhecimentos por meio de cursos gratuitos, plataf
 - Anotações de cursos online e materiais de referência
 - Projetos simples desenvolvidos durante os estudos
 - Aplicações dos conceitos de programação orientada a objetos
+- Extração de dados de API
 - Códigos organizados por temas e tópicos abordados
 
 ### 🚀 Fontes de estudo utilizadas:
@@ -19,6 +20,7 @@ A proposta é aprofundar meus conhecimentos por meio de cursos gratuitos, plataf
 - [Codewars](https://www.codewars.com/)
 - [Leetcode](https://leetcode.com/)
 - [Programação Orientada a Objetos com Python & Dataclass](https://www.youtube.com/watch?v=eqBf1TxN5mQ&ab_channel=ProgramadorPython)
+- [Extração de Dados de API com Python](https://www.udemy.com/course/aprenda-a-extrair-dados-de-apis-com-python-do-zero/)
 
 ### 🗂️ Estrutura do repositório
 
