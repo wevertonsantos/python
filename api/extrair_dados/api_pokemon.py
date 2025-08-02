@@ -5,6 +5,6 @@ url = "https://pokeapi.co/api/v2/pokemon/" # passando url
 payload = {}
 headers = {}
 
-response = requests.request("GET", url, headers=headers, data=payload).text # retornando o conteúdo com .text do response
+response = json.loads(requests.request("GET", url, headers=headers, data=payload).text) # transformando retorno o request em json
 
-print(response.text)
+print(response["results"])
