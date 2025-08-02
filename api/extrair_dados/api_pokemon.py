@@ -27,3 +27,10 @@ while url != None:
         pokemon_list.append(infos)
 
 print(pokemon_list) # printando lista de todos os pokemons
+
+'''
+Extraindo dados e criando arquivo json
+'''
+
+with open("pokemon.json","w") as file:
+    file.write(json.dumps(pokemon_list,indent=4)) # salvando dado em arquivo json
