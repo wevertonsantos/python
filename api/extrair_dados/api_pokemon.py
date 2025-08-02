@@ -16,7 +16,7 @@ while url != None:
         url_pokemon = f"https://pokeapi.co/api/v2/pokemon/{pokemon_name}" # pegando cada pokemon com sua devida url
         response_pokemon = json.loads(requests.request("GET", url_pokemon, headers=headers, data=payload).text) # retorno da url de cada pokemon
 
-        info = { # criando dic para ter informações básicas de cada pokemon
+        infos = { # criando dic para ter informações básicas de cada pokemon
             "name":pokemon_name,
             "id":response_pokemon["id"],
             "height":response_pokemon["height"],
@@ -24,4 +24,4 @@ while url != None:
             "is_default":response_pokemon["is_default"]
         }
 
-        pokemon_list.append(info)
+        pokemon_list.append(infos)
