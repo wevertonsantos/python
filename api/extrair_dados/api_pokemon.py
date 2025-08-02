@@ -7,4 +7,5 @@ headers = {}
 
 response = json.loads(requests.request("GET", url, headers=headers, data=payload).text) # transformando retorno o request em json
 
-print(response["results"])
+for item_pokemon in response['results']: # acessando cada registro que retorna lista do results
+    print(item_pokemon)
