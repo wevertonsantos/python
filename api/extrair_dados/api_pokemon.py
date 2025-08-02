@@ -1,4 +1,4 @@
-import requests # importando requests para fazer requisição
+import requests,json # importando requests para fazer requisição
 
 url = "https://pokeapi.co/api/v2/pokemon/" # passando url
 
