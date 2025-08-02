@@ -25,3 +25,5 @@ while url != None:
         }
 
         pokemon_list.append(infos)
+
+print(pokemon_list) # printando lista de todos os pokemons
