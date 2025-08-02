@@ -11,4 +11,5 @@ while url != None:
     url = response['next'] # url da próxima página
 
     for item_pokemon in response['results']: # acessando cada registro que retorna lista do results
-        print(item_pokemon['name'])
+        pokemon_name = item_pokemon['name']
+        url_pokemon = f"https://pokeapi.co/api/v2/pokemon/{pokemon_name}" # pegando cada pokemon com sua devida url
