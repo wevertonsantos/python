@@ -44,3 +44,12 @@ if info != None:
     print('O que foi encontrado:',info.group())
 else:
     print("Nada foi encontrado")
+
+texto = 'Olá, sou eu, AQUI, e nada para frente'
+info = re.search('(.)*(AQUI)(.)*',texto) # '(.)*' - vai buscar o grupo em qualquer lugar do texto.
+
+if info != None:
+    print('Encontrado ocorrência em:',info.span())
+    print('O que foi encontrado:',info.group())
+else:
+    print("Nada foi encontrado")
