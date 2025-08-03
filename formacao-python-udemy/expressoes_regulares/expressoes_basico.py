@@ -51,3 +51,9 @@ info = re.search('^existem',texto2)
 if info != None:
     print("Encontrado ocorrência em:", info.span())
     print("O que foi encontrado:", info.group())
+
+# buscando padrão no final do texto com '$'
+info = re.search('metros$',texto)
+if info != None:
+    print("Encontrado ocorrência em:", info.span())
+    print("O que foi encontrado:", info.group())
