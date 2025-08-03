@@ -42,7 +42,7 @@ texto = 'existem 64 predios com 700 metros'
 info = re.findall('predio|metros',texto) # '|' significa OU
 print(info)
 
-# buscando caracteres e números
+# buscando caracteres e números com OU '|'
 texto = 'ABCDefgHI123'
 info = re.findall('[A-Z]|[0-9]',texto)
 print(info)
