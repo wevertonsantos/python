@@ -26,3 +26,9 @@ info = re.search("\S",texto) # \S irá buscar a não ocorrência de espaços em 
 if info != None:
     print("Encontrado ocorrência em:", info.span())
     print("O que foi encontrado:", info.group())
+
+info = re.search("\w",texto) # \w detecta qualquer tipo de caractere
+
+if info != None:
+    print("Encontrado ocorrência em:", info.span())
+    print("O que foi encontrado:", info.group())
