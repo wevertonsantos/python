@@ -8,8 +8,8 @@ if info != None:
 else:
     print("Temperatura inválida")
 
-telefone = '99224466'
-info = re.search('^99([0-9]{6})$',telefone)
+telefone = '92224466'
+info = re.search('^9([0-9]{7})$',telefone)
 
 if info != None:
     print("Número válido")
