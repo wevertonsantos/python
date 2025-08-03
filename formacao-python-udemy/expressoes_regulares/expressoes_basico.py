@@ -18,3 +18,7 @@ print(info)
 # utilizando split (divide a string antes e depois do padrão encontrado) para separar textos.
 info = re.split('1',texto)
 print(info)
+
+# sub - substitui o que é encontrado pelo o que é passado
+info = re.sub("1","#",texto)
+print(info)
