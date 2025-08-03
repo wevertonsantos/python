@@ -11,3 +11,15 @@ if info != None:
   print("Número encontrado  ", info.group())
 else:
   print("Valor inválido")
+
+'''
+2 - Faça uma expressão regular para dizer se a palavra 'python' esta na frase.
+'''
+
+texto = "olá, python, aqui estou"
+info = re.search('python',texto)
+if info != None:
+  print("Encontrado ocorrência em ", info.span())
+  print("Encontrado  ", info.group())
+else:
+  print("Python não encontrado")
