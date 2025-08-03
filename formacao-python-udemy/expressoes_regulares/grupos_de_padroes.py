@@ -26,3 +26,12 @@ if info != None:
     print('O que foi encontrado:',info.group())
 else:
     print("Nada foi encontrado")
+
+texto = 'aa'
+info = re.search('^(aa)?$',texto) # '?' - vai ser válido pra zero ou mais ocorrência
+
+if info != None:
+    print('Encontrado ocorrência em:',info.span())
+    print('O que foi encontrado:',info.group())
+else:
+    print("Nada foi encontrado")
