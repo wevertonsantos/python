@@ -51,3 +51,12 @@ if info !=None:
     print("Telefone não bloqueado")
 else:
   print("Número inválido")
+
+'''
+5 - Faça uma expressão regular para reconhecer palavrados no gerúndio. Normalmente essas palavras podem ser detectadas caso elas terminem com ando, endo, indo: Exemplo: sorrindo, andando. Usa a
+função “find all” para retornar as ocorrências.
+'''
+
+texto = "Olá, eu estou dormindo, e não sorrindo"
+info = re.findall("([\w]+indo|ando|endo)+", texto)
+print(info)
