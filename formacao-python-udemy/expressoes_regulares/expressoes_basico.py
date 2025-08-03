@@ -36,3 +36,8 @@ print(info2)
 print(info3)
 print(info4)
 print(info5)
+
+#buscando ocorrência de mais de um texto
+texto = 'existem 64 predios com 700 metros'
+info = re.findall('predio|metros',texto) # '|' significa OU
+print(info)
