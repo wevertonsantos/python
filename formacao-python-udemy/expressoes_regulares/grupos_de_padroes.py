@@ -35,3 +35,12 @@ if info != None:
     print('O que foi encontrado:',info.group())
 else:
     print("Nada foi encontrado")
+
+texto = 'xxxxxxx'
+info = re.search('^x{,7}$',texto) # ',7' - vai ser válido por 7 ou menos
+
+if info != None:
+    print('Encontrado ocorrência em:',info.span())
+    print('O que foi encontrado:',info.group())
+else:
+    print("Nada foi encontrado")
