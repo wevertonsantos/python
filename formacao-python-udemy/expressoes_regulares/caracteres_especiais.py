@@ -9,7 +9,13 @@ if info != None:
     print("O que foi encontrado:", info.group())
 
 
-info = re.search("\D",texto) # \D irá buscar a não ocorrência de números
+info = re.search("\D+",texto) # \D irá buscar a não ocorrência de números
+
+if info != None:
+    print("Encontrado ocorrência em:", info.span())
+    print("O que foi encontrado:", info.group())
+
+info = re.search("\s",texto) # \s irá buscar espaços em branco
 
 if info != None:
     print("Encontrado ocorrência em:", info.span())
