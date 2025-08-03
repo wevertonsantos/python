@@ -23,3 +23,11 @@ if info != None:
   print("Encontrado  ", info.group())
 else:
   print("Python não encontrado")
+
+'''
+3 - Faça uma expressão regular para validar se uma string dada é um dia da semana. As
+possibilidades são:
+'''
+
+texto = 'Terça-Feira'
+info = re.search('^(Segunda-Feira|Terça-Feira|Quarta-Feira|Quinta-Feira|Sexta-Feira|Sábado|Domingo)$', texto)
