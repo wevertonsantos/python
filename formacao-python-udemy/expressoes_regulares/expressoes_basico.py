@@ -45,3 +45,9 @@ print(info)
 # buscando caracteres e números com OU '|'
 info = re.findall('[A-Z]|[0-9]',texto1)
 print(info)
+
+# buscando padrão no início do texto com '^'
+info = re.search('^existem',texto2)
+if info != None:
+    print("Encontrado ocorrência em:", info.span())
+    print("O que foi encontrado:", info.group())
