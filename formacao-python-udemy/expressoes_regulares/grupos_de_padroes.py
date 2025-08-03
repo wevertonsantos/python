@@ -17,3 +17,12 @@ if info != None:
     print('O que foi encontrado:',info.group())
 else:
     print("Nada foi encontrado")
+
+texto = 'abc'
+info = re.search('(aa|bb)*',texto) # '*' - essa expressão irá buscar nenhum até N ocorrências
+
+if info != None:
+    print('Encontrado ocorrência em:',info.span())
+    print('O que foi encontrado:',info.group())
+else:
+    print("Nada foi encontrado")
