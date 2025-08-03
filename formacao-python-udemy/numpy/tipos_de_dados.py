@@ -13,3 +13,9 @@ inteiro = numpy.intc(-10) # criando variável inteiro que ocupa 32 bits
 print(inteiro)
 
 uinteiro = numpy.uintc(102) # criando variável inteiro sem sinal
+
+#inteiro de 64 bits
+long = numpy.int_(8328832)
+
+#inteiro de 64 bits sem sinal
+ulong = numpy.uint(2020203)
