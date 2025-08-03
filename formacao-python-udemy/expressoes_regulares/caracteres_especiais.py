@@ -20,3 +20,9 @@ info = re.search("\s",texto) # \s irá buscar espaços em branco
 if info != None:
     print("Encontrado ocorrência em:", info.span())
     print("O que foi encontrado:", info.group())
+
+info = re.search("\S",texto) # \S irá buscar a não ocorrência de espaços em branco
+
+if info != None:
+    print("Encontrado ocorrência em:", info.span())
+    print("O que foi encontrado:", info.group())
