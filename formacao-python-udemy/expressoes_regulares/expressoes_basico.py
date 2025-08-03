@@ -14,3 +14,7 @@ else:
 print("Encontrando todas ocorrências:")
 info = re.findall('1',texto)
 print(info)
+
+# utilizando split (divide a string antes e depois do padrão encontrado) para separar textos.
+info = re.split('1',texto)
+print(info)
