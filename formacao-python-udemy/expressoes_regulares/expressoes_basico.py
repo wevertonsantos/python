@@ -9,3 +9,8 @@ if info != None:
     print('O que foi encontrado:',info.group())
 else:
     print("Nada foi encontrado")
+
+# encontrar todas as ocorrências no texto
+print("Encontrando todas ocorrências:")
+info = re.findall('1',texto)
+print(info)
