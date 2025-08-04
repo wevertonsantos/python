@@ -62,5 +62,5 @@ print(array.nbytes) # dizer o total de bytes nesta variável
 
 # criando nosso próprio tipo pessoa com dtype
 tipo_pessoa = numpy.dtype([('nome','S10'),('idade','i4')])
-
+#passando nosso tipo criado para o array.
 array = numpy.array([('Rodrigo',24)],dtype=tipo_pessoa)
