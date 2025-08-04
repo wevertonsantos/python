@@ -55,3 +55,7 @@ f = ponto flutuante
 S = string (bytes)
 U = texto unicode
 '''
+
+array = numpy.array(["abc","def","ghi"],dtype='S3') #passando string com 3 bytes de tamanho
+print(array.itemsize) # número de bytes por item
+print(array.nbytes) # dizer o total de bytes nesta variável
