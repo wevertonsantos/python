@@ -40,3 +40,6 @@ uint8 = numpy.uint8(34)
 
 #inteiro 16 bits sem sinal
 uint16 = numpy.uint16(32)
+
+# criação de array
+array = numpy.array([1,2,3,4,5,6,7,8,9,0]) 
