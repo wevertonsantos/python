@@ -27,3 +27,5 @@ array2 = np.ones((4,4)) # criando matriz com vários um com 4 linhas e 4 colunas
 # geração de array com arange
 array1 = np.arange(2,16,2) # de 2 a 15 de 2 em 2
 array2 = np.arange(4,16)
+
+array = np.full((4,4),10) # matriz 4,4 preenchida com 10 usando full
