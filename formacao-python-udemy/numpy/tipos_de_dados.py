@@ -26,6 +26,9 @@ ponto_flutuante = numpy.float64(1000.23)
 #ponto flutuante 32 bits
 ponto_flutuante2 = numpy.float32(4993.32)
 
+#ponto flutuante 16bits
+ponto_flutuante3 = numpy.float16(12)
+
 #inteiro de 8 bits
 int8 = numpy.int8(20)
 
