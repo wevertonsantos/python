@@ -25,5 +25,5 @@ array1 = np.zeros((3,3)) # criando matriz de zeros com 3 linhas e 3 colunas
 array2 = np.ones((4,4)) # criando matriz com vários um com 4 linhas e 4 colunas
 
 # geração de array com arange
-array1 = np.arange(9)
+array1 = np.arange(2,16,2) # de 2 a 15 de 2 em 2
 array2 = np.arange(4,16)
