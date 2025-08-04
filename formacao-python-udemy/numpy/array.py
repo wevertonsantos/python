@@ -32,3 +32,13 @@ array = np.full((4,4),10) # matriz 4,4 preenchida com 10 usando full
 
 array_float = np.random.rand(4,4) # matriz 4,4 com números aleatórios float
 array_int = np.random.randint(5,10,(5,5)) #  matriz 5,5 com números aleatórios inteiros de 5 a 9
+
+# list comprehension
+array = np.array([i for i in range(0,10)])
+
+#list comprehension matriz
+array = np.array([
+    [i for i in range(0,3)],
+    [i for i in range(3,6)],
+    [i for i in range(6,9)]
+])
