@@ -46,3 +46,12 @@ array = numpy.array([1,2,3,4,5,6,7,8,9,0])
 
 #passando tipo para array com dtype
 array = numpy.array([1,2,3,4,5,6,7,8,9,0],dtype=numpy.int8) 
+
+'''
+i = inteiro
+b = booleano
+u = inteiro sem sinal
+f = ponto flutuante
+S = string (bytes)
+U = texto unicode
+'''
