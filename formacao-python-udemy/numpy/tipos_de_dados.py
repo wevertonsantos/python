@@ -19,3 +19,9 @@ long = numpy.int_(8328832)
 
 #inteiro de 64 bits sem sinal
 ulong = numpy.uint(2020203)
+
+#ponto flutuante 64 bits
+ponto_flutuante = numpy.float64(1000.23)
+
+#ponto flutuante 32 bits
+ponto_flutuante2 = numpy.float32(4993.32)
