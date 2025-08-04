@@ -29,3 +29,6 @@ array1 = np.arange(2,16,2) # de 2 a 15 de 2 em 2
 array2 = np.arange(4,16)
 
 array = np.full((4,4),10) # matriz 4,4 preenchida com 10 usando full
+
+array_float = np.random.rand(4,4) # matriz 4,4 com números aleatórios float
+array_int = np.random.randint(5,10,(5,5)) #  matriz 5,5 com números aleatórios inteiros de 5 a 9
