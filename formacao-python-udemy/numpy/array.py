@@ -20,3 +20,6 @@ array2 = np.ones(3) # vetor de 3 posicoes preenchido com 1
 array3 = np.empty(6) # vetor vazios com 6 posicoes
 array4 = np.identity(4) # matriz quadrada com número 1 da diagonal principal
 print(array4)
+
+array1 = np.zeros((3,3)) # criando matriz de zeros com 3 linhas e 3 colunas
+array2 = np.ones((4,4)) # criando matriz com vários um com 4 linhas e 4 colunas
