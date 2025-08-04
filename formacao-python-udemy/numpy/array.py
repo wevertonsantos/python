@@ -42,3 +42,8 @@ array = np.array([
     [i for i in range(3,6)],
     [i for i in range(6,9)]
 ])
+
+# acessando elementos do array
+array = np.array([1,2,3,4,5,6,7,8,9,10])
+print(array[2])
+print(array[2:4])
