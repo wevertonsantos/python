@@ -271,3 +271,4 @@ print(array_sum)
 array = np.array([1,2,3,4,5,6])
 print(np.amin(array)) # menor valor
 print(np.amax(array)) # maior valor
+print(np.abs(array)) # valores absolutos
