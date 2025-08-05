@@ -123,3 +123,11 @@ print(copy_array)
 #alterando dimensões
 array = np.array([[1,2,3],[4,5,6],[7,8,9]])
 array = array.reshape(9) # transformando array em um array normal sem dimensões
+
+#transforma um array normal em array com dimensões
+array = np.array([i for i in range(0,27)])
+print(array)
+array1 = array.reshape(3,9) # 3 linhas e 9 colunas
+array2 = array.reshape(9,3) # 9 linhas e 3 colunas
+array3 = array.reshape(3,3,3) # 3 tabelas com 3 linhas e 3 colunas
+print(array3)
