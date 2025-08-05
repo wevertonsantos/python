@@ -262,7 +262,7 @@ array_sum = np.sum(array)
 print(array_sum)
 array_sum = np.sum(array,axis=1) # soma por linha
 
-#soma acumulativa
+#resultado do produto
 array = np.array([[1,2,3],[4,5,6]])
-array_sum = np.cumsum(array)
+array_sum = np.cumprod(array)
 print(array_sum)
