@@ -102,3 +102,8 @@ array1 = np.insert(array,3,[10,11,12],axis=0) # inserindo na linha
 print(array1)
 array2 = np.insert(array,1,[4,5,6],axis=1) # inserindo na segunda coluna elemento 4,5,6
 print(array2)
+
+# removendo elementos do array
+array = np.array([[1,2,3],[4,5,6],[7,8,9]])
+array1 = np.delete(array,1,axis=0) # deletando a linha
+array2 = np.delete(array,1,axis=1) # deletando a coluna
