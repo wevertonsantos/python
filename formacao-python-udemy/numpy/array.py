@@ -95,3 +95,8 @@ print(array2)
 # inserindo elemento no array
 array = np.array([1,2,3])
 array = np.insert(array,1,10) # inserindo na posição 1 o valor 10
+
+# inserindo elemento no array com mais dimensoes
+array = np.array([[1,2,3],[4,5,6],[7,8,9]])
+array1 = np.insert(array,3,[10,11,12],axis=0) # inserindo na linha
+print(array1)
