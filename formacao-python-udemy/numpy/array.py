@@ -91,3 +91,7 @@ array1 = np.append(array,[[10,11,12]],axis=0) # adicionando uma linha no array
 array2 = np.append(array,[[10],[11],[12]],axis=1) # adiciona coluna no array
 print(array1)
 print(array2)
+
+# inserindo elemento no array
+array = np.array([1,2,3])
+array = np.insert(array,1,10) # inserindo na posição 1 o valor 10
