@@ -154,3 +154,9 @@ print(array1 > array2)
 print(array1 == array2)
 print(array1 != array2)
 print(np.array_equal(array1,array2)) # verificando se array é igual ao outro
+
+#combinação de arrays
+array1 = np.array([10,20,30,5])
+array2 = np.array([20,40,10,5])
+array12 = np.concatenate((array1,array2),axis=0) # concatenar arrays a partir da linha
+print(array12)
