@@ -12,3 +12,7 @@ series = pd.Series([1,2,3,4,5],dtype='i4',name="Meus Números",index=["Um","Dois
 print(series['Um'])
 print(series['Quatro'])
 print(series.shape) # formato da série
+
+# adicionando novo valor na serie
+series['Seis'] = 6
+print(series)
