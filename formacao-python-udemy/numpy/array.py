@@ -225,3 +225,5 @@ array_find = np.all((array > 6)) # testando se todos atende essa condição
 filter = (array == 1) | (array == 2) # filtrando que os elementos sejam igual a 1 ou igual a 2
 filter_array = array[filter]
 print(filter_array)
+filtered_array = np.array([i for i in array if i == 1])
+print(filtered_array) # mesmo fluxo de filtro
