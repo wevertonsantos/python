@@ -75,4 +75,5 @@ for i in np.nditer(array,order='F'):
 array = np.array([[1,2,3],[5,6,7],[8,9,10]])
 print(array)
 array[0] = [1,2,4] # passando novos valores na linha
+array[1,1:3] = [0,0] # passando novos valores na linha com slice
 print(array)
