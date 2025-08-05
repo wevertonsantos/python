@@ -234,3 +234,16 @@ print(np.sort(array)) # ordenando com sort
 array = np.array([[38,2,1],[5,5,4]])
 print(np.sort(array,axis=0)) # ordenando por linha
 print(np.sort(array,axis=1)) # ordenando por coluna
+
+# operações aritméticas
+arr1 = np.array([1,2,3,4,5,6,18])
+arr2 = np.array([1,2,3,4,5,6,3])
+
+array1 = np.add(arr1, arr2) # add - soma dois vetores
+array2 = np.subtract(arr1, arr2) # subtrai dois vetores
+array3 = np.multiply(arr1, arr2) # multiplica dois vetores
+array4 = np.divide(arr1, arr2) # divide dois vetores
+print(array1)
+print(array2)
+print(array3)
+print(array4)
