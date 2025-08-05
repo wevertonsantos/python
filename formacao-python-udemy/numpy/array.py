@@ -70,3 +70,9 @@ for i in array:
 array = np.array([[1,2,3,4],[5,6,7,8]])
 for i in np.nditer(array,order='F'):
     print(i)
+
+# modificando array existente
+array = np.array([[1,2,3],[5,6,7],[8,9,10]])
+print(array)
+array[0] = [1,2,4] # passando novos valores na linha
+print(array)
