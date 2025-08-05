@@ -176,3 +176,11 @@ array12r = np.vstack((array1,array2)) # vai combinar linha por linha
 array12c = np.hstack((array1,array2)) # vai combinar coluna por coluna
 print(array12r)
 print(array12c)
+
+# combinação por linha ou coluna multidimensional
+array1 = np.array([[1,2,3],[4,5,6]])
+array2 = np.array([[7,8,9],[10,11,12]])
+array12r = np.vstack((array1,array2)) # vai combinar linha por linha
+array12c = np.hstack((array1,array2)) # vai combinar coluna por coluna
+print(array12r)
+print(array12c)
