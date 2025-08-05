@@ -208,3 +208,7 @@ print(array1)
 array = np.array([[1,2,3],[4,5,6]])
 array1 = np.hsplit(array,3)
 print(array1)
+
+#filtrando elementos
+array = np.array([1,3,4,2,7,4])
+array_findo = np.where(array >= 4) # verificando onde no array é maior igual a 5
