@@ -107,3 +107,15 @@ print(array2)
 array = np.array([[1,2,3],[4,5,6],[7,8,9]])
 array1 = np.delete(array,1,axis=0) # deletando a linha
 array2 = np.delete(array,1,axis=1) # deletando a coluna
+
+# copiando array - por referência
+array = np.array([1,2,3])
+copy_array = array
+copy_array[0] = 0
+print(array)
+
+# copiando array - por valor
+array = np.array([1,2,3])
+copy_array = array.copy() # criado outro objeto
+copy_array[0] = 0
+print(copy_array)
