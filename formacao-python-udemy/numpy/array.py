@@ -231,3 +231,6 @@ print(filtered_array) # mesmo fluxo de filtro
 #ordenando array
 array = np.array([4,1,3,2])
 print(np.sort(array)) # ordenando com sort
+array = np.array([[38,2,1],[5,5,4]])
+print(np.sort(array,axis=0)) # ordenando por linha
+print(np.sort(array,axis=1)) # ordenando por coluna
