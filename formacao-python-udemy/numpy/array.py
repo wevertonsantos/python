@@ -266,3 +266,8 @@ array_sum = np.sum(array,axis=1) # soma por linha
 array = np.array([[1,2,3],[4,5,6]])
 array_sum = np.cumprod(array)
 print(array_sum)
+
+#maior valor e menor valor
+array = np.array([1,2,3,4,5,6])
+print(np.amin(array)) # menor valor
+print(np.amax(array)) # maior valor
