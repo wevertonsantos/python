@@ -160,3 +160,11 @@ array1 = np.array([10,20,30,5])
 array2 = np.array([20,40,10,5])
 array12 = np.concatenate((array1,array2),axis=0) # concatenar arrays a partir da linha
 print(array12)
+
+#concatenar vetores com mais de uma dimensão
+array1 = np.array([[1,2,3],[4,5,6]])
+array2 = np.array([[7,8,9],[10,11,12]])
+array12 = np.concatenate((array1,array2),axis=1) # concatenar arrays a partir de coluna
+print(array12)
+array12 = np.concatenate((array1,array2),axis=0) # concatenar arrays a partir da linha
+print(array12)
