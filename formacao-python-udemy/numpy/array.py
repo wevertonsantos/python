@@ -54,3 +54,8 @@ print(array[0]) # primeira linha do array
 print(array[0][0]) # pegando primeira linha do array, primeiro elemento
 print(array[0,0]) # pegando primeira linha do array, primeiro elemento
 print(array[0:2]) # slices de linhas
+
+#iteração em arrays
+array = np.array([1,2,3,4])
+for i in array:
+    print(i)
