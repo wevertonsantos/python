@@ -84,3 +84,10 @@ print(array)
 array = np.array([1,2,3,4])
 array = np.append(array,[5,6,7,8])
 print(array)
+
+# adicionando elementos no array de mais dimensões
+array = np.array([[1,2,3],[4,5,6],[7,8,9]])
+array1 = np.append(array,[[10,11,12]],axis=0) # adicionando uma linha no array
+array2 = np.append(array,[[10],[11],[12]],axis=1) # adiciona coluna no array
+print(array1)
+print(array2)
