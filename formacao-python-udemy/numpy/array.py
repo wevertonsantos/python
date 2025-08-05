@@ -272,3 +272,10 @@ array = np.array([1,2,3,4,5,6])
 print(np.amin(array)) # menor valor
 print(np.amax(array)) # maior valor
 print(np.abs(array)) # valores absolutos
+
+#união, intersecção e remoção de duplicados
+arr1 = np.array([1,2,3,4])
+arr2 = np.array([3,4,5,6,7])
+newarr = np.union1d(arr1,arr2) # união entre arrays
+newarr = np.intersect1d(arr1,arr2) # intersecção entre arrays
+newarr = np.unique(arr1) # remoção de duplicados entre arrays
