@@ -9,4 +9,6 @@ series = pd.Series([1,2,3,4,5],dtype='i4',name="Meus Números") # adicionando pr
 print(series)
 
 series = pd.Series([1,2,3,4,5],dtype='i4',name="Meus Números",index=["Um","Dois","Três","Quatro","Cinco"]) # atribuindo index para serie
-print(series)
+print(series['Um'])
+print(series['Quatro'])
+print(series.shape) # formato da série
