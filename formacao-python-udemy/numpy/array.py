@@ -252,3 +252,4 @@ print(array5)
 array6 = np.mod(arr1,arr2) # resto da divisão
 array7 = np.divmod(arr1,arr2) # resto da divisão e divisão inteira
 array8 = np.sqrt(arr1) # raiz quadrada
+array9 = np.around(arr1,2) # arrendodamento passando n de casa decimais que gostria
