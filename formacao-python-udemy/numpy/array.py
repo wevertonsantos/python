@@ -184,3 +184,13 @@ array12r = np.vstack((array1,array2)) # vai combinar linha por linha
 array12c = np.hstack((array1,array2)) # vai combinar coluna por coluna
 print(array12r)
 print(array12c)
+
+#divisão de array
+array = np.array([1,2,3,4,5,6])
+print(np.split(array,1)) #divide o array em uma vez
+print(np.split(array,2)) #divide o array em duas vezes
+print(np.split(array,3)) #divide o array em três vezes
+
+#divisão de array com multipla dimensão
+array = np.array([[1,2,3,4],[4,5,6,7]])
+print(np.split(array,2))
