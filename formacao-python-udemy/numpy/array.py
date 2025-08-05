@@ -255,3 +255,8 @@ array8 = np.sqrt(arr1) # raiz quadrada
 array9 = np.around(arr1,2) # arrendodamento passando n de casa decimais que gostria
 array9 = np.floor(arr1) # arrendodamento pra baixo
 array9 = np.ceil(arr1) # arrendodamento pra cima
+
+#soma
+array = np.array([[1,2,3],[4,5,6]])
+array_sum = np.sum(array)
+print(array_sum)
