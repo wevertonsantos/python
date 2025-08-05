@@ -227,3 +227,7 @@ filter_array = array[filter]
 print(filter_array)
 filtered_array = np.array([i for i in array if i == 1])
 print(filtered_array) # mesmo fluxo de filtro
+
+#ordenando array
+array = np.array([4,1,3,2])
+print(np.sort(array)) # ordenando com sort
