@@ -216,3 +216,8 @@ array_find = np.where((array == 4) | (array == 7)) # verificando onde no array �
 
 array = np.array([1,-1,-3,0,6,3,-78])
 array_find = np.where((array > 0) & (array < 10)) # verificando onde no array é maior que 0 e menor que 10
+
+#ocorrência de um valor - retorna true ou falso
+array = np.array([1,3,4,2,7,4])
+array_find = np.any(array == 1)
+array_find = np.any((array > 0) & (array < 10))
