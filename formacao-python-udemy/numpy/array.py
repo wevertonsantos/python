@@ -100,3 +100,5 @@ array = np.insert(array,1,10) # inserindo na posição 1 o valor 10
 array = np.array([[1,2,3],[4,5,6],[7,8,9]])
 array1 = np.insert(array,3,[10,11,12],axis=0) # inserindo na linha
 print(array1)
+array2 = np.insert(array,1,[4,5,6],axis=1) # inserindo na segunda coluna elemento 4,5,6
+print(array2)
