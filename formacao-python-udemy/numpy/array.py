@@ -131,3 +131,7 @@ array1 = array.reshape(3,9) # 3 linhas e 9 colunas
 array2 = array.reshape(9,3) # 9 linhas e 3 colunas
 array3 = array.reshape(3,3,3) # 3 tabelas com 3 linhas e 3 colunas
 print(array3)
+
+array = np.array([[1,2,3],[4,5,6],[7,8,9]])
+array = array.flatten(9) # transformando array em um array normal sem dimensões com flatten
+print(array)
