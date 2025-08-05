@@ -59,3 +59,9 @@ print(array[0:2]) # slices de linhas
 array = np.array([1,2,3,4])
 for i in array:
     print(i)
+
+#iteração em arrays de mais dimensoes
+array = np.array([[1,2,3,4],[5,6,7,8]])
+for i in array:
+    for j in i:
+        print(j)
