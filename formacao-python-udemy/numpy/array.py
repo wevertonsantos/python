@@ -168,3 +168,11 @@ array12 = np.concatenate((array1,array2),axis=1) # concatenar arrays a partir de
 print(array12)
 array12 = np.concatenate((array1,array2),axis=0) # concatenar arrays a partir da linha
 print(array12)
+
+#usando stack
+array1 = np.array([1,2,3])
+array2 = np.array([4,5,6])
+array12r = np.vstack((array1,array2)) # vai combinar linha por linha
+array12c = np.hstack((array1,array2)) # vai combinar coluna por coluna
+print(array12r)
+print(array12c)
