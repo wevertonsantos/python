@@ -79,3 +79,8 @@ array[1,1:3] = [0,0] # passando novos valores na linha com slice
 array[0,0] = 10 # passando novo valor na linha 1 e coluna 1
 array[:,2] = [0,0,0] # passando novos valores na terceira coluna do array
 print(array)
+
+# adicionando elementos no array
+array = np.array([1,2,3,4])
+array = np.append(array,[5,6,7,8])
+print(array)
