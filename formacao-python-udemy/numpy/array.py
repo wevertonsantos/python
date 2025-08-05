@@ -221,3 +221,4 @@ array_find = np.where((array > 0) & (array < 10)) # verificando onde no array é
 array = np.array([1,3,4,2,7,4])
 array_find = np.any(array == 1)
 array_find = np.any((array > 0) & (array < 10))
+array_find = np.all((array > 6)) # testando se todos atende essa condição
