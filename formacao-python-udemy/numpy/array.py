@@ -203,3 +203,8 @@ array1 = np.array_split(array,4) # faz divisões conforme passado mesmo não sen
 array = np.array([[1,2,3],[4,5,6]])
 array1 = np.array_split(array,2)
 print(array1)
+
+#array split horizontalmente
+array = np.array([[1,2,3],[4,5,6]])
+array1 = np.hsplit(array,3)
+print(array1)
