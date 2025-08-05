@@ -260,3 +260,4 @@ array9 = np.ceil(arr1) # arrendodamento pra cima
 array = np.array([[1,2,3],[4,5,6]])
 array_sum = np.sum(array)
 print(array_sum)
+array_sum = np.sum(array,axis=1) # soma por linha
