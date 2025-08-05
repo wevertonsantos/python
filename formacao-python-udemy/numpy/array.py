@@ -222,6 +222,6 @@ array = np.array([1,3,4,2,7,4])
 array_find = np.any(array == 1)
 array_find = np.any((array > 0) & (array < 10))
 array_find = np.all((array > 6)) # testando se todos atende essa condição
-filter = array == 1 # filtrando que os elementos sejam igual a 1
+filter = (array == 1) | (array == 2) # filtrando que os elementos sejam igual a 1 ou igual a 2
 filter_array = array[filter]
 print(filter_array)
