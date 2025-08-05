@@ -212,3 +212,4 @@ print(array1)
 #filtrando elementos
 array = np.array([1,3,4,2,7,4])
 array_find = np.where(array >= 4) # verificando onde no array é maior igual a 5
+array_find = np.where((array == 4) | (array == 7)) # verificando onde no array é igual a 4 ou igual a 7
