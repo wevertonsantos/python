@@ -198,3 +198,8 @@ print(np.split(array,2))
 # array_split
 array = np.array([1,2,3,4,5,6])
 array1 = np.array_split(array,4) # faz divisões conforme passado mesmo não sendo divisão exata
+
+# array_split com array multidimensional
+array = np.array([[1,2,3],[4,5,6]])
+array1 = np.array_split(array,2)
+print(array1)
