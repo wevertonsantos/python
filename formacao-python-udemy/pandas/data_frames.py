@@ -155,3 +155,7 @@ print(data)
 #remoção de linha pelo índice
 data.drop(index=data.index[[0,1]],inplace=True)
 print(data)
+
+#remoção de linha com condicional
+data.drop(index=data[data['Altura'] >= 1.7].index,inplace=True)
+print(data)
