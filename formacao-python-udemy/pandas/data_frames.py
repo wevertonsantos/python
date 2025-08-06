@@ -159,3 +159,10 @@ print(data)
 #remoção de linha com condicional
 data.drop(index=data[data['Altura'] >= 1.7].index,inplace=True)
 print(data)
+
+#Remoção de colunas
+data = pd.read_csv('pessoas.csv',index_col='Nome')
+print(data)
+
+data.drop(columns=['Idade'],inplace=True)
+print(data)
