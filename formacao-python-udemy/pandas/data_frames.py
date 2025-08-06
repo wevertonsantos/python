@@ -170,3 +170,12 @@ print(data)
 #remoção de coluna pelo índice
 data.drop(columns=data.columns[[0,1]],axis=1,inplace=True)
 print(data)
+
+#localizando valores nulos
+data = pd.read_csv('pessoas.csv',index_col='Nome')
+print(data)
+
+data.loc['Roger','Idade'] = None
+print(data)
+
+print(data.isnull()) # verificando se há valores nulos
