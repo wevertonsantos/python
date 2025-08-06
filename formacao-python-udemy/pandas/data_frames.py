@@ -212,4 +212,4 @@ for indice,grupo in grupos:
     print(indice)
     print(grupo)
 
-grupos.get_group('Programador') #gerando data frame de um terminado grupo
+print(grupos.get_group('Programador')) #gerando data frame de um determinado grupo
