@@ -130,3 +130,12 @@ data_adicional.index.name = 'Nome'
 
 data = pd.concat([data,data_adicional]) # adicionando novo data frame em um data frame existente
 print(data)
+
+#inserindo coluna
+data = pd.read_csv('pessoas.csv',index_col='Nome')
+print(data)
+
+#inserindo coluna com valores diferente para cada linha
+data['Sobrenome'] = ['Silva','Sagan','','','','']
+print(data)
+
