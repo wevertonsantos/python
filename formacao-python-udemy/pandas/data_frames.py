@@ -119,3 +119,14 @@ print(data)
 
 #inserindo linha
 data.loc['Carlos'] = (56,'Engenheiro',1.76) # passando novo indice e valores
+print(data)
+
+data_adicional = pd.DataFrame({'Idade':[34,21,54],
+                               'Profissão':['Paraquedista','Professor','Cozinheiro'],
+                               'Altura':[1.79,1.76,1.90]
+                               }, index=['Julia','Roberto','Jack'])
+
+data_adicional.index.name = 'Nome'
+
+data = pd.concat([data,data_adicional]) # adicionando novo data frame em um data frame existente
+print(data)
