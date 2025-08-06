@@ -26,3 +26,5 @@ dados = {
 
 data_frame = pd.DataFrame(dados,index=['Roger','Cristiano','Diego','Carla'])
 print(data_frame)
+
+print(data_frame.loc['Roger']) # capturando colunas pelo índice
