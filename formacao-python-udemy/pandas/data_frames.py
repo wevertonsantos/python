@@ -166,3 +166,7 @@ print(data)
 
 data.drop(columns=['Idade'],inplace=True)
 print(data)
+
+#remoção de coluna pelo índice
+data.drop(columns=data.columns[[0,1]],axis=1,inplace=True)
+print(data)
