@@ -106,3 +106,9 @@ print(data)
 #usando iloc para alterar
 data.iloc[0,2] = 1.94
 print(data)
+
+#alterando mais valores
+data = pd.read_csv('pessoas.csv',index_col='Nome')
+print(data)
+data.loc[(data['Idade'] == 34) & (data['Profissão'] == 'Programador'), ['Idade','Altura']] = (80,1.40)
+print(data)
