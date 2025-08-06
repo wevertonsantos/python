@@ -57,3 +57,7 @@ print(data['Idade']) # verificando coluna
 # acessando valores individuais
 print(data.loc['Roger']['Idade']) # acessando valor individual passando indice e coluna
 print(data.loc['Roger'][0])
+
+# acessando valores individuais pelo indice
+print(data.iloc[0]['Idade'])
+print(data.iloc[0][0])
