@@ -28,3 +28,22 @@ data_frame = pd.DataFrame(dados,index=['Roger','Cristiano','Diego','Carla'])
 print(data_frame)
 
 print(data_frame.loc['Roger']) # capturando colunas pelo índice
+
+# importando arquivo csv
+data = pd.read_csv('pessoas.csv',index_col='Nome') # o index vai vir da coluna nome
+print(data)
+
+# quantas colunas existem
+print(len(data.columns))
+
+print(data.columns) # vetor com nome das colunas
+
+print(len(data.index)) #quantos index o data frame tem
+
+print(data.index) # mostrando os index
+
+print(data.shape) # formato do dataframe
+
+#iterar sobre dataframe
+for indice, linha in data.iterrows():
+    print(indice,linha[0],linha[1],linha[2])
