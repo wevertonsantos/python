@@ -102,3 +102,7 @@ print(data)
 
 data.loc['José',['Idade','Altura']] = (65,1.72)
 print(data)
+
+#usando iloc para alterar
+data.iloc[0,2] = 1.94
+print(data)
