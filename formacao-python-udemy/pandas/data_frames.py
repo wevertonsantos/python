@@ -180,3 +180,5 @@ print(data)
 
 print(data.isnull()) # verificando se há valores nulos
 print(pd.isnull(data)) # verificando se há valores nulos
+
+print(data.notnull()) # verificando se há valores não nulos
