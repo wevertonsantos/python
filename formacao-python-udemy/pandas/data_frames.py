@@ -149,3 +149,5 @@ print(data)
 
 data2 = data.drop(index=['Roger','Diego']) # removendo linha com drop
 print(data2)
+data.drop(index=['Roger','Diego'],inplace=True) # removendo linha do objeto original
+print(data)
