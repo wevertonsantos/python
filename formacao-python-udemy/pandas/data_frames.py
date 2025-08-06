@@ -211,3 +211,5 @@ grupos = data.groupby('Profissão') # agrupando por profissão
 for indice,grupo in grupos:
     print(indice)
     print(grupo)
+
+grupos.get_group('Programador') #gerando data frame de um terminado grupo
