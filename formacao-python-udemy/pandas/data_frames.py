@@ -5,3 +5,14 @@ nomes = ['Roger','Lucas','Cristiano','Maria']
 #criando data frame a partir da lista
 data_frame = pd.DataFrame(nomes)
 print(data_frame)
+
+# criar tabela com mais colunas
+numeros = [
+    ['11','12','13','14'],
+    ['11','12','13','14'],
+    ['11','12','13','14'],
+    ['11','12','13','14']
+]
+
+data_frame = pd.DataFrame(numeros)
+print(data_frame)
