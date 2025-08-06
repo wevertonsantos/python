@@ -61,3 +61,7 @@ print(data.loc['Roger'][0])
 # acessando valores individuais pelo indice
 print(data.iloc[0]['Idade'])
 print(data.iloc[0][0])
+
+#slicing com dataframe
+print(data.loc['Cristiano':'Jeferson']) #slicing de index
+print(data.iloc[1:4])
