@@ -91,3 +91,7 @@ print(data)
 #atualizando pelo index
 data.iat[2,0] = 100
 print(data)
+
+# alterando mais de um valor simultaneamente
+data.loc['Cristiano','Idade':'Profissão'] = (45,'Dev')
+print(data)
