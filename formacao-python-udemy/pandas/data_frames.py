@@ -14,5 +14,5 @@ numeros = [
     ['11','12','13','14']
 ]
 
-data_frame = pd.DataFrame(numeros)
+data_frame = pd.DataFrame(numeros,columns=['a','b','c','d'],index=['x','y','z','w']) # passando nome das colunas e index como linhas
 print(data_frame)
