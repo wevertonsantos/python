@@ -95,3 +95,10 @@ print(data)
 # alterando mais de um valor simultaneamente
 data.loc['Cristiano','Idade':'Profissão'] = (45,'Dev')
 print(data)
+
+# alterando colunas especificas
+data.loc['Cristiano','Idade':'Profissão'] = (45,'Dev')
+print(data)
+
+data.loc['José',['Idade','Altura']] = (65,1.72)
+print(data)
