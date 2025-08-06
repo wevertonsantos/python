@@ -112,3 +112,10 @@ data = pd.read_csv('pessoas.csv',index_col='Nome')
 print(data)
 data.loc[(data['Idade'] == 34) & (data['Profissão'] == 'Programador'), ['Idade','Altura']] = (80,1.40)
 print(data)
+
+#inserindo linhas e colunas
+data = pd.read_csv('pessoas.csv',index_col='Nome')
+print(data)
+
+#inserindo linha
+data.loc['Carlos'] = (56,'Engenheiro',1.76) # passando novo indice e valores
