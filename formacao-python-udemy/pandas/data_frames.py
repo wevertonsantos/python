@@ -139,3 +139,6 @@ print(data)
 data['Sobrenome'] = ['Silva','Sagan','','','','']
 print(data)
 
+#inserindo coluna em uma posição específica
+data.insert(loc=1,column='Data Nascimento',value=['30/09/2000' for i in range(6)])
+print(data)
