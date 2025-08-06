@@ -68,3 +68,7 @@ print(data[['Idade','Altura']])
 #slicing com dataframe
 print(data.loc['Cristiano':'Jeferson']) #slicing de index
 print(data.iloc[1:4])
+
+#slicing com colunas
+print(data.iloc[:,1:3])
+print(data.loc[:,"Idade":"Profissão"])
