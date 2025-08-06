@@ -83,3 +83,11 @@ print(novo_dframe)
 
 novo_dframe = data[(data['Idade'] > 40) & (data['Altura'] > 1.75)]
 print(novo_dframe)
+
+# atualizando valores no data frame
+data.at['Roger','Idade'] = 56
+print(data)
+
+#atualizando pelo index
+data.iat[2,0] = 100
+print(data)
