@@ -76,3 +76,7 @@ print(data.loc[:,"Idade":"Profissão"])
 #máscaras com dataframe
 mask = data['Idade'] < 50 # verificando na coluna idade que atende a condição
 print(mask)
+
+# aplicando máscara no dataframe
+novo_dframe = data[mask]
+print(novo_dframe)
