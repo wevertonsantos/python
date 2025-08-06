@@ -16,3 +16,13 @@ numeros = [
 
 data_frame = pd.DataFrame(numeros,columns=['a','b','c','d'],index=['x','y','z','w']) # passando nome das colunas e index como linhas
 print(data_frame)
+
+# criar data frame a partir de dicionários
+dados = {
+    'Nome':['Roger','Cristiano','Diego','Carla'],
+    'Idade':[45,34,56,21],
+    'Profissão':['Engenheiro','Desenvolvedor','Metalúrgico','Médica']
+}
+
+data_frame = pd.DataFrame(dados)
+print(data_frame)
