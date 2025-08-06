@@ -185,3 +185,7 @@ print(data.notnull()) # verificando se há valores não nulos
 
 mask = pd.notnull(data['Idade']) # verificando se há valores não nulos e usando máscara
 print(mask)
+
+#ordenar valores
+copy = data.sort_values('Idade',ascending=True,inplace=False) # ordenando de forma crescente
+print(copy)
