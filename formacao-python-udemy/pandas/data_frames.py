@@ -19,10 +19,10 @@ print(data_frame)
 
 # criar data frame a partir de dicionários
 dados = {
-    'Nome':['Roger','Cristiano','Diego','Carla'],
+    #'Nome':['Roger','Cristiano','Diego','Carla'],
     'Idade':[45,34,56,21],
     'Profissão':['Engenheiro','Desenvolvedor','Metalúrgico','Médica']
 }
 
-data_frame = pd.DataFrame(dados)
+data_frame = pd.DataFrame(dados,index=['Roger','Cristiano','Diego','Carla'])
 print(data_frame)
