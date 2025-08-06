@@ -189,3 +189,6 @@ print(mask)
 #ordenar valores
 copy = data.sort_values('Idade',ascending=True,inplace=False) # ordenando de forma crescente
 print(copy)
+
+copy = data.sort_values('Idade',ascending=True,inplace=False,na_position='first') # ordenando de forma crescente e o na_position indica que o valores nulos vem primeiro
+print(copy)
