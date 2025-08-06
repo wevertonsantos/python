@@ -195,3 +195,19 @@ print(copy)
 
 copy = data.sort_values(['Idade','Altura'],ascending=[True,False],inplace=False,na_position='first')
 print(copy) #mais exemplos de ordenação
+
+# agrupando valores
+data = pd.read_csv('pessoas.csv',index_col='Nome')
+print(data)
+
+data.loc['Willam'] = (25,'Programador',1.75)
+data.loc['Lando'] = (22,'Programador',1.65)
+data.loc['Max'] = (45,'Médico',1.68)
+data.loc['Sebastian'] = (35,'Médico',1.74)
+data.loc['Ana'] = (23,'Médica',1.70)
+print(data)
+
+grupos = data.groupby('Profissão') # agrupando por profissão
+for indice,grupo in grupos:
+    print(indice)
+    print(grupo)
