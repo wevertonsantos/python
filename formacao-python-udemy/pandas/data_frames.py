@@ -142,3 +142,10 @@ print(data)
 #inserindo coluna em uma posição específica
 data.insert(loc=1,column='Data Nascimento',value=['30/09/2000' for i in range(6)])
 print(data)
+
+#remoção de linhas
+data = pd.read_csv('pessoas.csv',index_col='Nome')
+print(data)
+
+data2 = data.drop(index=['Roger','Diego']) # removendo linha com drop
+print(data2)
