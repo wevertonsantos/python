@@ -72,3 +72,7 @@ print(data.iloc[1:4])
 #slicing com colunas
 print(data.iloc[:,1:3])
 print(data.loc[:,"Idade":"Profissão"])
+
+#máscaras com dataframe
+mask = data['Idade'] < 50 # verificando na coluna idade que atende a condição
+print(mask)
