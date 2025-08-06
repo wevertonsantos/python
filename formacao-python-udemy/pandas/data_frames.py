@@ -47,3 +47,9 @@ print(data.shape) # formato do dataframe
 #iterar sobre dataframe
 for indice, linha in data.iterrows():
     print(indice,linha[0],linha[1],linha[2])
+
+#iterando coluna
+for coluna in data:
+    print(coluna)
+
+print(data['Idade']) # verificando coluna
