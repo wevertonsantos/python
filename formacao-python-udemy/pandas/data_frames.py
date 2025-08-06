@@ -80,3 +80,6 @@ print(mask)
 # aplicando máscara no dataframe
 novo_dframe = data[mask]
 print(novo_dframe)
+
+novo_dframe = data[(data['Idade'] > 40) & (data['Altura'] > 1.75)]
+print(novo_dframe)
