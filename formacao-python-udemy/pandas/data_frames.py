@@ -53,3 +53,7 @@ for coluna in data:
     print(coluna)
 
 print(data['Idade']) # verificando coluna
+
+# acessando valores individuais
+print(data.loc['Roger']['Idade']) # acessando valor individual passando indice e coluna
+print(data.loc['Roger'][0])
