@@ -35,4 +35,8 @@ def cotacaocompleta():
 
     return str(total)
 
+@app.route('/tabela/')
+def tabela():
+    return jsonify(Janeiro='5.34',Fevereiro='5.22',Marco='5.33') # transformando parametros em um json
+
 app.run() #executando aplicação
