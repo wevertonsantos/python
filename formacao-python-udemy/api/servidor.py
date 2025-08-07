@@ -1,8 +1,11 @@
 from flask import jsonify, Flask
-from flask_ngrok import run_with_ngrok
+from pyngrok import ngrok
 
 app = Flask(__name__) # criando aplicação flask
-run_with_ngrok(app) # rodar ngrok com aplicação flask
+
+# Abre o túnel ngrok na porta 5000
+public_url = ngrok.connect(5000)
+print(f"* ngrok tunnel: {public_url}")  # Mostra a URL pública no terminal
 
 @app.route('/cotacao/') # rota para acessar o endereço e executar função
 def cotacao():
