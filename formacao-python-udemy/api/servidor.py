@@ -7,6 +7,10 @@ app = Flask(__name__) # criando aplicação flask
 public_url = ngrok.connect(5000)
 print(f"* ngrok tunnel: {public_url}")  # Mostra a URL pública no terminal
 
+@app.route('/')
+def padrao():
+    return "Escolha um dos métodos"
+
 @app.route('/cotacao/') # rota para acessar o endereço e executar função
 def cotacao():
     return '5.34'
