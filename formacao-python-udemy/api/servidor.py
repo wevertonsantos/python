@@ -15,4 +15,8 @@ def padrao():
 def cotacao():
     return '5.34'
 
+@app.route('/conversao/<float:val>')
+def conversao(val):
+    return str(val * 5.34)
+
 app.run() #executando aplicação
