@@ -11,3 +11,6 @@ print(x.text)
 
 x = requests.get('http://127.0.0.1:5000/cotacaocompleta?valor=100&mes=Marco')
 print(x.text)
+
+x = requests.get('http://127.0.0.1:5000/tabela/')
+print(x.text)
