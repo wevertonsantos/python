@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="4" time="0.298" timestamp="2025-08-07T10:32:54.030981-03:00" hostname="DESKTOP-FHQ30LK"><testcase classname="test_1" name="test_par3[10-2]" time="0.001" /><testcase classname="test_1" name="test_par3[3-2]" time="0.002"><failure message="assert (3 % 2) == 0">num1 = 3, num2 = 2
+
+    @pytest.mark.parametrize("num1,num2",[(10,2),(3,2),(3,1),(12,4)]) #parametrizando números para fazer teste
+    def test_par3(num1,num2):
+&gt;       assert num1 % num2 == 0
+E       assert (3 % 2) == 0
+
+test_1.py:13: AssertionError</failure></testcase><testcase classname="test_1" name="test_par3[3-1]" time="0.001" /><testcase classname="test_1" name="test_par3[12-4]" time="0.001" /></testsuite></testsuites>

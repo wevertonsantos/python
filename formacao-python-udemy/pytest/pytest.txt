@@ -5,3 +5,4 @@ pytest test_2.py -: verifica o teste daquele determinado arquivo
 pytest -k im -v : executar apenas as funções que tem im por exemplo
 pytest -m primarios -v: executa exatamente onde o pytest está marcado com primarios
 pytest test_par3 -v --maxfail 1 : mostrando com maxfail no máximo 1 falha
+pytest -k test_par3 -v --junitxml="resultadoteste.xml" : salva teste em um arquivo xml
