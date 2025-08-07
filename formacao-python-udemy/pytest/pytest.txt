@@ -1,0 +1,5 @@
+Comandos:
+
+pytest -v : verifica os testes e mostrar informações
+pytest test_2.py -: verifica o teste daquele determinado arquivo
+pytest -k im -v : executar apenas as funções que tem im por exemplo
