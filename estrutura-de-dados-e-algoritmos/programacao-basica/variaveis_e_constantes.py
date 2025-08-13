@@ -21,7 +21,7 @@ print(letra,palavra1)
 print('Estou aprendendo uma', palavra1)
 print('Esta',palavra1,'se chama',palavra2)
 
-idade = input('Digite sua idade: ')
+idade = int(input('Digite sua idade: '))
 print('Sua idade é', idade) 
 
 pH = input('Qual o pH do solo durante a última medição: ')
