@@ -24,7 +24,7 @@ print('Esta',palavra1,'se chama',palavra2)
 idade = int(input('Digite sua idade: '))
 print('Sua idade é', idade) 
 
-pH = input('Qual o pH do solo durante a última medição: ')
+pH = float(input('Qual o pH do solo durante a última medição: '))
 print('O pH medido foi',pH)
 
 nome = input('Qual o seu nome? ')
