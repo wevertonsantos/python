@@ -32,3 +32,7 @@ print(len(e)) # tamanho da string
 
 f = e.strip() # remove espaços antes e depois da string
 print(f)
+
+n1 = 14
+n2 = 16
+print(f'Divindo {n1} por {n2} o resultado é {n1/n2}') # f string - string formatada
