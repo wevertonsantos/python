@@ -14,5 +14,5 @@ print(a | b)
 d = a or b
 print("'A' ou 'B' é igual a",d)
 
-not a
+not a # reverte o bool
 not b
