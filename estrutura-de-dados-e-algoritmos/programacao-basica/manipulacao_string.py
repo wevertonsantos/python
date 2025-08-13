@@ -26,3 +26,9 @@ print(c)
 print(c.find('s')) # irá retornar índice
 print(c.find('a'))
 print(c.find('b')) # se não existe retorna -1
+
+e = ' casaco '
+print(len(e)) # tamanho da string
+
+f = e.strip() # remove espaços antes e depois da string
+print(f)
