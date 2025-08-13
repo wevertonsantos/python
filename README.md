@@ -21,6 +21,7 @@ A proposta é aprofundar meus conhecimentos por meio de cursos gratuitos, plataf
 - [Leetcode](https://leetcode.com/)
 - [Programação Orientada a Objetos com Python & Dataclass](https://www.youtube.com/watch?v=eqBf1TxN5mQ&ab_channel=ProgramadorPython)
 - [Extração de Dados de API com Python](https://www.udemy.com/course/aprenda-a-extrair-dados-de-apis-com-python-do-zero/)
+- [Estrutura de Dados e Algoritmos em Python](https://www.udemy.com/course/estrutura-de-dados-e-algoritmos-python-guia-completo/?couponCode=MT130825G1)
 
 ### 🗂️ Estrutura do repositório
 
