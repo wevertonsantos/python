@@ -16,3 +16,11 @@ print("'A' ou 'B' é igual a",d)
 
 not a # reverte o bool
 not b
+
+# operadores relacionais
+print(5 > 3)
+print(5 < 3)
+print(5 >= 3)
+print(5 <= 3)
+print(5 == 3)
+print(5 != 3)
