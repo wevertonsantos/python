@@ -32,3 +32,34 @@ del (lista) # deletando lista inteira
 
 for item in lista2_2:
     print(item)
+
+#dicionário
+coleta = {
+    'Aedes aegypt' : 32,
+    'Aedes albopictus' : 22,
+    'Anopheles darling' : 14
+}
+print(coleta['Aedes aegypt'])
+
+coleta['Rhodnius montenegrensis'] = 11 # adicionando novo elemento
+print(coleta)
+
+del (coleta)['Aedes albopictus'] # deletando
+print(coleta)
+
+print(coleta.items()) # trazendo itens do dicionário
+print(coleta.keys()) # trazendo apenas chaves
+print(coleta.values()) # trazendo apenas valores
+
+coleta2 = {
+    'Anopheles gambiae' : 13,
+    'Anopheles deaneorum' : 14
+}
+print(coleta2)
+
+coleta.update(coleta2) # juntando dois dicionários
+print(coleta)
+
+#percorrendo dicionário
+for especie, num_especimes in coleta.items():
+    print(f'Espécie: {especie}, número de espécimes coletados: {num_especimes}')
