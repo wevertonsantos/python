@@ -14,3 +14,21 @@ lista = ['Homo sapiens','Canis familiaries','Felis catus']
 lista2 = ['Xenopus laevis','Ailuropoda melanoleuca']
 lista3 = lista + lista2
 print(lista3)
+print(lista2)
+
+lista2_2 = lista2 * 2 # duplicando lista
+print(lista2_2)
+print(lista[0])
+print(lista)
+print(lista[0:2]) # slicing
+
+lista.append('Gorila gorila') # adicionando elemento
+print(lista)
+
+lista.remove('Felis catus') # removendo elemento
+print(lista)
+
+del (lista) # deletando lista inteira
+
+for item in lista2_2:
+    print(item)
