@@ -46,3 +46,19 @@ print(horario.hour)
 print(horario.minute)
 #segundos
 print(horario.second)
+
+'''
+biblioteca random
+'''
+
+import random
+
+#números de 0 a 1
+print(random.random())
+#números random de uma faixa que você queira
+print(random.randint(1,10))
+#números random com faixa e com step
+print(random.randrange(0,10,2))
+#sortear elemento dentro de uma lista
+x = ['K','d',13,'34-j','x']
+print(random.choice(x))
