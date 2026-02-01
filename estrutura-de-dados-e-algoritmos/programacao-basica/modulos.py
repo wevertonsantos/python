@@ -62,3 +62,27 @@ print(random.randrange(0,10,2))
 #sortear elemento dentro de uma lista
 x = ['K','d',13,'34-j','x']
 print(random.choice(x))
+
+'''
+biblioteca time
+'''
+
+import time as tm
+
+#tempo atual em segundos
+print(tm.time())
+#ver quanto tempo código leva para executar
+antes = tm.time()
+lista = []
+for i in range(0,100000):
+    lista.append(i)
+depois = tm.time()
+intervalo = depois - antes
+print(f"Tempo: {intervalo} segundos")
+
+print('Finalizando...')
+#parar o programa por tempo
+tm.sleep(2)
+print('...')
+tm.sleep(2)
+print('Até a próxima')
