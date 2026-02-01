@@ -28,10 +28,12 @@ A proposta é aprofundar meus conhecimentos por meio de cursos gratuitos, plataf
 ```bash
 📦 python/
 ├── harvard-cs50p/            # Conteúdo curso da Harvard
-├── formacao-python-udemy/    # Curso completo e projetos práticos
+├── formacao-python-udemy/    # Curso completo de python e projetos práticos
 ├── codewars/                 # Resolução de desafios do Codewars
 ├── leetcode/                 # Problemas resolvidos do Leetcode
 ├── oop/                      # Estudos de Programação Orientada a Objetos
+├── api/                      # Extração de Dados de API com Python
+├── estrutura-de-dados-e-algoritmos/                                                      # Estrutura de Dados e Algoritmos em Python
 └── README.md                 # Este arquivo
 ```
 
