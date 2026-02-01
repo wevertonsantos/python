@@ -33,7 +33,7 @@ A proposta é aprofundar meus conhecimentos por meio de cursos gratuitos, plataf
 ├── leetcode/                 # Problemas resolvidos do Leetcode
 ├── oop/                      # Estudos de Programação Orientada a Objetos
 ├── api/                      # Extração de Dados de API com Python
-├── estrutura-de-dados-e-algoritmos/                                                      # Estrutura de Dados e Algoritmos em Python
+├── estrutura-de-dados-e-algoritmos/ # Estrutura de Dados e Algoritmos em Python
 └── README.md                 # Este arquivo
 ```
 
