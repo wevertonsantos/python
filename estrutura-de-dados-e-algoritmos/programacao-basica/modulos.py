@@ -86,3 +86,12 @@ tm.sleep(2)
 print('...')
 tm.sleep(2)
 print('Até a próxima')
+
+'''
+biblioteca própria
+'''
+
+import exercicios.parte6 as parte6
+
+print(parte6.mensagem("Mensagem"))
+print(parte6.mensagem_float(2.5))
