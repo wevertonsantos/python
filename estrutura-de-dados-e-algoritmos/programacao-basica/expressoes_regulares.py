@@ -34,3 +34,11 @@ print(re.search('[A-Za-z]{3}-\d{4}',frase))
 
 email = 'Entre em contato, meu email é teste@teste.com'
 print(re.search('\w+@\w+\.com',email))
+
+#função match - indicar se uma expressão regular está no início do texto
+
+frase = 'A placa de carro que eu anotei durante o acidente foi FrT-1998'
+print(re.match('[A-Za-z]{3}-\d{4}',frase))
+
+frase2 = 'FRT-1998 é a placa do carro'
+print(re.match('[A-Za-z]{3}-\d{4}',frase2))
