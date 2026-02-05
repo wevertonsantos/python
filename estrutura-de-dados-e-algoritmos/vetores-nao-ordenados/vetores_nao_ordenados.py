@@ -20,10 +20,19 @@ class VetorNaoOrdenado:
             self.ultima_posicao += 1
             self.valores[self.ultima_posicao] = valor
 
+    def pesquisar(self, valor):
+        for i in range(self.ultima_posicao + 1):
+            if valor == self.valores[i]:
+                return i
+        return -1
+
 vetor = VetorNaoOrdenado(5)
 vetor.insere(2)
 vetor.insere(3)
 vetor.insere(5)
 vetor.insere(8)
 vetor.insere(1)
+
 vetor.imprime()
+print(vetor.pesquisar(8))
+print(vetor.pesquisar(9))
