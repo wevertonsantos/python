@@ -25,6 +25,16 @@ class VetorNaoOrdenado:
             if valor == self.valores[i]:
                 return i
         return -1
+    
+    def excluir(self,valor):
+        for i in range(self.ultima_posicao + 1):
+            posicao = self.pesquisar(valor)
+            if posicao == -1:
+                return -1
+            else:
+                for i in range(posicao,self.ultima_posicao):
+                    self.valores[i] = self.valores[i + 1]
+                self.ultima_posicao -= 1
 
 vetor = VetorNaoOrdenado(5)
 vetor.insere(2)
@@ -32,6 +42,8 @@ vetor.insere(3)
 vetor.insere(5)
 vetor.insere(8)
 vetor.insere(1)
+
+vetor.excluir(5)
 
 vetor.imprime()
 print(vetor.pesquisar(8))
