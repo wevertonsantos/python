@@ -34,7 +34,7 @@ class VetorOrdenado:
         self.valores[posicao] = valor
         self.ultima_posicao += 1
     
-    def pesquisar(self,valor):
+    def pesquisa_linear(self,valor):
         for i in range(self.ultima_posicao + 1):
             if self.valores[i] > valor:
                 return -1
@@ -43,6 +43,27 @@ class VetorOrdenado:
             if i == self.ultima_posicao:
                 return -1
     
+    def pesquisa_binaria(self,valor):
+        limite_inferior = 0
+        limite_superior = self.ultima_posicao
+
+        while True:
+            posicao_atual = int((limite_inferior + limite_superior) / 2)
+            # Se achou na primeira tentativa
+            if self.valores[posicao_atual] == valor:
+                return posicao_atual
+            # Se não achou
+            elif limite_inferior > limite_superior:
+                return -1
+            # Divide os limites
+            else:
+                # Limite inferior
+                if self.valores[posicao_atual] < valor:
+                    limite_inferior = posicao_atual + 1
+                # Limite superior
+                else:
+                    limite_superior = posicao_atual - 1
+
     def excluir(self,valor):
             posicao = self.pesquisar(valor)
             if posicao == -1:
