@@ -42,6 +42,15 @@ class VetorOrdenado:
                 return i
             if i == self.ultima_posicao:
                 return -1
+    
+    def excluir(self,valor):
+            posicao = self.pesquisar(valor)
+            if posicao == -1:
+                return -1
+            else:
+                for i in range(posicao,self.ultima_posicao):
+                    self.valores[i] = self.valores[i + 1]
+                self.ultima_posicao -= 1
 
 vetor = VetorOrdenado(10)
 
